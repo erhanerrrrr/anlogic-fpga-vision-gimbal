@@ -1,0 +1,25 @@
+{
+  "groups":[
+    {"w":640,"h":360,"name":"specified_sequence","drain":false,"cases":[
+      {"id":10,"pattern":0,"publish":true,"cx":120},
+      {"id":11,"pattern":1,"publish":true,"cx":130},
+      {"id":12,"pattern":2,"publish":true,"cx":140},
+      {"id":13,"pattern":3,"publish":true},
+      {"id":14,"pattern":3,"publish":true},
+      {"id":15,"pattern":0,"publish":true,"cx":120},
+      {"id":15,"pattern":0,"publish":false},
+      {"id":16,"pattern":4,"publish":true}
+    ]},
+    {"w":64,"h":48,"name":"reset_and_stop","drain":true,"cases":[
+      {"id":0,"pattern":0,"publish":true,"cx":30},
+      {"id":1,"pattern":0,"abort":true,"publish":false},
+      {"id":0,"pattern":0,"publish":true,"cx":30},
+      {"id":2,"pattern":0,"stop":true,"publish":false},
+      {"id":2,"pattern":0,"publish":true,"cx":30}
+    ]},
+    {"w":1280,"h":720,"name":"wrap_720p","drain":false,"cases":[
+      {"id":4294967295,"pattern":0,"publish":true,"cx":120,"cfg":7,"color":1},
+      {"id":0,"pattern":1,"publish":true,"cx":130,"cfg":8,"color":2}
+    ]}
+  ]
+}

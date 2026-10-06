@@ -1,0 +1,14 @@
+{
+  "cases":[
+    {"name":"rectangle","w":640,"h":360,"id":10,"cfg":0,"color":0,"pattern":0,"expected":[1,1271,100,80,140,110,120,95]},
+    {"name":"floor_2x2","w":32,"h":32,"id":11,"cfg":0,"color":1,"pattern":1,"expected":[1,4,10,20,11,21,10,20]},
+    {"name":"empty","w":32,"h":32,"id":12,"cfg":0,"color":2,"pattern":2,"expected":[0,0,0,0,0,0,0,0]},
+    {"name":"full_720p","w":1280,"h":720,"id":4294967295,"cfg":0,"color":0,"pattern":3,"expected":[1,921600,0,0,1279,719,639,359]},
+    {"name":"last_pixel_720p","w":1280,"h":720,"id":0,"cfg":0,"color":2,"pattern":4,"expected":[1,1,1279,719,1279,719,1279,719]},
+    {"name":"one_pixel_cfg_a","w":1,"h":1,"id":1,"cfg":7,"color":0,"pattern":3,"expected":[1,1,0,0,0,0,0,0]},
+    {"name":"one_pixel_cfg_b","w":1,"h":1,"id":2,"cfg":8,"color":1,"pattern":3,"expected":[1,1,0,0,0,0,0,0]},
+    {"name":"empty_new_cfg","w":1,"h":1,"id":3,"cfg":9,"color":2,"pattern":2,"expected":[0,0,0,0,0,0,0,0]},
+    {"name":"abort","w":16,"h":12,"id":4,"cfg":10,"color":0,"pattern":3,"abort_at":35,"expected":null},
+    {"name":"recover","w":16,"h":12,"id":5,"cfg":11,"color":1,"pattern":4,"expected":[1,1,15,11,15,11,15,11]}
+  ]
+}

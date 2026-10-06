@@ -1,0 +1,13 @@
+{
+  "interface_version": "s0-draft-1",
+  "seed": 20261005,
+  "cases": [
+    {"name":"red_rectangle","width":640,"height":360,"frame_id":10,"rectangles":[[100,80,140,110,200,40,40]],"expected":{"red":[1271,100,80,140,110,120,95],"green":null,"blue":null}},
+    {"name":"green_next_frame","width":640,"height":360,"frame_id":11,"rectangles":[[100,80,140,110,40,200,40]],"expected":{"red":null,"green":[1271,100,80,140,110,120,95],"blue":null}},
+    {"name":"empty","width":64,"height":48,"frame_id":12,"rectangles":[],"expected":{"red":null,"green":null,"blue":null}},
+    {"name":"rgb_cards","width":64,"height":48,"frame_id":13,"rectangles":[[2,3,12,13,200,40,40],[24,3,34,13,40,200,40],[46,3,56,13,40,40,200]],"expected":{"red":[121,2,3,12,13,7,8],"green":[121,24,3,34,13,29,8],"blue":[121,46,3,56,13,51,8]}},
+    {"name":"two_red_unsupported","width":64,"height":48,"frame_id":14,"rectangles":[[2,3,12,13,200,40,40],[46,3,56,13,200,40,40]],"expected":{"red":[242,2,3,56,13,29,8],"green":null,"blue":null}},
+    {"name":"last_pixel","width":1280,"height":720,"frame_id":15,"rectangles":[[1279,719,1279,719,40,40,200]],"expected":{"red":null,"green":null,"blue":[1,1279,719,1279,719,1279,719]}},
+    {"name":"full_green","width":1280,"height":720,"frame_id":16,"rectangles":[[0,0,1279,719,40,200,40]],"expected":{"red":null,"green":[921600,0,0,1279,719,639,359],"blue":null}}
+  ]
+}

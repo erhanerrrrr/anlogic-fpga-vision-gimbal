@@ -1,0 +1,56 @@
+{
+  "stage": "C10",
+  "result": "PASS",
+  "interface_version": "c9-draft-1",
+  "seed": 20261006,
+  "groups": [
+    {
+      "name": "sequence_720p",
+      "input_complete_frames": 12,
+      "partial_input_frames": 0,
+      "input_pixels": 11059200,
+      "filtered_pixels": 11059200,
+      "new_observations": 11,
+      "valid_observations": 8,
+      "rejected_observations": 3,
+      "suppressed_duplicates": 1,
+      "calibrations": 2,
+      "successful_calibrations": 1,
+      "L_result_cycles": 1287,
+      "L_filtered_cycles": 1283,
+      "pixel_mismatches": 0,
+      "packet_mismatches": 0,
+      "timing_errors": 0,
+      "cycles": 11077775
+    },
+    {
+      "name": "recovery",
+      "input_complete_frames": 5,
+      "partial_input_frames": 2,
+      "input_pixels": 17543,
+      "filtered_pixels": 17412,
+      "new_observations": 5,
+      "valid_observations": 3,
+      "rejected_observations": 2,
+      "suppressed_duplicates": 0,
+      "calibrations": 0,
+      "successful_calibrations": 0,
+      "L_result_cycles": 71,
+      "L_filtered_cycles": 67,
+      "pixel_mismatches": 0,
+      "packet_mismatches": 0,
+      "timing_errors": 0,
+      "cycles": 18589
+    }
+  ],
+  "tool_versions": {
+    "python": "3.7.8",
+    "modelsim": "10.3c"
+  },
+  "board_measurements": "pending_H3_H4",
+  "B_integration": "pending_B_RTL",
+  "real_input_replay": "no_capture_available",
+  "throughput": "one_valid_pixel_per_clock_in_simulation",
+  "hardware_fps": null,
+  "timing_signoff": false
+}

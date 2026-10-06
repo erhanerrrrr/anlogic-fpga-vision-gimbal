@@ -1,0 +1,467 @@
+{
+  "seed": 20261006,
+  "groups": [
+    {
+      "name": "protocol",
+      "w": 64,
+      "h": 48,
+      "cases": [
+        {
+          "id": 0,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "req": 100
+        },
+        {
+          "id": 1,
+          "pattern": 1,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "extra": 3071
+        },
+        {
+          "id": 2,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 2,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 3,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 4,
+          "pattern": 2,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 5,
+          "pattern": 3,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 6,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 7,
+          "pattern": 4,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 8,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 9,
+          "pattern": 5,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 10,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 11,
+          "pattern": 6,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 12,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 13,
+          "pattern": 7,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "extra": 100
+        },
+        {
+          "id": 14,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 15,
+          "pattern": 8,
+          "cfg": 2,
+          "color": 1,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 16,
+          "pattern": 9,
+          "cfg": 2,
+          "color": 1,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "req": 100
+        },
+        {
+          "id": 17,
+          "pattern": 10,
+          "cfg": 2,
+          "color": 1,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 18,
+          "pattern": 8,
+          "cfg": 2,
+          "color": 1,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 19,
+          "pattern": 11,
+          "cfg": 3,
+          "color": 2,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 20,
+          "pattern": 11,
+          "cfg": 3,
+          "color": 2,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "select_at": 100,
+          "select": 0
+        },
+        {
+          "id": 20,
+          "pattern": 11,
+          "cfg": 3,
+          "color": 2,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        },
+        {
+          "id": 21,
+          "pattern": 0,
+          "cfg": 4,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 22,
+          "pattern": 0,
+          "cfg": 4,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "req": 100
+        },
+        {
+          "id": 23,
+          "pattern": 1,
+          "cfg": 4,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "stop": true
+        },
+        {
+          "op": "idle",
+          "cycles": 200
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 24,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 25,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "select_at": 100,
+          "select": 3
+        },
+        {
+          "id": 26,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "req": 100
+        },
+        {
+          "id": 27,
+          "pattern": 1,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "discard": true
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 28,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 29,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "select_at": 0,
+          "select": 1
+        },
+        {
+          "id": 30,
+          "pattern": 8,
+          "cfg": 1,
+          "color": 1,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "name": "full_720p",
+      "w": 1280,
+      "h": 720,
+      "cases": [
+        {
+          "id": 100,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "req": 500
+        },
+        {
+          "id": 101,
+          "pattern": 1,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 102,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 102,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ]
+        },
+        {
+          "id": 103,
+          "pattern": 0,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ]
+        }
+      ]
+    }
+  ]
+}

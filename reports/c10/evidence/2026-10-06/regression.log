@@ -1,0 +1,10 @@
+C1 exit=0 PASS: 12636 cycles x 4 profiles; 12288 random RGB; valid/reset/hold checks passed
+C2 exit=0 PASS: 11 cases, 2322567 RTL pixels; all masks and metadata match
+C3 exit=0 PASS: 12 cases; 11 raw results per path; geometry, EOF, reset and hold checks passed
+C4 exit=0 PASS: 10 frame cases, 9 packets per path, 5 arithmetic anchors; L_result=1/2 cycles
+C5 exit=0 PASS: C5 full masks, geometry, boundary and flush timing verified for both paths
+C6 exit=0 PASS: C6 boundary/random rules, accepted/rejected examples, debug fields and timing
+C7 exit=0 PASS: C7 motion, loss/reappearance, duplicate suppression, wrap, stop and reset
+C8 exit=0 PASS: C8 ROI statistics, request protocol, reset and unchanged C7 detector
+C9 exit=0 PASS: C9 calibration arithmetic, atomic application and complete RGB pipeline
+TD exit=0 PASS: C1-C10 TD synthesis with observable word-read harness. No board timing claim.

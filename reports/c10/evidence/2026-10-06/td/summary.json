@@ -1,0 +1,9 @@
+{
+  "stage": "C10",
+  "result": "PASS",
+  "top": "c10_synth_top",
+  "device": "PH1P35MDG324",
+  "mode": "synthesis-only full-result word-read harness",
+  "timing": "not_constrained_not_signed_off",
+  "hardware": "not_tested"
+}

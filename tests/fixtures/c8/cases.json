@@ -1,0 +1,213 @@
+{
+  "stage": "C8",
+  "seed": 20261006,
+  "groups": [
+    {
+      "name": "protocol",
+      "w": 32,
+      "h": 24,
+      "rx": 8,
+      "ry": 4,
+      "cases": [
+        {
+          "op": "request"
+        },
+        {
+          "id": 0,
+          "pattern": 0
+        },
+        {
+          "id": 1,
+          "req": 100
+        },
+        {
+          "id": 1,
+          "pattern": 2
+        },
+        {
+          "id": 2,
+          "pattern": 1,
+          "extra": [
+            0,
+            100,
+            -2
+          ]
+        },
+        {
+          "id": 3,
+          "req": 0
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4,
+          "pattern": 2
+        },
+        {
+          "id": 5,
+          "req": -2
+        },
+        {
+          "id": 6,
+          "pattern": 3
+        },
+        {
+          "id": 7,
+          "req": 100
+        },
+        {
+          "id": 8,
+          "pattern": 4,
+          "stop": true
+        },
+        {
+          "op": "idle",
+          "cycles": 200
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 0,
+          "pattern": 0,
+          "stop": true
+        },
+        {
+          "id": 1,
+          "pattern": 1
+        },
+        {
+          "id": 2,
+          "req": 100
+        },
+        {
+          "id": 3,
+          "pattern": 4
+        },
+        {
+          "id": 4,
+          "req": 100
+        },
+        {
+          "id": 5,
+          "pattern": 5,
+          "missing": true
+        },
+        {
+          "id": 4294967295,
+          "req": 100
+        },
+        {
+          "id": 4294967295
+        },
+        {
+          "id": 0,
+          "pattern": 5
+        },
+        {
+          "op": "request"
+        },
+        {
+          "op": "idle",
+          "cycles": 65540,
+          "req": true
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 9,
+          "req": 100
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 10
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 11,
+          "pattern": 6
+        }
+      ]
+    },
+    {
+      "name": "roi_edges",
+      "w": 16,
+      "h": 16,
+      "rx": 0,
+      "ry": 0,
+      "cases": [
+        {
+          "op": "request"
+        },
+        {
+          "id": 0,
+          "pattern": 0
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 1,
+          "pattern": 2
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 2,
+          "pattern": 3
+        }
+      ]
+    },
+    {
+      "name": "full_720p",
+      "w": 1280,
+      "h": 720,
+      "rx": 632,
+      "ry": 352,
+      "cases": [
+        {
+          "id": 30,
+          "req": 500
+        },
+        {
+          "id": 31,
+          "pattern": 0,
+          "cfg": 7,
+          "color": 0
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 31,
+          "pattern": 2
+        },
+        {
+          "id": 32,
+          "pattern": 1,
+          "cfg": 8,
+          "color": 2
+        },
+        {
+          "op": "request"
+        },
+        {
+          "id": 33,
+          "pattern": 2,
+          "cfg": 9,
+          "color": 1
+        }
+      ]
+    }
+  ]
+}

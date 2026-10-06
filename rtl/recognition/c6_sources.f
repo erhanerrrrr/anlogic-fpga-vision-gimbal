@@ -1,0 +1,11 @@
+rtl/recognition/color_classifier.v
+rtl/recognition/color_mask_stream.v
+rtl/recognition/mask_frame_stats.v
+rtl/recognition/target_result_pack.v
+rtl/recognition/mask_target_result.v
+rtl/recognition/mask_majority_3x3.v
+rtl/recognition/mask_denoised_result.v
+rtl/recognition/rgb_denoised_result.v
+rtl/recognition/target_validity.v
+rtl/recognition/target_validated_pack.v
+rtl/recognition/rgb_validated_result.v

@@ -1,0 +1,24 @@
+{
+  "provenance": "board_input",
+  "capture_stage": "FILL: exact RGB signal before gamma/OSD",
+  "lighting": "FILL: light type and exposure setting",
+  "distance_cm": null,
+  "source_revision": "FILL: FPGA source revision and bitstream hash",
+  "pixel_format": "RGB888_R_G_B",
+  "clock_hz": null,
+  "frames": [
+    {
+      "path": "capture_000.rgb",
+      "width": 1280,
+      "height": 720,
+      "source_frame_id": 0,
+      "cfg_id": 0,
+      "color": 0,
+      "limits": [
+        80,
+        40,
+        40
+      ]
+    }
+  ]
+}

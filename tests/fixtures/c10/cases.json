@@ -1,0 +1,519 @@
+{
+  "interface_version": "c9-draft-1",
+  "seed": 20261006,
+  "groups": [
+    {
+      "name": "sequence_720p",
+      "w": 1280,
+      "h": 720,
+      "cases": [
+        {
+          "id": 100,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              100,
+              80,
+              140,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 101,
+          "pattern": 1,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              110,
+              80,
+              150,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 102,
+          "pattern": 2,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 0,
+            "filtered_count": 0,
+            "bbox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "valid": 0,
+            "reason": 1
+          },
+          "publish": true
+        },
+        {
+          "id": 103,
+          "pattern": 3,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 2542,
+            "filtered_count": 2534,
+            "bbox": [
+              100,
+              80,
+              340,
+              110
+            ],
+            "valid": 0,
+            "reason": 5
+          },
+          "publish": true
+        },
+        {
+          "id": 104,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              100,
+              80,
+              140,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "req": 500,
+          "publish": true
+        },
+        {
+          "id": 105,
+          "pattern": 4,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 256,
+            "filtered_count": 252,
+            "bbox": [
+              632,
+              352,
+              647,
+              367
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 106,
+          "pattern": 5,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              100,
+              80,
+              140,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 106,
+          "pattern": 5,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              100,
+              80,
+              140,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": false
+        },
+        {
+          "id": 107,
+          "pattern": 5,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "expected": {
+            "raw_count": 0,
+            "filtered_count": 0,
+            "bbox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "valid": 0,
+            "reason": 1
+          },
+          "publish": true
+        },
+        {
+          "id": 108,
+          "pattern": 6,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              110,
+              80,
+              150,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "req": 500,
+          "publish": true
+        },
+        {
+          "id": 109,
+          "pattern": 7,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              120,
+              80,
+              160,
+              110
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 110,
+          "pattern": 8,
+          "cfg": 1,
+          "color": 0,
+          "limits": [
+            120,
+            80,
+            80
+          ],
+          "expected": {
+            "raw_count": 921600,
+            "filtered_count": 917604,
+            "bbox": [
+              1,
+              1,
+              1278,
+              718
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        }
+      ],
+      "calibrations": [
+        [
+          105,
+          1,
+          0,
+          0,
+          120,
+          80,
+          80
+        ],
+        [
+          109,
+          0,
+          5,
+          0,
+          120,
+          80,
+          80
+        ]
+      ]
+    },
+    {
+      "name": "recovery",
+      "w": 64,
+      "h": 48,
+      "cases": [
+        {
+          "id": 200,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              10,
+              8,
+              50,
+              38
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "op": "idle",
+          "cycles": 200,
+          "busy": 0
+        },
+        {
+          "id": 201,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              10,
+              8,
+              50,
+              38
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "req": 100,
+          "stop_after": 135,
+          "publish": false
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 202,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              10,
+              8,
+              50,
+              38
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "req": 100,
+          "publish": true
+        },
+        {
+          "id": 203,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              10,
+              8,
+              50,
+              38
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "stop_after": 2048,
+          "publish": false
+        },
+        {
+          "op": "idle",
+          "cycles": 200,
+          "busy": 1
+        },
+        {
+          "op": "reset"
+        },
+        {
+          "id": 204,
+          "pattern": 0,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 1271,
+            "filtered_count": 1267,
+            "bbox": [
+              10,
+              8,
+              50,
+              38
+            ],
+            "valid": 1,
+            "reason": 0
+          },
+          "publish": true
+        },
+        {
+          "id": 205,
+          "pattern": 2,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 0,
+            "filtered_count": 0,
+            "bbox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "valid": 0,
+            "reason": 1
+          },
+          "publish": true
+        },
+        {
+          "id": 206,
+          "pattern": 3,
+          "cfg": 0,
+          "color": 0,
+          "limits": [
+            80,
+            40,
+            40
+          ],
+          "expected": {
+            "raw_count": 162,
+            "filtered_count": 154,
+            "bbox": [
+              4,
+              8,
+              52,
+              16
+            ],
+            "valid": 0,
+            "reason": 5
+          },
+          "publish": true
+        }
+      ],
+      "calibrations": []
+    }
+  ]
+}

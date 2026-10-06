@@ -1,0 +1,16 @@
+{
+  "seed":20261005,
+  "cases":[
+    {"name":"red_rectangle","width":640,"height":360,"frame_id":10,"color":0,"pattern":0,"ones":1271},
+    {"name":"green_replaces_red","width":640,"height":360,"frame_id":11,"color":0,"pattern":1,"ones":0},
+    {"name":"bars_red","width":64,"height":48,"frame_id":12,"color":0,"pattern":2,"ones":528},
+    {"name":"bars_green","width":64,"height":48,"frame_id":13,"color":1,"pattern":2,"ones":528},
+    {"name":"bars_blue","width":64,"height":48,"frame_id":14,"color":2,"pattern":2,"ones":480},
+    {"name":"touch_border","width":64,"height":48,"frame_id":15,"color":0,"pattern":3,"ones":63},
+    {"name":"noise","width":64,"height":48,"frame_id":16,"color":0,"pattern":4},
+    {"name":"aborted_frame","width":64,"height":48,"frame_id":17,"color":0,"pattern":3,"abort_at":135},
+    {"name":"recovery","width":64,"height":48,"frame_id":18,"color":2,"pattern":2,"ones":480},
+    {"name":"720p_noise","width":1280,"height":720,"frame_id":4294967295,"color":0,"pattern":4},
+    {"name":"720p_green","width":1280,"height":720,"frame_id":0,"color":1,"pattern":5,"ones":921600}
+  ]
+}

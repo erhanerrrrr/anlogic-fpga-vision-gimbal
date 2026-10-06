@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+tmp/
+reports/s0/generated/
+reports/c1/generated/
+reports/c2/generated/
+reports/c3/generated/
+reports/c4/generated/
+reports/c5/generated/
+reports/c6/generated/
+reports/c7/generated/
+reports/c8/generated/
+reports/c9/generated/
+reports/c10/generated/

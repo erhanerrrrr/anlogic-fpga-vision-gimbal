@@ -1,0 +1,30 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 15:52:35 on Oct 06,2026
+vlog -sv color_classifier.v color_mask_stream.v mask_frame_stats.v target_result_pack.v mask_target_result.v mask_majority_3x3.v mask_denoised_result.v rgb_denoised_result.v target_validity.v target_validated_pack.v rgb_validated_result.v result_new_frame.v rgb_fresh_result.v roi_color_sampler.v rgb_sampling_result.v saturate_sub32.v calibration_params.v calibration_control.v color_classifier_runtime.v rgb_calibrated_result.v tb_final_chain.v 
+-- Compiling module color_classifier
+-- Compiling module color_mask_stream
+-- Compiling module mask_frame_stats
+-- Compiling module target_result_pack
+-- Compiling module mask_target_result
+-- Compiling module mask_majority_3x3
+-- Compiling module mask_denoised_result
+-- Compiling module rgb_denoised_result
+-- Compiling module target_validity
+-- Compiling module target_validated_pack
+-- Compiling module rgb_validated_result
+-- Compiling module result_new_frame
+-- Compiling module rgb_fresh_result
+-- Compiling module roi_color_sampler
+-- Compiling module rgb_sampling_result
+-- Compiling module saturate_sub32
+-- Compiling module calibration_params
+-- Compiling module calibration_control
+-- Compiling module color_classifier_runtime
+-- Compiling module rgb_calibrated_result
+-- Compiling module tb_final_chain
+
+Top level modules:
+	rgb_sampling_result
+	tb_final_chain
+End time: 15:52:36 on Oct 06,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

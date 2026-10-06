@@ -1,0 +1,16 @@
+{
+  "cases":[
+    {"name":"rectangle","width":640,"height":360,"id":10,"pattern":0,"expected":[1271,100,80,140,110]},
+    {"name":"one_point_after_rectangle","width":16,"height":12,"id":11,"pattern":1,"expected":[1,0,0,0,0]},
+    {"name":"empty_after_point","width":16,"height":12,"id":12,"pattern":2,"expected":[0,0,0,0,0]},
+    {"name":"last_pixel_720p","width":1280,"height":720,"id":4294967295,"pattern":3,"expected":[1,1279,719,1279,719]},
+    {"name":"full_720p","width":1280,"height":720,"id":0,"pattern":4,"expected":[921600,0,0,1279,719]},
+    {"name":"empty_after_full","width":16,"height":12,"id":1,"pattern":2,"expected":[0,0,0,0,0]},
+    {"name":"one_pixel_frame","width":1,"height":1,"id":2,"pattern":4,"expected":[1,0,0,0,0]},
+    {"name":"empty_one_pixel_frame","width":1,"height":1,"id":3,"pattern":2,"expected":[0,0,0,0,0]},
+    {"name":"aborted_frame","width":16,"height":12,"id":4,"pattern":4,"abort_at":35,"expected":null},
+    {"name":"recovery_frame","width":16,"height":12,"id":5,"pattern":5,"expected":[4,14,10,15,11]},
+    {"name":"disjoint_raw_geometry","width":16,"height":12,"id":6,"pattern":6,"expected":[2,0,0,15,11]},
+    {"name":"green_rejected_by_red","width":16,"height":12,"id":7,"pattern":7,"expected":[0,0,0,0,0]}
+  ]
+}

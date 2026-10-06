@@ -1,0 +1,22 @@
+{
+  "groups":[
+    {"w":64,"h":48,"max_area":3072,"cases":[
+      {"id":10,"pattern":3,"name":"empty","reason":1,"count":0},
+      {"id":11,"pattern":4,"name":"filtered_3x3","reason":2,"count":5},
+      {"id":12,"pattern":5,"name":"filtered_4x4","reason":0,"count":12,"color":1,"cfg":2},
+      {"id":13,"pattern":6,"name":"narrow_strip","reason":3,"count":16},
+      {"id":14,"pattern":7,"name":"aborted","abort":true},
+      {"id":15,"pattern":5,"name":"recovery","reason":0,"count":12,"color":2,"cfg":3}
+    ]},
+    {"w":640,"h":360,"max_area":5000,"cases":[
+      {"id":20,"pattern":0,"name":"single","reason":0,"count":1267},
+      {"id":21,"pattern":1,"name":"far_same_color","reason":5,"count":2534},
+      {"id":22,"pattern":2,"name":"near_same_color_counterexample","reason":0},
+      {"id":23,"pattern":7,"name":"oversized","reason":4,"count":228404}
+    ]},
+    {"w":1280,"h":720,"max_area":921600,"cases":[
+      {"id":4294967295,"pattern":7,"name":"720p_full","reason":0,"count":917604,"cfg":4,"color":1},
+      {"id":0,"pattern":1,"name":"720p_far_same_color","reason":5,"count":2534,"cfg":5,"color":2}
+    ]}
+  ]
+}

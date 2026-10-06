@@ -1,0 +1,67 @@
+standard
+***Report Model: c10_synth_top Device: PH1P35MDG324***
+
+Design Statistics
+#IO                       110   out of    160   68.75%
+  #input                   93
+  #output                  17
+  #inout                    0
+#lut                     1753
+  #lut1                     5
+  #lut2                   314
+  #lut3                   309
+  #lut4                   364
+  #lut5                   175
+  #lut6                   586
+#reg                     1524
+  #slice reg             1524   out of  42432    3.59%
+  #pad reg                  0
+
+Utilization Statistics
+#slice*                  1372   out of  21216    6.47%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic            1372
+    #with luts*          1056
+    #with adder           209
+    #reg only*            107
+#f7mux                      0   out of  10608    0.00%
+#f8mux                      0   out of   5304    0.00%
+#eram                       2   out of    108    1.85%
+  #eram20k                  2
+  #fifo20k                  0
+#dsp                        1   out of     40    2.50%
+#ddr_byte                   0   out of     12    0.00%
+#mipi_tx                    0   out of      2    0.00%
+#mipi_rx                    0   out of      2    0.00%
+#pad                      110   out of    160   68.75%
+#pll                        0   out of      6    0.00%
+#gclk                       0   out of     32    0.00%
+#lclk                       0   out of     12    0.00%
+#sclk                       0   out of     48    0.00%
+#mlclk                      0   out of      6    0.00%
+#ioclk                      0   out of     18    0.00%
+
+* Note! The LUT and Slice count after Optimize-Gate is not the final value, Run Optimize-place for a more realistic count.
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance       |Module                   |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |ddr     |
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+|top            |c10_synth_top            |1056      |209     |1524    |2       |1       |0        |0           |0       |0       |0       |0       |
+|  core         |rgb_calibrated_result    |886       |209     |1524    |2       |1       |0        |0           |0       |0       |0       |0       |
+|    classifier |color_classifier_runtime |102       |8       |2       |0       |0       |0        |0           |0       |0       |0       |0       |
+|    control    |calibration_control      |115       |32      |159     |0       |0       |0        |0           |0       |0       |0       |0       |
+|    dedup      |result_new_frame         |17        |0       |206     |0       |0       |0        |0           |0       |0       |0       |0       |
+|    detector   |mask_denoised_result     |254       |32      |578     |2       |0       |0        |0           |0       |0       |0       |0       |
+|      detector |mask_target_result       |161       |20      |345     |0       |0       |0        |0           |0       |0       |0       |0       |
+|        packer |target_result_pack       |27        |0       |115     |0       |0       |0        |0           |0       |0       |0       |0       |
+|        stats  |mask_frame_stats         |124       |20      |193     |0       |0       |0        |0           |0       |0       |0       |0       |
+|      filter   |mask_majority_3x3        |93        |12      |233     |2       |0       |0        |0           |0       |0       |0       |0       |
+|    gate       |target_validated_pack    |173       |48      |205     |0       |1       |0        |0           |0       |0       |0       |0       |
+|      packet   |target_result_pack       |102       |24      |138     |0       |0       |0        |0           |0       |0       |0       |0       |
+|      rule     |target_validity          |68        |24      |0       |0       |1       |0        |0           |0       |0       |0       |0       |
+|    generator  |calibration_params       |20        |41      |0       |0       |0       |0        |0           |0       |0       |0       |0       |
+|    sampler    |roi_color_sampler        |177       |48      |317     |0       |0       |0        |0           |0       |0       |0       |0       |
++---------------------------------------------------------------------------------------------------------------------------------------------------+

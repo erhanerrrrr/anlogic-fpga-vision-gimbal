@@ -1,0 +1,55 @@
+{
+  "result": "PASS",
+  "stages": [
+    {
+      "stage": "C1",
+      "exit_code": 0,
+      "last_line": "PASS: 12636 cycles x 4 profiles; 12288 random RGB; valid/reset/hold checks passed"
+    },
+    {
+      "stage": "C2",
+      "exit_code": 0,
+      "last_line": "PASS: 11 cases, 2322567 RTL pixels; all masks and metadata match"
+    },
+    {
+      "stage": "C3",
+      "exit_code": 0,
+      "last_line": "PASS: 12 cases; 11 raw results per path; geometry, EOF, reset and hold checks passed"
+    },
+    {
+      "stage": "C4",
+      "exit_code": 0,
+      "last_line": "PASS: 10 frame cases, 9 packets per path, 5 arithmetic anchors; L_result=1/2 cycles"
+    },
+    {
+      "stage": "C5",
+      "exit_code": 0,
+      "last_line": "PASS: C5 full masks, geometry, boundary and flush timing verified for both paths"
+    },
+    {
+      "stage": "C6",
+      "exit_code": 0,
+      "last_line": "PASS: C6 boundary/random rules, accepted/rejected examples, debug fields and timing"
+    },
+    {
+      "stage": "C7",
+      "exit_code": 0,
+      "last_line": "PASS: C7 motion, loss/reappearance, duplicate suppression, wrap, stop and reset"
+    },
+    {
+      "stage": "C8",
+      "exit_code": 0,
+      "last_line": "PASS: C8 ROI statistics, request protocol, reset and unchanged C7 detector"
+    },
+    {
+      "stage": "C9",
+      "exit_code": 0,
+      "last_line": "PASS: C9 calibration arithmetic, atomic application and complete RGB pipeline"
+    },
+    {
+      "stage": "TD",
+      "exit_code": 0,
+      "last_line": "PASS: C1-C10 TD synthesis with observable word-read harness. No board timing claim."
+    }
+  ]
+}
