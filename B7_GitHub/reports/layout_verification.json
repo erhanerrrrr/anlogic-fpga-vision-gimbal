@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "scope": "New layout, launched from another working directory: asset readback, standalone and integrated small tests with negative checkers, strict synthesis. Full-size simulation retained from unchanged RTL/testbench/models baseline.",
+  "checks": {
+    "assets": {
+      "passed": true,
+      "run": "osd_assets_sim/run_20261006_174025_605864",
+      "summary": "layout/assets/summary.json"
+    },
+    "osd_small": {
+      "passed": true,
+      "run": "static_osd_sim/run_20261006_174027_887527",
+      "summary": "layout/osd_small/summary.json"
+    },
+    "display_small": {
+      "passed": true,
+      "run": "video_display_sim/run_20261006_174059_944848",
+      "summary": "layout/display_small/summary.json"
+    },
+    "synthesis": {
+      "passed": true,
+      "run": "video_display_synthesis/run_20261006_174025_933629",
+      "summary": "layout/synthesis/synthesis_result.json",
+      "resources": {
+        "reg": 996,
+        "eram20k": 28,
+        "dsp": 6,
+        "pad": 123,
+        "slice": 3368,
+        "lut": 4112,
+        "dram lut": 24,
+        "rtl_latch": 0
+      },
+      "setup_slack_ns": 2.295,
+      "hold_slack_ns": 0.22
+    }
+  },
+  "full_size_rerun_in_new_layout": false,
+  "board_verified": false,
+  "formal_acceptance": false
+}

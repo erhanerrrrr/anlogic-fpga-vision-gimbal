@@ -1,0 +1,12 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 14:03:39 on Oct 06,2026
+vlog -work lib src/anlogic_logo_rom.v src/osd_char_lib.v src/video_static_osd.v src/tb_video_static_osd.v 
+-- Compiling module anlogic_logo_rom
+-- Compiling module osd_char_lib
+-- Compiling module video_static_osd
+-- Compiling module tb_video_static_osd
+
+Top level modules:
+	tb_video_static_osd
+End time: 14:03:39 on Oct 06,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

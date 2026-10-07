@@ -1,0 +1,373 @@
+{
+  "td_version": "6.2.168116",
+  "td_executable": "D:\\TD\\bin\\td_commands_prompt.exe",
+  "top_module": "video_display_720p_probe_top",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "device": "PH1P35MDG324",
+  "speed_grade": "-3",
+  "flow": "normal synthesis, syn_ip_flow off",
+  "observation_wrapper": "32-bit selectable probe; not a board video interface",
+  "requested_clock_mhz": 75.0,
+  "clock_period_ns": 13.333,
+  "clock_is_provisional": true,
+  "timing_required_for_exit_zero": true,
+  "source_sha256": {
+    "rgb_to_gray.v": "bc7e47c7566f6534db2e7e1e7e7239cfa7ce5187f81e18c6cd59e59ff301ef1d",
+    "video_gray.v": "73080292ff509b9af94a5c4e44d3d4019d1f37d5e0d0f38920be0404db90a9f4",
+    "window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+    "sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+    "edge_raster.v": "3b7032164bf7f754b3ef863f07d9e128fd1676a40673930819a22f9ab9919519",
+    "video_edge.v": "516356a601e74e8c9a62896d85f43074b1fc3549385a1cfaf2bce2a5ffeea2ec",
+    "video_rgb_edge_align.v": "e21c1fe7972b9afdced6f550724910735e12faafd4f20e5a72b13c2c4fca3993",
+    "frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+    "rgb_bypass.v": "e57d957350ad7924c34d7b615380325da4e422c92368c2b7d8ad8a13361ab56c",
+    "video_bypass.v": "636869a5430e0710e47a45e2a9a5a8549a9a5565d8f87c9a51a6b3d8b22991b4",
+    "video_modes.v": "c82cfa52b9f62665fc342f8eb5aa2fa1fb85a11d9ba0548f741807fe50c9aea4",
+    "button_events.v": "940134f9682c2b90fabc5c410c0b0ea6147b4f4bd7907113ecc8658e217dbb22",
+    "button_mode_request.v": "2c11aa0cca4b9396f0944e3bf983d171213e3ee16abfdce648fd971407c7e371",
+    "video_modes_buttons.v": "6194cf35e7351083f367bc66e7f39cf4aff12a5cdc13e9d9916448686d131f2a",
+    "video_static_osd.v": "3b5ed68ccfba6063e87bc1de29c6301306faaf36e0d3afbc4277652792d71a64",
+    "video_display.v": "f0b7af7e3909fa2dfe81a0d7aa6b66a36d99ae4ffe3f1ae5ffad29d49faf2835",
+    "anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "osd_char_lib.v": "80269dee8af301d175a0b8ba0b0305149852916a3ed81082349bebc27feac311",
+    "video_display_720p_probe_top.v": "8286f4af6247dd6167e1796d72c7b5a99f68585491b1953f6145c7b06c7a3dfa"
+  },
+  "synthesis_passed": true,
+  "ram_resource_check_passed": true,
+  "board_timing_verified": false,
+  "checks_passed": true,
+  "fifo_depth": 5136,
+  "fifo_packet_bits": 81,
+  "fifo_logical_bits": 416016,
+  "tag_fifo_bits": 15408,
+  "threshold": 128,
+  "buttons_and_mask_are_dynamic_inputs": true,
+  "debounce_cycles": 750000,
+  "active_low": true,
+  "async_button_ports_false_pathed": true,
+  "osd_enabled": true,
+  "resources": {
+    "reg": 996,
+    "eram20k": 28,
+    "dsp": 6,
+    "pad": 123,
+    "slice": 3381,
+    "lut": 4129,
+    "dram lut": 24,
+    "rtl_latch": 0
+  },
+  "physical_eram_instances": 28,
+  "mapped_register_modes": [
+    "FF"
+  ],
+  "ram_mapping": [
+    {
+      "instance": "core/chain/video/align/edges/raster/ramread5_syn_13",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "1",
+      "DATA_WIDTH_B": "1",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/edges/windows/ramread0_syn_14",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/edges/windows/ramread0_syn_23",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_103",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_109",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "1",
+      "DATA_WIDTH_B": "1",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_111",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_13",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_152",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_19",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_193",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_234",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_25",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_275",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_31",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_316",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "40",
+      "DATA_WIDTH_B": "40",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_37",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_43",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_49",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_55",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_61",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_67",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_73",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_79",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_85",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_91",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/align/ramread0_syn_97",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/ramread0_syn_13",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "2",
+      "DATA_WIDTH_B": "2",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    },
+    {
+      "instance": "core/chain/video/ramread0_syn_16",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "1",
+      "DATA_WIDTH_B": "1",
+      "REGMODE_A": "NOREG",
+      "REGMODE_B": "NOREG"
+    }
+  ],
+  "pixel_fifo_ram_blocks": 23,
+  "edge_ram_blocks": 3,
+  "tag_fifo_ram_blocks": 2,
+  "synthesis_warnings": [
+    "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+    "SYN-6021 CRITICAL-WARNING: 123 out of 123 logical ports has no user assigned specific location constraint."
+  ],
+  "unexpected_synthesis_warnings": [],
+  "undriven_unused_bit_audit": {
+    "passed": true,
+    "method": "Every diagnosed bit has zero references after declarations are removed.",
+    "diagnostic_count": 56,
+    "unused_bits": [
+      "key[31]",
+      "key[30]",
+      "key[29]",
+      "key[28]",
+      "key[27]",
+      "key[26]",
+      "key[25]",
+      "key[24]",
+      "key[23]",
+      "key[22]",
+      "key[21]",
+      "key[20]",
+      "key[19]",
+      "key[18]",
+      "key[17]",
+      "key[16]",
+      "key[15]",
+      "key[14]",
+      "key[13]",
+      "key[12]",
+      "key[11]",
+      "key[10]",
+      "key[9]",
+      "key[8]",
+      "key[7]",
+      "key[6]",
+      "key[5]",
+      "key[4]",
+      "key[3]",
+      "key[2]",
+      "key[1]",
+      "key[0]",
+      "write_ptr_b2[13]",
+      "read_ptr_b2[13]",
+      "write_ptr_b2[13]",
+      "read_ptr_b2[13]",
+      "read_address_b[13]",
+      "label_dx_b[11]",
+      "title_row_b[11]",
+      "title_row_b[10]",
+      "title_row_b[9]",
+      "title_row_b[8]",
+      "title_row_b[7]",
+      "title_row_b[6]",
+      "title_row_b[5]",
+      "title_row_b[4]",
+      "label_row_b[11]",
+      "label_row_b[10]",
+      "label_row_b[9]",
+      "label_row_b[8]",
+      "label_row_b[7]",
+      "label_row_b[6]",
+      "label_row_b[5]",
+      "label_row_b[4]",
+      "logo_dx_b[11]",
+      "logo_dy_b[11]"
+    ]
+  },
+  "timing_stage": "post-synthesis estimate, before placement and routing",
+  "estimated_setup_slack_ns": 2.197,
+  "estimated_hold_slack_ns": 0.22,
+  "estimated_timing_met": true,
+  "button_register_counts": {
+    "stable_count": 60,
+    "sync_first": 3,
+    "sync_second": 3
+  },
+  "button_mapping_check_passed": true
+}
