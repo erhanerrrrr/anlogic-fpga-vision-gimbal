@@ -1,0 +1,17 @@
+Reading D:/altera14.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -onfinish stop -wlf assets.wlf -lib lib tb_osd_assets -do "run.do" 
+# Start time: 12:27:05 on Oct 06,2026
+# Loading lib.tb_osd_assets
+# Loading lib.anlogic_logo_rom
+# Loading lib.osd_char_lib
+# do run.do
+# LogoAddresses=32768 FontRows=4096 UnknownErrors=0
+# PASS: OSD asset RTL dump completed.
+# ** Note: $finish    : src/tb_osd_assets.v(38)
+#    Time: 36864 ns  Iteration: 0  Instance: /tb_osd_assets
+# Break in Module tb_osd_assets at src/tb_osd_assets.v line 38
+# End time: 12:27:06 on Oct 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
