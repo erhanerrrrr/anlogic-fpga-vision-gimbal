@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "baseline": "H4E-row-regions-20261010",
+  "status": "frozen_accepted_visual_localization_baseline",
+  "board": "HX1P35A / PH1P35MDG324",
+  "directory": "boards/hx1p35a/h4e",
+  "bit": "boards/hx1p35a/h4e/H4E_row_regions.bit",
+  "bit_sha256": "9d5bfd2f2f3ece15f772d92406762a30fbc06db0af72c16f2b87c461ee007f79",
+  "interface_document": "docs/interfaces/team-contract-v1.md",
+  "implemented_profile": "h4e-refresh-v1",
+  "next_profile": "capture-v1",
+  "next_profile_board_implemented": false,
+  "C_source_commit": "acd9165be556e6c732325e220fab72effae6c05b",
+  "B_source_commit": "5e38a9698d7bbcedb1c06457e275c1d95d36b119",
+  "board_evidence": "user report: largest target, handover, empty/recovery, approximately one minute continuity",
+  "pending": ["source frame identity and freshness", "long-duration and lighting stress", "FIFO/DDR fault observation", "gimbal closed loop", "multi-mode board integration", "calibration board integration", "measured acquisition-to-display latency"]
+}

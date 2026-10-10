@@ -1,0 +1,46 @@
+RESULT 1 area=9996 cx=649 cy=349 PASS
+T RESULT 1 F_area=9996 T_area=9996 reason=0 PASS
+DIAG 1 W=100 H=100 B=10000 PCT=99 PASS
+RESULT 2 area=252 cx=807 cy=407 PASS
+T RESULT 2 F_area=0 T_area=0 reason=2 PASS
+DIAG 2 W=16 H=16 B=256 PCT=98 PASS
+RESULT 3 area=0 cx=0 cy=0 PASS
+DIAG 3 W=0 H=0 B=0 PCT=0 PASS
+T RESULT 3 F_area=0 T_area=0 reason=1 PASS
+RESULT 4 area=285 cx=808 cy=408 PASS
+T RESULT 4 F_area=285 T_area=285 reason=0 PASS
+DIAG 4 W=17 H=17 B=289 PCT=98 PASS
+RESULT 5 area=909936 cx=639 cy=359 PASS
+T RESULT 5 F_area=909936 T_area=909936 reason=0 PASS
+DIAG 5 W=1278 H=712 B=909936 PCT=100 PASS
+RESULT 6 area=16592 cx=694 cy=444 PASS
+T RESULT 6 F_area=14996 T_area=14996 reason=0 PASS
+DIAG 6 W=590 H=290 B=171100 PCT=9 PASS
+RESULT 7 area=13318 cx=529 cy=429 PASS
+T RESULT 7 F_area=13318 T_area=13318 reason=0 PASS
+DIAG 7 W=394 H=360 B=141840 PCT=9 PASS
+RESULT 8 area=15689 cx=612 cy=349 PASS
+T RESULT 8 F_area=14996 T_area=14996 reason=0 PASS
+DIAG 8 W=625 H=100 B=62500 PCT=25 PASS
+RESULT 9 area=65246 cx=467 cy=314 PASS
+T RESULT 9 F_area=65246 T_area=65246 reason=0 PASS
+DIAG 9 W=335 H=210 B=70350 PCT=92 PASS
+RESULT 10 area=52532 cx=609 cy=357 PASS
+T RESULT 10 F_area=26996 T_area=26996 reason=0 PASS
+DIAG 10 W=1180 H=655 B=772900 PCT=6 PASS
+T RESULT 11 F_area=0 T_area=0 reason=3 PASS
+RESULT 11 area=4615 cx=522 cy=257 PASS
+DIAG 11 W=645 H=15 B=9675 PCT=47 PASS
+RESULT 12 area=9996 cx=249 cy=349 PASS
+T RESULT 12 F_area=9996 T_area=9996 reason=0 PASS
+DIAG 12 W=100 H=100 B=10000 PCT=99 PASS
+RESULT 13 area=0 cx=0 cy=0 PASS
+DIAG 13 W=0 H=0 B=0 PCT=0 PASS
+T RESULT 13 F_area=0 T_area=0 reason=1 PASS
+FILTERED pixels=11980800; isolated/2x2/line noise removed, rectangle center unchanged
+OVERLAY green=14744 cyan=837
+PASS H4E: 13 complete native 720p frames, 11980801 metadata pixels, 8785920 HDMI mask/ROI pixels; moving rectangle, first/last corners, empty, full frame, held snapshot, sync and DDR
+LOGO opaque pixels=83031, area rejection/recovery and snapshots PASS
+PASS DIAG: metrics and frame-matched display snapshots; decimal 000..100
+ROW_ENGINE max_row_cycles=1007 max_EOF_wait=4
+tb_h4e.v:263: $finish called at 173250146000 (1ps)

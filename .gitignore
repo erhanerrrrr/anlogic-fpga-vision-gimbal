@@ -1,5 +1,10 @@
 __pycache__/
 *.pyc
+boards/hx1p35a/h4e/simulation/
+boards/hx1p35a/h4e/build/
+boards/hx1p35a/h4e/*.vvp
+boards/hx1p35a/h4e/region_simulation.log
+boards/hx1p35a/h4e/h4e_simulation.log
 tmp/
 reports/s0/generated/
 reports/c1/generated/

@@ -1,0 +1,60 @@
+{
+  "stage": "H4E",
+  "result": "PASS",
+  "bit": "D:\\FPGA\\board_validation\\H4E_row_regions\\H4E_row_regions.bit",
+  "bytes": 1789539,
+  "sha256": "9d5bfd2f2f3ece15f772d92406762a30fbc06db0af72c16f2b87c461ee007f79",
+  "source_files_verified": 216,
+  "functional_changes": true,
+  "timing": {
+    "SWNS_ns": 0.235,
+    "STNS_ns": 0.0,
+    "HWNS_ns": 0.02,
+    "HTNS_ns": 0.0,
+    "STA_coverage_percent": 94.1
+  },
+  "resources": {
+    "slice": 12348,
+    "eram": 45,
+    "dsp": 8
+  },
+  "new_physical_warning_lines": [],
+  "timing_scope": "existing SDC only; incomplete STA coverage retained",
+  "board_status": "passed_stage_board_acceptance",
+  "baseline_status": "frozen_accepted_visual_localization_baseline",
+  "board_feedback": {
+    "date": "2026-10-10",
+    "evidence": "user_report",
+    "user_statement": "测试结果优秀 不会间歇消失 且同时有大小目标是 绿框仅包围大目标",
+    "completion_statement": "接替通过、清空恢复通过、连续运行通过",
+    "confirmed": ["目标框不再间歇消失", "大小目标同时出现时绿框仅包围大目标", "移走大目标后的有效小目标接替", "清空及重新放入恢复", "按约一分钟验收步骤确认连续运行、Logo完整及N=010000"],
+    "pending": [],
+    "scope": "当前阶段指定场景与约一分钟连续性，依据用户现场确认；不代表任意环境、长期稳定性、量化性能或舵机闭环验收"
+  },
+  "simulation_status": "passed",
+  "diagnostic_only": false,
+  "resource_delta_vs_H4C": {
+    "slice": 1263,
+    "eram": 3,
+    "dsp": 0
+  },
+  "resource_delta_vs_H4D": {
+    "slice": -5145,
+    "eram": 1,
+    "dsp": 0
+  },
+  "selection": "Exact 8-connected largest region, area >=256, bbox midpoint, no fill rejection",
+  "limits": "64 runs per row; 128 working slots recycled each row; explicit capacity/deadline rejection",
+  "diagnostic_scope": "R/F/D global; T/green/cyan selected component; C frame component count, L peak working slots",
+  "new_module_synthesis_warnings": [],
+  "simulation": {
+    "unit_frames": 68,
+    "unit_pixels": 2506752,
+    "pipeline_frames": 13,
+    "filtered_pixels": 11980800,
+    "nontext_display_pixels": 8785920,
+    "logo_opaque_pixels": 83031,
+    "max_row_cycles": 1007,
+    "max_EOF_wait": 4
+  }
+}

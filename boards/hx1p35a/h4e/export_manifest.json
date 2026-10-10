@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "note": "Portable drivers differ from historical source_manifest test hashes; RTL and original project unchanged.",
+  "sha256": {
+    "test_regions.py": "d3398ac7bba8e343df8267430b7a6a5a4d0de951bd044e8b6a1d5f58b45401e5",
+    "legacy_fixtures.py": "aff8b11d0de59690bf66d3b2e0989312feca60acf43847d7dd94adb7f31c7252",
+    "prepare_pipeline_test.py": "d0a7be4200e03e6e4ad8c35016b596b05dec6d95aeba8efdd83b9db194f28d01",
+    "run_pipeline_test.py": "8882b907bfd4e074b6519ce3976d0eb93b7669a5014f308c1d3469db970fba5b",
+    "tb_regions.v": "415b426b6c3fa540c8b80d4b4da195ee89f0782f4004626cb0c334599010d481",
+    "tb_h4e.v": "a1b0d14ca28f6414d5d2f12e1b8982a1ad17e793410cb077c17a0c6abb25ec8c",
+    "assets/logo_reference.hex": "cc319419dfd29e67542fc85691722164e1fbb71554ed3aefa245d780e3bfd39b",
+    "gamma_lut.hex": "3b060f09390bc9298966d7c65c80c00fd53ffb63674d83e1bb4399a675ab0543",
+    "run.py": "a52ce682ad46779de395de66fdc1e2ff71bf042481784a805eb6ecd4e9148b40",
+    "verify_package.py": "06e450a90d7f3d6da2993a2739797e3a3d2a1f7c0ea36f481594cdc464f7dd22",
+    "requirements.txt": "2872240ad39db3fa61ea202cac35a5579c482437efa38edec506dbdc0f870942"
+  }
+}

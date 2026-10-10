@@ -3,3 +3,7 @@
 * whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Tool output is kept verbatim, including its original spacing.
 reports/c10/evidence/** -whitespace
+boards/hx1p35a/h4e/evidence/** -whitespace
+boards/hx1p35a/h4e/user_source/** -whitespace
+boards/hx1p35a/h4e/td_project/** -whitespace
+*.bit binary
