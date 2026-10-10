@@ -10,6 +10,8 @@ H4E 已通过用户报告的目标接替、清空恢复及约一分钟连续运�
 - [统一接口 v1](docs/interfaces/team-contract-v1.md)：明确当前实现与后续开发约定，旧模块文档作为局部接口参考。
 - [赛题逐项核对与遗漏](docs/contest-review.md)：基本要求、评分重点、选做项和项目自定目标分开记录。
 - [三人下一阶段任务与验收](docs/team-roadmap.md)：按小阶段交付，先仿真、再整机实现、最后上板。
+- [B 同学独立任务书](docs/tasks/B-task-guide.md) / [C 同学独立任务书](docs/tasks/C-task-guide.md)：每步目标、注意事项、仿真验收和交付材料。
+- [上板成果直白说明](docs/board-progress-explained.md)：我们实际做成了什么、对应哪条赛题要求、哪些还未完成。
 - [协作规则](CONTRIBUTING.md)与[来源记录](docs/provenance.md)。
 
 ## 目录与维护责任

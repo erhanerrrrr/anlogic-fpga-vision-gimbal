@@ -2,6 +2,8 @@
 
 共同入口：[H4E](../boards/hx1p35a/h4e/README.md)、[统一接口](interfaces/team-contract-v1.md)、[赛题核对](contest-review.md)。现在可以停止继续堆叠H4E识别规则，保留已通过的最大区域算法，转入三人分工。尚无证据要求重写识别算法。
 
+可直接分别转给队友的详细执行文件：[B任务书](tasks/B-task-guide.md)、[C任务书](tasks/C-task-guide.md)。面向团队汇报和理解当前成果，阅读[上板成果直白说明](board-progress-explained.md)。
+
 ## A：你——集成、硬件、真实新帧与云台
 
 | 顺序 | 实现与交付 | 进入下一步的条件 |
