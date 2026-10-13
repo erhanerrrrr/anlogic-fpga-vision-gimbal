@@ -1,0 +1,27 @@
+[
+  {
+    "manifest": "reports/h4e-c4/generated/summary.json",
+    "status": "PASS",
+    "sources": 5
+  },
+  {
+    "manifest": "reports/h4e-c4/generated/scenes/summary.json",
+    "status": "PASS",
+    "sources": 11
+  },
+  {
+    "manifest": "reports/h4e-c4/generated/capacity/summary.json",
+    "status": "PASS",
+    "sources": 11
+  },
+  {
+    "manifest": "reports/h4e-c4/generated/deadline/summary.json",
+    "status": "PASS",
+    "sources": 11
+  },
+  {
+    "manifest": "reports/h4e-c3c/evidence/2026-10-10/summary.json",
+    "status": "PASS",
+    "sources": 22
+  }
+]

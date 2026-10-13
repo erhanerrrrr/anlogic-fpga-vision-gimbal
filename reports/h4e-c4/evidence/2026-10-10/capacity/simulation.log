@@ -1,0 +1,2 @@
+H4E_C4_REPLAY_PASS frames=2 pixels=32768 quiet_clocks=256
+tb_h4e_rgb_replay.v:104: $finish called at 2881570000 (1ps)
