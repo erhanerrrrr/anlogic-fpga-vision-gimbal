@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "base_commit": "009f09b7276afbe962dff4bbcc5fa0324d432d79",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "tools": {
+    "iverilog": "Icarus Verilog version 14.0 (devel) ()",
+    "vvp": "Icarus Verilog runtime version 14.0 (devel) ()"
+  },
+  "seed": 20261010,
+  "unit_cycles": 282,
+  "unit_events": 201,
+  "chain_frames": 8,
+  "chain_pixels": 12288,
+  "demo_cycles": 25,
+  "demo_events": 13,
+  "payload_bits": 192,
+  "register_bits": 193,
+  "packet_latency_clocks": 1,
+  "source_binding": "C2b pending",
+  "hardware": "not_tested",
+  "synthesis": "see separate TD report",
+  "checker_selftest": "PASS",
+  "command_exit_codes": "all 0"
+}
