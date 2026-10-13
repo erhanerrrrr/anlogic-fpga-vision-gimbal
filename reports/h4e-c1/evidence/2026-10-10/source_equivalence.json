@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "meaning": "ModelSim staged development inputs equal frozen source inputs byte for byte; one pipeline run, not two",
+  "files": [
+    {
+      "path": "tb_h4e.v",
+      "sha256": "a1b0d14ca28f6414d5d2f12e1b8982a1ad17e793410cb077c17a0c6abb25ec8c"
+    },
+    {
+      "path": "tb_regions.v",
+      "sha256": "415b426b6c3fa540c8b80d4b4da195ee89f0782f4004626cb0c334599010d481"
+    },
+    {
+      "path": "test_regions.py",
+      "sha256": "d3398ac7bba8e343df8267430b7a6a5a4d0de951bd044e8b6a1d5f58b45401e5"
+    },
+    {
+      "path": "prepare_pipeline_test.py",
+      "sha256": "d0a7be4200e03e6e4ad8c35016b596b05dec6d95aeba8efdd83b9db194f28d01"
+    },
+    {
+      "path": "user_source/hdl_source/h3d3_display_path.v",
+      "sha256": "53c072723772ba5c344e14972f5ac4d91ead8d2936b0f42b7542f2d7ff013ad0"
+    },
+    {
+      "path": "user_source/hdl_source/h3d2_mixer.v",
+      "sha256": "6d1eb08bb385db3504ac738188481313d672a6d0ae2db8328a27f47d8e10a621"
+    },
+    {
+      "path": "user_source/hdl_source/h4e_region_select.v",
+      "sha256": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66"
+    },
+    {
+      "path": "user_source/hdl_source/h4c_fill_metrics.v",
+      "sha256": "c8350ba6b79331e562ba4394fd666a80775ce5a6e57fd364eec57381349e52d4"
+    },
+    {
+      "path": "user_source/hdl_source/anlogic_logo_rom.v",
+      "sha256": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8"
+    },
+    {
+      "path": "user_source/hdl_source/display_raster_adapter.v",
+      "sha256": "14411c7a1447cc3fd6c1543c56b09085c5d463bdf612f4a02a80b20f9a611023"
+    },
+    {
+      "path": "user_source/hdl_source/color_classifier_runtime.v",
+      "sha256": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9"
+    },
+    {
+      "path": "user_source/hdl_source/mask_frame_stats.v",
+      "sha256": "771401029d2e78e9a7342712d7c08b46a26ac1c17f5f404ceaef54ccd0e29bae"
+    },
+    {
+      "path": "user_source/hdl_source/mask_target_result.v",
+      "sha256": "fbe277e38674ce56ebb3b0a0d453443a2168a0cc6ac8eb2f0ea851f95abc5550"
+    },
+    {
+      "path": "user_source/hdl_source/target_result_pack.v",
+      "sha256": "0ec06767cb3e20df5975db6922a8cfef5108e6c712895242ed34f5596a757eb0"
+    },
+    {
+      "path": "user_source/hdl_source/mask_majority_3x3.v",
+      "sha256": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a"
+    },
+    {
+      "path": "user_source/hdl_source/mask_denoised_result.v",
+      "sha256": "8d83fb61ac4679e61bb005e4e15b8d5f4a9a190d3ea22d42db8aaeb091c6ba88"
+    },
+    {
+      "path": "user_source/hdl_source/vtc/uivtc.v",
+      "sha256": "c7deaea83ea04fae9caaf34644fe089aeba6dc54dee26c377aef1df44648e4db"
+    },
+    {
+      "path": "assets/logo_reference.hex",
+      "sha256": "cc319419dfd29e67542fc85691722164e1fbb71554ed3aefa245d780e3bfd39b"
+    },
+    {
+      "path": "simulation/pipeline_raw.mem",
+      "sha256": "5f5806dfee8804b396a489f2616d0836f42dd3d974ac3456ec64c2e134577570"
+    },
+    {
+      "path": "simulation/pipeline_filtered.mem",
+      "sha256": "80aed722cf8de13cdb4d4ac9cebe7613ce1340872acae73a75863179a4bac720"
+    },
+    {
+      "path": "simulation/f_stats.mem",
+      "sha256": "2d89b07f1255d23bef175d654bc7bfe63f38670c54fd9a8485af4f4bb5813476"
+    },
+    {
+      "path": "simulation/r_stats.mem",
+      "sha256": "ffa25b754749c83858ae4b2aafb677f5d12f342e930dd9bc7df96b437db7783d"
+    },
+    {
+      "path": "simulation/t_stats.mem",
+      "sha256": "677af463af4e47b25d765ee3b912847b11854e572d480b92cd4e3ca634678455"
+    }
+  ]
+}

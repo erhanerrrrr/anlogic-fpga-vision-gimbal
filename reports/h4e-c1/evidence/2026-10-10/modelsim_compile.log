@@ -1,0 +1,22 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 20:22:26 on Oct 10,2026
+vlog -sv -work msim_work tb_h4e.v user_source/hdl_source/h3d3_display_path.v user_source/hdl_source/h3d2_mixer.v user_source/hdl_source/h4e_region_select.v user_source/hdl_source/h4c_fill_metrics.v user_source/hdl_source/anlogic_logo_rom.v user_source/hdl_source/display_raster_adapter.v user_source/hdl_source/color_classifier_runtime.v user_source/hdl_source/mask_frame_stats.v user_source/hdl_source/mask_target_result.v user_source/hdl_source/target_result_pack.v user_source/hdl_source/mask_majority_3x3.v user_source/hdl_source/mask_denoised_result.v user_source/hdl_source/vtc/uivtc.v 
+-- Compiling module tb_h4e
+-- Compiling module h3d3_display_path
+-- Compiling module h3d2_mixer
+-- Compiling module h4e_region_select
+-- Compiling module h4c_fill_metrics
+-- Compiling module anlogic_logo_rom
+-- Compiling module display_raster_adapter
+-- Compiling module color_classifier_runtime
+-- Compiling module mask_frame_stats
+-- Compiling module mask_target_result
+-- Compiling module target_result_pack
+-- Compiling module mask_majority_3x3
+-- Compiling module mask_denoised_result
+-- Compiling module uivtc
+
+Top level modules:
+	tb_h4e
+End time: 20:22:26 on Oct 10,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
