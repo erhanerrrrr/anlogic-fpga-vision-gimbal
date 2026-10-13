@@ -1,0 +1,35 @@
+standard
+***Report Model: h4e_c3c_synth_top Device: PH1P35MDG324***
+
+IO Statistics
+#IO                        75
+  #input                   43
+  #output                  32
+  #inout                    0
+
+Gate Statistics
+#Basic gates              295
+  #and                     17
+  #nand                     0
+  #or                       9
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                     10
+  #bufif1                   0
+  #MX21                    53
+  #FADD                     0
+  #DFF                    206
+  #LATCH                    0
+#MACRO_ADD                  1
+#MACRO_EQ                  13
+#MACRO_MUX                105
+
+Report Hierarchy Area:
++----------------------------------------------------------+
+|Instance |Module                  |gates  |seq    |macros |
++----------------------------------------------------------+
+|top      |h4e_c3c_synth_top       |89     |206    |14     |
+|  dut    |h4e_calibration_control |64     |65     |6      |
++----------------------------------------------------------+

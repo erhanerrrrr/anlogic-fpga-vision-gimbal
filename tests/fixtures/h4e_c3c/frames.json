@@ -1,0 +1,325 @@
+[
+  {
+    "name": "baseline_red",
+    "fid": 10,
+    "epoch": 7,
+    "scene": "dim_red",
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "sample_red_old_cfg",
+    "fid": 11,
+    "epoch": 7,
+    "scene": "red",
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "repeat_pending_red_tail_revoked_on_apply",
+    "fid": 11,
+    "epoch": 7,
+    "scene": "dim_red",
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "fresh": 0,
+    "new": 0,
+    "apply": 0,
+    "event": 0
+  },
+  {
+    "name": "apply_red_ignore_requests",
+    "fid": 12,
+    "epoch": 7,
+    "scene": "dim_red",
+    "active": [
+      2,
+      0,
+      188,
+      158,
+      178
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 1,
+    "event": 1
+  },
+  {
+    "name": "sof_request_skips_frame",
+    "fid": 13,
+    "epoch": 7,
+    "scene": "red",
+    "active": [
+      2,
+      0,
+      188,
+      158,
+      178
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "repeat_waiting_sample",
+    "fid": 13,
+    "epoch": 7,
+    "scene": "red",
+    "active": [
+      2,
+      0,
+      188,
+      158,
+      178
+    ],
+    "fresh": 0,
+    "new": 0,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "sample_green_tail_superseded",
+    "fid": 14,
+    "epoch": 7,
+    "scene": "green",
+    "active": [
+      2,
+      0,
+      188,
+      158,
+      178
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 0
+  },
+  {
+    "name": "candidate_coincides_sof",
+    "fid": 15,
+    "epoch": 7,
+    "scene": "green",
+    "active": [
+      2,
+      0,
+      188,
+      158,
+      178
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "apply_green_then_select_blue",
+    "fid": 16,
+    "epoch": 7,
+    "scene": "green",
+    "active": [
+      3,
+      1,
+      168,
+      148,
+      128
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 1,
+    "event": 1
+  },
+  {
+    "name": "repeat_manual_pending",
+    "fid": 16,
+    "epoch": 7,
+    "scene": "green",
+    "active": [
+      3,
+      1,
+      168,
+      148,
+      128
+    ],
+    "fresh": 0,
+    "new": 0,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "apply_manual_blue",
+    "fid": 17,
+    "epoch": 7,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 1,
+    "event": 1
+  },
+  {
+    "name": "gray_calibration_fails",
+    "fid": 18,
+    "epoch": 7,
+    "scene": "gray",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "failure_keeps_blue",
+    "fid": 19,
+    "epoch": 7,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "flush_keeps_blue",
+    "fid": 20,
+    "epoch": 7,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "epoch_cancels_waiting",
+    "fid": 20,
+    "epoch": 8,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "epoch_cancels_pending",
+    "fid": 21,
+    "epoch": 9,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "partial_sample",
+    "fid": 22,
+    "epoch": 9,
+    "scene": "red",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 0
+  },
+  {
+    "name": "same_id_retry_after_failure",
+    "fid": 22,
+    "epoch": 9,
+    "scene": "blue",
+    "active": [
+      4,
+      2,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 0,
+    "apply": 0,
+    "event": 1
+  },
+  {
+    "name": "reset_restores_baseline",
+    "fid": 23,
+    "epoch": 9,
+    "scene": "dim_red",
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "fresh": 1,
+    "new": 1,
+    "apply": 0,
+    "event": 1
+  }
+]
