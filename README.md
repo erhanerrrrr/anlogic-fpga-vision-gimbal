@@ -39,4 +39,20 @@ python -X utf8 boards/hx1p35a/h4e/run.py pipeline
 
 `check` 核对源文件、约束、工程依赖、码流和测试输入的哈希；`unit` 检查 68 个案例；`pipeline` 检查 13 帧完整 720p 数据及显示。无需开发板或 TD 即可跑仿真。B/C 每个小阶段提交一个 PR，并附可复跑的检查结果。
 
+C 的根目录开发核回归入口及资源边界见 [H4E 新 C1](docs/stages/H4E-C1.md)，冻结版本与开发版本的证据分别保存。
+
+[H4E 新 C2a](docs/stages/H4E-C2a.md)提供 T 主目标原子结果封装、A/B 联调序列和资源报告；已独立仿真/综合，与 C2b 来源适配配合使用，尚未进入冻结板级工程。
+
+[H4E 新 C2b](docs/stages/H4E-C2b.md)已完成合成来源身份、重复观察抑制、旧 epoch 拦截与半帧恢复验证；新增身份保护不占 ERAM/DSP。真实来源/DDR/CDC 接入和整机上板仍待 A 集成。
+
 本次集成以 B 分支 `5e38a969` 为父提交，其历史包含 C 基线 `acd9165b`。是否已进入默认分支，以 GitHub PR 状态为准；不要把仍在评审的分支当作已合并。
+
+[H4E 新 C3a](docs/stages/H4E-C3a.md)完成中央 16×16 颜色统计，不改阈值；独立综合新增采样模块不占 ERAM/DSP，真实采样与整机时序待 A 集成验证。
+
+[H4E 新 C3b](docs/stages/H4E-C3b.md)完成样本质量判断和候选阈值计算；不改变活动配置，独立综合不占 ERAM/DSP。C3c 再接新帧参数应用。
+
+[H4E 新 C3c](docs/stages/H4E-C3c.md)完成新来源帧边界的参数整体应用、人工选色和完整 busy 仲裁；含取消后两拍收尾。独立控制模块不占 ERAM/DSP，尚待 A 整机集成上板。
+
+[H4E 新 C4](docs/stages/H4E-C4.md)已交付 RGB888 文件校验/RTL 回放和合成场景指标；新增 FPGA 资源为 0。真实输入与人工标注待 A 提供，实拍鲁棒性尚未验收。
+
+C 开发进度本次交付范围和 A/B 接入事项见 [2026-10-13 交付状态](docs/stages/H4E-C-delivery-status.md)；C4 实拍评估及新增功能上板尚待完成。
