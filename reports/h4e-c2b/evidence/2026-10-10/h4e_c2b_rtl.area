@@ -1,0 +1,41 @@
+standard
+***Report Model: h4e_c2b_synth_top Device: PH1P35MDG324***
+
+IO Statistics
+#IO                        79
+  #input                   45
+  #output                  34
+  #inout                    0
+
+Gate Statistics
+#Basic gates             3038
+  #and                    406
+  #nand                     0
+  #or                     141
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                     92
+  #bufif1                   0
+  #MX21                   416
+  #FADD                     0
+  #DFF                   1982
+  #LATCH                    0
+#MACRO_ADD                 65
+#MACRO_EQ                  56
+#MACRO_MUX               1226
+
+Report Hierarchy Area:
++------------------------------------------------------------------+
+|Instance       |Module                    |gates  |seq    |macros |
++------------------------------------------------------------------+
+|top            |h4e_c2b_synth_top         |1056   |1982   |121    |
+|  tracker      |h4e_capture_tracker       |1013   |1798   |121    |
+|    classifier |color_classifier_runtime  |4      |2      |6      |
+|    filter     |mask_majority_3x3         |105    |235    |22     |
+|    ingress    |capture_frame_guard       |67     |233    |16     |
+|    observer   |capture_observation_guard |7      |65     |3      |
+|    packet     |h4e_target_packet         |0      |193    |0      |
+|    region     |h4e_region_select         |828    |1046   |72     |
++------------------------------------------------------------------+

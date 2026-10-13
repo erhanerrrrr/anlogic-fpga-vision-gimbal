@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "device": "PH1P35MDG324",
+  "top": "h4e_c2b_synth_top",
+  "module_hierarchy": {
+    "capture_frame_guard": {
+      "logic_lut": 120,
+      "ripple": 0,
+      "seq": 233,
+      "eram": 0,
+      "dsp": 0,
+      "dram_lut": 0,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "capture_observation_guard": {
+      "logic_lut": 0,
+      "ripple": 0,
+      "seq": 65,
+      "eram": 0,
+      "dsp": 0,
+      "dram_lut": 0,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "color_classifier_runtime": {
+      "logic_lut": 33,
+      "ripple": 18,
+      "seq": 2,
+      "eram": 0,
+      "dsp": 0,
+      "dram_lut": 0,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "mask_majority_3x3": {
+      "logic_lut": 95,
+      "ripple": 12,
+      "seq": 233,
+      "eram": 2,
+      "dsp": 0,
+      "dram_lut": 0,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "h4e_region_select": {
+      "logic_lut": 749,
+      "ripple": 104,
+      "seq": 962,
+      "eram": 3,
+      "dsp": 0,
+      "dram_lut": 96,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "h4e_target_packet": {
+      "logic_lut": 44,
+      "ripple": 0,
+      "seq": 193,
+      "eram": 0,
+      "dsp": 0,
+      "dram_lut": 0,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    },
+    "h4e_capture_tracker": {
+      "logic_lut": 1041,
+      "ripple": 134,
+      "seq": 1712,
+      "eram": 5,
+      "dsp": 0,
+      "dram_lut": 96,
+      "shifter_lut": 0,
+      "f7mux": 0,
+      "f8mux": 0,
+      "pll": 0,
+      "ddr": 0
+    }
+  },
+  "identity_guard_increment": {
+    "logic_lut": 120,
+    "ripple": 0,
+    "seq": 298,
+    "eram": 0,
+    "dsp": 0,
+    "dram_lut": 0,
+    "shifter_lut": 0,
+    "f7mux": 0,
+    "f8mux": 0,
+    "pll": 0,
+    "ddr": 0
+  },
+  "whole_harness_synthesis_slice_estimate": 1519,
+  "timing": "not_constrained_not_signed_off",
+  "hardware": "not_tested",
+  "full_board_increment": "requires A integration and place/route; harness is excluded",
+  "command": [
+    "D:\\Program Files\\bin\\td_commands_prompt.EXE",
+    "h4e_c2b_synth.tcl"
+  ],
+  "exit_code": 0,
+  "source_hashes": {
+    "rtl/recognition/capture_frame_guard.v": "ce45b6baf5943326a8a95725137092336c524aa9e5922e6e4015851a3e05732a",
+    "rtl/recognition/capture_observation_guard.v": "e34f567addcfb23ade389b5078a503bc89d75529da8aad572555a28b0083aa2b",
+    "rtl/recognition/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "rtl/recognition/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/recognition/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+    "rtl/recognition/h4e_target_packet.v": "4c17e7a3fc84621247868c5f888e10aecfa9f06481d6c9f7aa9e9f54d0440b91",
+    "rtl/recognition/h4e_capture_tracker.v": "8ea0f492c2a39d1963b473a02880bc1bacded3c29e64929b690423ff0cee9603",
+    "synth/h4e_c2b/h4e_c2b_synth_top.v": "e2a574a9ad72c530dbdd81c7a634d56022d48f0e447e87fcaf9250d681453730",
+    "scripts/h4e_c2b_synth.tcl": "d851d306d332dc16ca391741e5c35396ab8de22b597ac54d544d7c3c3afb855f"
+  }
+}
