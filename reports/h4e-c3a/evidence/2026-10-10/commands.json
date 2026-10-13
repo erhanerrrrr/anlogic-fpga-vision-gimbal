@@ -1,0 +1,36 @@
+[
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-g2012",
+    "-s",
+    "tb_h4e_roi_sampler",
+    "-Ptb_h4e_roi_sampler.W=32",
+    "-Ptb_h4e_roi_sampler.H=32",
+    "-o",
+    "sim.vvp",
+    "capture_frame_guard.v",
+    "h4e_roi_sampler.v",
+    "tb_h4e_roi_sampler.v"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "sim.vvp"
+  ],
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-g2012",
+    "-s",
+    "tb_h4e_roi_sampler",
+    "-Ptb_h4e_roi_sampler.W=1280",
+    "-Ptb_h4e_roi_sampler.H=720",
+    "-o",
+    "sim.vvp",
+    "capture_frame_guard.v",
+    "h4e_roi_sampler.v",
+    "tb_h4e_roi_sampler.v"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "sim.vvp"
+  ]
+]
