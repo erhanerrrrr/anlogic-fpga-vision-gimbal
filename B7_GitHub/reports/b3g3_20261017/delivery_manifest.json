@@ -1,0 +1,17 @@
+{
+  "stage": "B3g3",
+  "date": "2026-10-17",
+  "rtl_simulation_passed": true,
+  "real_h4e_region_selector_tested": true,
+  "synthetic_mask": true,
+  "synthetic_epoch": true,
+  "integrated_b3g2_video": false,
+  "user_run_confirmed": true,
+  "board_tested": false,
+  "bit_generated": false,
+  "additional_sha256": {
+    "run_b3g3.py": "3ff62b5c8b7ce583abbdd620bebb8a2facb065a9f68812c668d8b3b1f1a689fa",
+    "B3g3_README.md": "8a6af818c52fed1f3e73d1c65512ecf6c40b17d239ac269c993a75ce2886dd63"
+  },
+  "build_path": "build\\b3g3_h4e_result\\run_20261017_201253"
+}

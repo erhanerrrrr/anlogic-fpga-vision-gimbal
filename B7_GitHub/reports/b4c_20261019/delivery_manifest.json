@@ -1,0 +1,31 @@
+{
+  "stage": "B4c",
+  "date": "2026-10-19",
+  "user_simulation_confirmed": true,
+  "user_visual_confirmed": true,
+  "user_synthesis_confirmed": true,
+  "simulation_run": "build/b4c_sameclk_latency/run_20261019_210534",
+  "simulation_frames": 4,
+  "simulation_pixels": 1873920,
+  "pixel_differences": 0,
+  "modelsim_errors": 0,
+  "modelsim_warnings": 0,
+  "standalone_synthesis_run": "build/b4c_closed_loop_synthesis/run_20261019_213223_161612",
+  "standalone_synthesis_resources": {
+    "reg": 7858,
+    "lut": 12453,
+    "slice": 8622,
+    "eram20k": 10,
+    "dsp": 0,
+    "latch": 0
+  },
+  "provisional_75mhz_timing_ns": {
+    "SWNS": 0.841,
+    "HWNS": 0.292
+  },
+  "synthetic_capture_identity": true,
+  "synthetic_latency_measurements": true,
+  "full_board_timing_verified": false,
+  "bit_generated": false,
+  "board_tested": false
+}

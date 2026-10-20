@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "user_run_confirmed": true,
+  "user_visual_confirmed": true,
+  "source_hashes_verified": true,
+  "build_path": "build\\calibration_status\\run_20261016_123323",
+  "observer_vectors": 53,
+  "frames": 11,
+  "pixel_differences": 0,
+  "logo_composition_differences": 0
+}

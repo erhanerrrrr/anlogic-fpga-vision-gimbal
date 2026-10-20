@@ -1,0 +1,4 @@
+B4g user-confirmed verification, 2026-10-20
+ModelSim ALTERA vlog 10.3c: PASS B4G_NATIVE720_PERFORMANCE; 2 x 1280 x 720, 1,843,200 pixels, 0 differences; compile/simulation errors 0 warnings 0; FIFO peak 1284.
+Tang Dynasty 6.2.168116: PASS B4g closed-loop standalone synthesis; 8904 reg, 13694 LUT, 9339 Slice, 10 ERAM, 0 DSP, 0 latch; provisional 75 MHz SWNS +1.071 ns, HWNS +0.292 ns.
+Inputs for capture identity, latency and rates were synthetic. No full-board timing, bit or board test.
