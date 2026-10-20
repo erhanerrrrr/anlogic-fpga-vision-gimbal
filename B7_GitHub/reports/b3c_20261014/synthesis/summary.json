@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "scope": "ROI block only; not full video/board",
+  "board_tested": false,
+  "board_timing_verified": false,
+  "source_sha256": {
+    "rtl/video_calibration_roi.v": "c3c178353e39f02fd6ae115cb0d5a23a147be9a964a1106a2e4d3f677868c7c7"
+  },
+  "provisional_clock_mhz": 75,
+  "warnings": [
+    "SYN-6021 CRITICAL-WARNING: 78 out of 78 logical ports has no user assigned specific location constraint."
+  ],
+  "resources": {
+    "reg": 3,
+    "lut": 37,
+    "slice": 22,
+    "eram20k": 0,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 4.888,
+    "STNS": 0.0,
+    "HWNS": 1.077,
+    "HTNS": 0.0
+  }
+}
