@@ -1,0 +1,8 @@
+{
+  "user_run_confirmed": true,
+  "user_image_confirmed": false,
+  "source_hashes_verified": true,
+  "pairing": "build\\rgb_mask_pair\\run_20261012_101052",
+  "faults": "build\\rgb_mask_faults\\run_20261012_100951",
+  "board_tested": false
+}

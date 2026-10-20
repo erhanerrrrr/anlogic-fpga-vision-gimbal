@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "board_timing_verified": false,
+  "wrapper_included": true,
+  "clock_mhz_provisional": 75,
+  "fifo_depth": 2048,
+  "fifo_word_bits": 24,
+  "fifo_logical_bits": 49152,
+  "frame_descriptors_bits": 164,
+  "source_sha256": {
+    "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+    "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+    "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+    "rtl/video_rgb_mask_raw_gray.v": "0e96b1c7fa3c8ac40719c605a92cd0856781165447967a6ff225b27581c0e971",
+    "synthesis/raw_gray_probe.v": "7c933cd9b26ffdf77d9869ed8c9132c40d278a4de16bc23917cff812f12b35ab"
+  },
+  "warnings": [
+    "SYN-6021 CRITICAL-WARNING: 123 out of 123 logical ports has no user assigned specific location constraint."
+  ],
+  "resources": {
+    "reg": 889,
+    "eram20k": 5,
+    "dsp": 0,
+    "slice": 731,
+    "lut": 877,
+    "latch": 0
+  },
+  "ram_mapping": [
+    {
+      "instance": "core/pair/filter/ramread0_syn_13",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10"
+    },
+    {
+      "instance": "core/pair/filter/ramread0_syn_22",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10"
+    },
+    {
+      "instance": "core/pair/ramread0_syn_11",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10"
+    },
+    {
+      "instance": "core/pair/ramread0_syn_22",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "10",
+      "DATA_WIDTH_B": "10"
+    },
+    {
+      "instance": "core/pair/ramread0_syn_33",
+      "MODE": "DP20K",
+      "DATA_WIDTH_A": "5",
+      "DATA_WIDTH_B": "5"
+    }
+  ],
+  "rgb_fifo_eram": 3,
+  "filter_eram": 2,
+  "timing_ns": {
+    "SWNS": 2.847,
+    "STNS": 0.0,
+    "HWNS": 0.457,
+    "HTNS": 0.0
+  },
+  "resource_delta_from_b2a": {
+    "reg": 142,
+    "eram20k": 0,
+    "dsp": 0,
+    "slice": 142,
+    "lut": 193,
+    "latch": 0
+  },
+  "timing_passed": true,
+  "ram_layout_passed": true
+}

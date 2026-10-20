@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "arithmetic_vectors": 5308,
+  "maximum_tested_magnitude": 1530,
+  "stage_fault_scenarios": 12,
+  "source_sha256": {
+    "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+    "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+    "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+    "sim/tb_sobel_arithmetic.v": "341fecfc08838d1f55ca3c7bf0e80380bafef0b9288e18cf2b93a51fe7204b25",
+    "sim/tb_edge_stage_faults.v": "f1e7cb2516cea29ba7a89fb848c8e496af8a3db78328ab02097ff2d7ac82acb7",
+    "scripts/check_edge_stage.py": "2a7a5a04d0e9ec0bfe95daec395e7e1e14c4ecb8d59b26ef19a89e005eec8ed9"
+  }
+}

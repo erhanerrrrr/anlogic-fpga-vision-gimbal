@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "simulator": "ModelSim (original TBs and reference unchanged)",
+  "baseline_declared_sha": "7eb4a90",
+  "git_sha_verified": false,
+  "board_tested_by_this_run": false,
+  "commands": [],
+  "tool_version": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.3c Simulator 2014.09 Sep 20 2014",
+  "check": "{\"status\": \"PASS\", \"source_files\": 216, \"project_references\": 64, \"bit_sha256\": \"9d5bfd2f2f3ece15f772d92406762a30fbc06db0af72c16f2b87c461ee007f79\"}",
+  "unit": {
+    "frames": 68,
+    "pixels": 2506752,
+    "exit_code": 0
+  },
+  "pipeline": {
+    "frames": 13,
+    "filtered_pixels": 11980800,
+    "exit_code": 0
+  },
+  "frozen_test_sha256": {
+    "tb_regions.v": "415b426b6c3fa540c8b80d4b4da195ee89f0782f4004626cb0c334599010d481",
+    "tb_h4e.v": "a1b0d14ca28f6414d5d2f12e1b8982a1ad17e793410cb077c17a0c6abb25ec8c",
+    "test_regions.py": "d3398ac7bba8e343df8267430b7a6a5a4d0de951bd044e8b6a1d5f58b45401e5",
+    "prepare_pipeline_test.py": "d0a7be4200e03e6e4ad8c35016b596b05dec6d95aeba8efdd83b9db194f28d01"
+  }
+}
