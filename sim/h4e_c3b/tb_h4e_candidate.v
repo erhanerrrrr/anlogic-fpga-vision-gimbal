@@ -1,0 +1,74 @@
+`timescale 1ns/1ps
+module tb_h4e_candidate;
+ reg clk=0;always #5 clk=~clk;
+ reg rst_n=0;
+ reg source_flush=0;
+ reg [31:0] active_epoch=0;
+ reg sample_done=0;
+ reg sample_ok=0;
+ reg [8:0] sample_count=0;
+ reg [31:0] sample_frame_id=0;
+ reg [31:0] sample_epoch=0;
+ reg [15:0] sample_cfg_id=0;
+ reg [1:0] sample_target_id=0;
+ reg [7:0] mean_r=0;
+ reg [7:0] mean_g=0;
+ reg [7:0] mean_b=0;
+ reg [7:0] min_r=0;
+ reg [7:0] min_g=0;
+ reg [7:0] min_b=0;
+ reg [7:0] max_r=0;
+ reg [7:0] max_g=0;
+ reg [7:0] max_b=0;
+ wire p0_calibration_done;
+ wire p0_calibration_ok;
+ wire [2:0] p0_calibration_reason;
+ wire [31:0] p0_calibration_frame_id;
+ wire [31:0] p0_calibration_epoch;
+ wire [15:0] p0_calibration_cfg_id;
+ wire [1:0] p0_calibration_target_id;
+ wire [1:0] p0_candidate_color;
+ wire [7:0] p0_candidate_min_main;
+ wire [7:0] p0_candidate_diff_1;
+ wire [7:0] p0_candidate_diff_2;
+ h4e_calibration_candidate  dut0(.clk(clk),.rst_n(rst_n),.source_flush(source_flush),.active_epoch(active_epoch),.sample_done(sample_done),.sample_ok(sample_ok),.sample_count(sample_count),.sample_frame_id(sample_frame_id),.sample_epoch(sample_epoch),.sample_cfg_id(sample_cfg_id),.sample_target_id(sample_target_id),.mean_r(mean_r),.mean_g(mean_g),.mean_b(mean_b),.min_r(min_r),.min_g(min_g),.min_b(min_b),.max_r(max_r),.max_g(max_g),.max_b(max_b),.calibration_done(p0_calibration_done),.calibration_ok(p0_calibration_ok),.calibration_reason(p0_calibration_reason),.calibration_frame_id(p0_calibration_frame_id),.calibration_epoch(p0_calibration_epoch),.calibration_cfg_id(p0_calibration_cfg_id),.calibration_target_id(p0_calibration_target_id),.candidate_color(p0_candidate_color),.candidate_min_main(p0_candidate_min_main),.candidate_diff_1(p0_candidate_diff_1),.candidate_diff_2(p0_candidate_diff_2));
+ wire p1_calibration_done;
+ wire p1_calibration_ok;
+ wire [2:0] p1_calibration_reason;
+ wire [31:0] p1_calibration_frame_id;
+ wire [31:0] p1_calibration_epoch;
+ wire [15:0] p1_calibration_cfg_id;
+ wire [1:0] p1_calibration_target_id;
+ wire [1:0] p1_candidate_color;
+ wire [7:0] p1_candidate_min_main;
+ wire [7:0] p1_candidate_diff_1;
+ wire [7:0] p1_candidate_diff_2;
+ h4e_calibration_candidate #(.MAIN_LOW(8'd0),.MAIN_HIGH(8'd255),.MAX_SPREAD(8'd255),.MIN_DOMINANCE(8'd0),.MARGIN(8'd0)) dut1(.clk(clk),.rst_n(rst_n),.source_flush(source_flush),.active_epoch(active_epoch),.sample_done(sample_done),.sample_ok(sample_ok),.sample_count(sample_count),.sample_frame_id(sample_frame_id),.sample_epoch(sample_epoch),.sample_cfg_id(sample_cfg_id),.sample_target_id(sample_target_id),.mean_r(mean_r),.mean_g(mean_g),.mean_b(mean_b),.min_r(min_r),.min_g(min_g),.min_b(min_b),.max_r(max_r),.max_g(max_g),.max_b(max_b),.calibration_done(p1_calibration_done),.calibration_ok(p1_calibration_ok),.calibration_reason(p1_calibration_reason),.calibration_frame_id(p1_calibration_frame_id),.calibration_epoch(p1_calibration_epoch),.calibration_cfg_id(p1_calibration_cfg_id),.calibration_target_id(p1_calibration_target_id),.candidate_color(p1_candidate_color),.candidate_min_main(p1_candidate_min_main),.candidate_diff_1(p1_candidate_diff_1),.candidate_diff_2(p1_candidate_diff_2));
+ wire p2_calibration_done;
+ wire p2_calibration_ok;
+ wire [2:0] p2_calibration_reason;
+ wire [31:0] p2_calibration_frame_id;
+ wire [31:0] p2_calibration_epoch;
+ wire [15:0] p2_calibration_cfg_id;
+ wire [1:0] p2_calibration_target_id;
+ wire [1:0] p2_candidate_color;
+ wire [7:0] p2_candidate_min_main;
+ wire [7:0] p2_candidate_diff_1;
+ wire [7:0] p2_candidate_diff_2;
+ h4e_calibration_candidate #(.MAIN_LOW(8'd0),.MAIN_HIGH(8'd255),.MAX_SPREAD(8'd255),.MIN_DOMINANCE(8'd0),.MARGIN(8'd255)) dut2(.clk(clk),.rst_n(rst_n),.source_flush(source_flush),.active_epoch(active_epoch),.sample_done(sample_done),.sample_ok(sample_ok),.sample_count(sample_count),.sample_frame_id(sample_frame_id),.sample_epoch(sample_epoch),.sample_cfg_id(sample_cfg_id),.sample_target_id(sample_target_id),.mean_r(mean_r),.mean_g(mean_g),.mean_b(mean_b),.min_r(min_r),.min_g(min_g),.min_b(min_b),.max_r(max_r),.max_g(max_g),.max_b(max_b),.calibration_done(p2_calibration_done),.calibration_ok(p2_calibration_ok),.calibration_reason(p2_calibration_reason),.calibration_frame_id(p2_calibration_frame_id),.calibration_epoch(p2_calibration_epoch),.calibration_cfg_id(p2_calibration_cfg_id),.calibration_target_id(p2_calibration_target_id),.candidate_color(p2_candidate_color),.candidate_min_main(p2_candidate_min_main),.candidate_diff_1(p2_candidate_diff_1),.candidate_diff_2(p2_candidate_diff_2));
+ integer f,o,c,n,i,clamps;
+ initial begin
+ f=$fopen("vectors.txt","r");o=$fopen("actual.csv","w");clamps=$fopen("clamps.csv","w");
+ $fdisplay(o,"profile,cycle,done,ok,reason,fid,epoch,cfg,target,color,main,d1,d2");
+ $fdisplay(clamps,"value,p0,p1,p2");
+ for(i=-512;i<512;i=i+1) $fdisplay(clamps,"%0d,%0d,%0d,%0d",i,dut0.subtract_margin(i),dut1.subtract_margin(i),dut2.subtract_margin(i));
+ c=0;while(!$feof(f)) begin
+ @(negedge clk);n=$fscanf(f,"%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n",rst_n,source_flush,active_epoch,sample_done,sample_ok,sample_count,sample_frame_id,sample_epoch,sample_cfg_id,sample_target_id,mean_r,mean_g,mean_b,min_r,min_g,min_b,max_r,max_g,max_b);
+ if(n!=19) $fatal(1,"bad vector");
+ @(posedge clk);#1;
+ $fdisplay(o,"0,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d",c,p0_calibration_done,p0_calibration_ok,p0_calibration_reason,p0_calibration_frame_id,p0_calibration_epoch,p0_calibration_cfg_id,p0_calibration_target_id,p0_candidate_color,p0_candidate_min_main,p0_candidate_diff_1,p0_candidate_diff_2);
+ $fdisplay(o,"1,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d",c,p1_calibration_done,p1_calibration_ok,p1_calibration_reason,p1_calibration_frame_id,p1_calibration_epoch,p1_calibration_cfg_id,p1_calibration_target_id,p1_candidate_color,p1_candidate_min_main,p1_candidate_diff_1,p1_candidate_diff_2);
+ $fdisplay(o,"2,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d",c,p2_calibration_done,p2_calibration_ok,p2_calibration_reason,p2_calibration_frame_id,p2_calibration_epoch,p2_calibration_cfg_id,p2_calibration_target_id,p2_candidate_color,p2_candidate_min_main,p2_candidate_diff_1,p2_candidate_diff_2);
+ c=c+1;end
+ $fclose(f);$fclose(o);$fclose(clamps);$display("C3B_PASS cycles=%0d",c);$finish;end
+endmodule

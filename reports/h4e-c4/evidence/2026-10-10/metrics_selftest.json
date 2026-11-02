@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cases": [
+    "known_synthetic_misses",
+    "touching_localization",
+    "structural_not_FN",
+    "injected_false_positive",
+    "unannotated_excluded"
+  ]
+}

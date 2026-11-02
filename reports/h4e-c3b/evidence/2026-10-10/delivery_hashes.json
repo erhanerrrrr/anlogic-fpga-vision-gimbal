@@ -1,0 +1,6 @@
+{
+  "rtl/recognition/h4e_c3b_sources.f": "b040ac81f247b9bdd1a516f8257f298621fdb44d05086cc23c3529723d61ddf1",
+  "scripts/run_h4e_c3b_td.py": "ba9ce1eb5272d9fd85a774c4060d3feb9de525d13889bb2e8ad964cea8bdf4f3",
+  "docs/stages/H4E-C3b.md": "36a7231c8d8d6f3dec221ed8339dcd50d781a80689007501ad19230de9013a99",
+  "tests/fixtures/h4e_c3b/candidate_events.csv": "c627c2bd1fa7f2e61e5659246d1e0dbb3640990eca0951c4b969e276402fe41a"
+}

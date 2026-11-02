@@ -1,0 +1,144 @@
+[
+  {
+    "index": 0,
+    "name": "deadline_stress",
+    "rgb_sha256": "590b0d412ef90973d2ad9d9471e133f93aed8eda0775b3a9922ce6a7bc605ade",
+    "rtl": {
+      "index": 0,
+      "latency": 73,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 100,
+      "capture_epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 5,
+      "peak_slots": 8,
+      "component_count": 0
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 2,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "expected_synthetic_structural_reject",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        4,
+        6,
+        6,
+        41
+      ],
+      "mask_file": "deadline_stress.mask",
+      "mask_sha256": "bba7376487632affa9124f6273c49cbec440712d8109a1df27661a5381c85514"
+    },
+    "mask_hashes": {
+      "class": "bba7376487632affa9124f6273c49cbec440712d8109a1df27661a5381c85514",
+      "filter": "70dd1bb442d7f40ca10947876dce0590eeb17ef045cd91ac30cbaf35660467f9"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 864,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2208
+      },
+      "filtered_pixels": {
+        "tp": 832,
+        "fp": 0,
+        "fn": 32,
+        "tn": 2208
+      }
+    },
+    "evaluation": {
+      "category": "deadline_failure"
+    }
+  },
+  {
+    "index": 1,
+    "name": "recovery",
+    "rgb_sha256": "2c041314f8439f79219fe2caefb4e5c922f6194ab9f704772f0c15a9f9390b04",
+    "rtl": {
+      "index": 1,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 101,
+      "capture_epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "area": 1148,
+      "cx": 25,
+      "cy": 23,
+      "xmin": 10,
+      "xmax": 41,
+      "ymin": 6,
+      "ymax": 41,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 1148,
+      "xmin": 10,
+      "xmax": 41,
+      "ymin": 6,
+      "ymax": 41,
+      "cx": 25,
+      "cy": 23
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        6,
+        41,
+        41
+      ],
+      "mask_file": "recovery.mask",
+      "mask_sha256": "8d9e0229cf4995d7bd02d504f401731e94c012c13f0243230049a500ca2a4a97"
+    },
+    "mask_hashes": {
+      "class": "8d9e0229cf4995d7bd02d504f401731e94c012c13f0243230049a500ca2a4a97",
+      "filter": "257e35771d14f000e1c77881a19a2a557e06f88d2a78a83606645e35ea26ca64"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 1152,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1920
+      },
+      "filtered_pixels": {
+        "tp": 1148,
+        "fp": 0,
+        "fn": 4,
+        "tn": 1920
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  }
+]

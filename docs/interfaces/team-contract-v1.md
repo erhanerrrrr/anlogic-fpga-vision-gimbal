@@ -67,13 +67,19 @@ H4E `display_raster_adapter` 在有效USER后才接收首完整刷新，按配�
 
 绿色框/青色十字只用T选区结果；R原始全局、F滤波全局、D对F算的填充率留作诊断。两物体的全局框可以很大，而T应只选择最大区域。禁止恢复统一75%填充率门槛。
 
+### C2a 开发适配（不改变冻结 H4E）
+
+根目录新增 `h4e_target_packet`，把上述 T 结果一起寄存，增加 1 拍延迟；输入为 `t_*`，输出采用本表统一字段名，具体映射见 [H4E-C2a](../stages/H4E-C2a.md)。无效事件仍发布身份/原因，公开几何清零；没有事件时字段保持。相邻周期均有 strobe 表示两个独立事件，消费者逐拍使能，不做仅上升沿触发。
+
+适配额外保留 `capture_epoch[31:0]`，当前 H4E 接零。未来必须由上游提供与结果绑定的 epoch，不能接实时相机 epoch。保留字段不等于完成 capture-v1；真实身份贯穿和去重仍由 C2b 实现。该模块已独立仿真/综合，尚未接入已验收板级顶层。
+
 ## 4. 真实来源帧与控制新鲜度（capture-v1，待实现）
 
 A负责完整帧提交、缓存槽及metadata绑定：只有可供读取的完整帧才成为新来源帧。读到哪份图像，就携带该图像ID；相机正在采集的新计数不能贴到旧缓存上。重复显示同一帧必须保持来源ID。
 
 A增加 `capture_epoch[31:0]` 作为相机重新启动/来源复位的代次，与 `frame_id[31:0]` 合成来源身份。epoch由未被相机局部复位清零的系统域维护；整机复位时所有消费者与缓存共同清空。frame_id正常32位回绕为新帧；局部重启不得让旧结果碰巧匹配。该sideband目前不在H4E/C10端口内，适配层必须保留至结果，不能丢失后宣称已实现。
 
-C根据有效SOF锁存来源/配置，完成时原子发布。C现有新帧逻辑只抑制**连续相同ID**，不保证任意历史重放去重；A保证顺序，不重放更旧缓存。配置只在下一真实新源帧生效，不把“同一图像换cfg”算成物理新观察。
+C根据有效SOF锁存来源/配置，完成时原子发布。C2b开发适配只抑制**连续相同来源身份（epoch、ID）**，不保证任意历史重放去重；A保证顺序，不重放更旧缓存。配置只在下一真实新源帧生效，不把“同一图像换cfg”算成物理新观察。
 
 ```text
 图像来源：          K       K       K+1      停采集（显示仍刷新）
@@ -85,6 +91,14 @@ C根据有效SOF锁存来源/配置，完成时原子发布。C现有新帧逻�
 A在系统时间基准下维护最后一次完整来源提交/新结果时间，独立产生 `source_timeout`、`result_timeout`。没有新事件时不能由保持的target_valid刷新计时器。超时/无效进入保持，恢复需可配置的新帧确认。复位、ID回绕、重复帧、采集慢于显示、半帧、来源停止/恢复均必须测试。
 
 跨时钟多位结果和帧metadata用异步FIFO或请求/应答邮箱原子传输，不能每位单独两级同步。配置/跟踪按钮事件也需可靠跨域。A记录各时钟、约束与CDC覆盖。
+
+### C2b 同域开发适配（合成来源已验证，未板测）
+
+根目录 `h4e_capture_tracker` 接固定 WB 后 RGB，锁存 SOF 的 `source_frame_id/source_epoch`，经原 H4E 分类/去噪/区域核及 C2a 包输出同一份结果。新增 `new_observation` 标记：`result_strobe` 可通知同源重复结果，只有 `new_observation` 通知新的控制观察；无目标新帧也通知。A/B 在同一采样沿锁存标记与整包，跨域时整体传输。
+
+A 额外提供同域 `active_epoch`（当前认可的代次）和 `source_flush` 屏障，不能将 active_epoch 接成缓存正在读出的旧 epoch。C 在处理入口及结果出口拒绝旧代次；C 出口之后的旧 FIFO 包仍由 A 校验/清空。请求配置为保持型 `requested_*`，只在新来源 SOF 采样，重复来源保持旧配置；完整标定 pending/busy/应用事件在 C3c 完成。
+
+适配只保存单个在途帧；新 SOF 可中止未交付结果的旧任务，并产生 `frame_abort` 诊断。行内连续，坐标/EOF 错误和半帧中断恢复规则、内部一拍处理复位及两拍像素缓冲见 [C2b 接线说明](../stages/H4E-C2b.md)。这不承诺任意零消隐都不丢结果，也不改变冻结 H4E 的 profile。
 
 ## 5. B显示、按键与C标定
 
@@ -111,3 +125,19 @@ A独占控制状态机，C只报告观测，B只显示。下一阶段控制参�
 ## 7. 接口变更验收
 
 字段、宽度、时钟、ID定义、边界事件或延迟调度变化，必须同一PR更新本文件/局部文档、适配层、两侧测试。至少包含：合法帧、空帧、帧中复位、SOF打断、边界/消隐、跨帧在途数据、配置切换、错误及恢复。OSD与真实C掩膜联合回归通过，才可把B的独立通过提升为整机通过。
+
+## H4E 新 C3a 采样旁路（开发，未上板）
+
+见 [C3a 接线与请求时序](../stages/H4E-C3a.md)。`h4e_sampling_tracker` 复用原 C2b 检测接口，新增 `sample_req/busy/request_ignored/sample_done/sample_ok/sample_reason`，以及 `sample_frame_id/sample_epoch/sample_cfg_id/sample_target_id`、9 位 sample_count、RGB 各 16 位 sum 和 8 位 min/max/mean。结果在整帧 EOF 检查后一拍发布；busy 请求忽略，重复身份不启动，取消统计清零。sample_done 不是 calibration_done 或 cfg_applied。使用固定白平衡、gamma/OSD 前 RGB，不自动改动活动参数。
+
+## H4E 新 C3b 候选参数（开发，未应用）
+
+见 [C3b 规则/时序](../stages/H4E-C3b.md)。新封装 `h4e_candidate_tracker` 保留 C3a 接口，新增 `calibration_done/ok/reason`、`calibration_frame_id/epoch/cfg_id/target_id`、`candidate_color/min_main/diff_1/diff_2`。calibration_done 比采样完成晚一拍；失败清零候选，身份保留，reason=6 优先拒绝 flush/旧 epoch。候选不会改变 requested/active 配置；没有 cfg_applied。busy 仍是 C3a 采样 busy，完整标定仲裁待 C3c。
+
+## H4E 新 C3c 帧边界应用（开发，未上板）
+
+见 [C3c 接口及上板步骤](../stages/H4E-C3c.md)。顶层 `h4e_calibrated_tracker` 替代外部 requested 配置/sample_req，输入 `calibrate_req/color_select_req/color_select`；内部复用 guard 的 active 配置寄存器。标定优先，busy 包括等待/采样/计算/pending/取消后两拍收尾。pending 只在 new_source_sof 应用，cfg_id 递增并发 cfg_applied；同拍生成候选不应用，重复帧不应用，完成/应用拍请求忽略。人工选色恢复 24/16/16；复位 red/cfg1/24/16/16。flush/epoch 撤销发 operation_cancelled，旧候选诊断可能迟到但不会应用。B 应区分 sample_done、calibration_done、pending_valid、cfg_applied 和取消状态。
+
+## H4E 新 C4 离线 RGB 回放
+
+A 导出格式见 [RGB 回放 v1](rgb-replay-v1.md)：完整 720p 固定白平衡 RGB888、无头无填充，每帧 2,764,800 字节，配来源 ID/epoch、已生效 cfg/阈值、bit 哈希和曝光/光照说明。标注不能使用 RTL 输出充当人工真值。回放逐帧排空，不代表原相机帧率/CDC 验证。E3/E5、重复帧和无标注分开统计；当前只有合成验收，真实部分待数据。

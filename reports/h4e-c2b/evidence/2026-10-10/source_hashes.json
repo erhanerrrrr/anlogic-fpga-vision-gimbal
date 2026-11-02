@@ -1,0 +1,14 @@
+{
+  "rtl/recognition/capture_frame_guard.v": "ce45b6baf5943326a8a95725137092336c524aa9e5922e6e4015851a3e05732a",
+  "rtl/recognition/capture_observation_guard.v": "e34f567addcfb23ade389b5078a503bc89d75529da8aad572555a28b0083aa2b",
+  "rtl/recognition/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+  "rtl/recognition/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+  "rtl/recognition/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+  "rtl/recognition/h4e_target_packet.v": "4c17e7a3fc84621247868c5f888e10aecfa9f06481d6c9f7aa9e9f54d0440b91",
+  "rtl/recognition/h4e_capture_tracker.v": "8ea0f492c2a39d1963b473a02880bc1bacded3c29e64929b690423ff0cee9603",
+  "sim/h4e_c2b/tb_capture_observer.v": "332f25516f9e1428c0683751a41bf40eca011a0e467d69e749be2c3816705c42",
+  "sim/h4e_c2b/tb_h4e_capture_tracker.v": "f13004049a4110763b6afa90e72c55e0b495bf1d87366f103710e8a6734d25cd",
+  "model/h4e_c2b_reference.py": "299c7447b64b83a11b055bcbec85394fda6999ff134892c6f6099caee87dd3e2",
+  "model/h4e_c2a_reference.py": "62f50c654725d84ef6a229535abfd12a0afb8924e4d6d18c8e5133590042c472",
+  "scripts/run_h4e_c2b.py": "9051f51221ca5b56ebabf5977c6a4044e1195e149395ec45fbb2f273a0349605"
+}

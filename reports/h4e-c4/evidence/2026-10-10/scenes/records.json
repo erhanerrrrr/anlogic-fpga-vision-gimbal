@@ -1,0 +1,1202 @@
+[
+  {
+    "index": 0,
+    "name": "empty",
+    "rgb_sha256": "2d07a41ae992770085117e9815300bfd0730745883e60b24aaad5e69dfc087ae",
+    "rtl": {
+      "index": 0,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 100,
+      "capture_epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 1,
+      "peak_slots": 0,
+      "component_count": 0
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 1,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": false,
+      "primary_bbox": null,
+      "mask_file": "empty.mask",
+      "mask_sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "mask_hashes": {
+      "class": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+      "filter": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3072
+      },
+      "filtered_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3072
+      }
+    },
+    "evaluation": {
+      "category": "true_negative"
+    }
+  },
+  {
+    "index": 1,
+    "name": "red",
+    "rgb_sha256": "a46a150a78735eadbbb239dc0fd9f2fc8222e19e42f111b6c866d9b06ee5ea06",
+    "rtl": {
+      "index": 1,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 101,
+      "capture_epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "area": 572,
+      "cx": 21,
+      "cy": 21,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 572,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "cx": 21,
+      "cy": 21
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "red.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750",
+      "filter": "2d2aaed86cd49d16f45695eb1b55de45084059172896a7a9d41fc46d64e77971"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 576,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 572,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 2,
+    "name": "green",
+    "rgb_sha256": "3457524cbae9fc4a0510809816baacc0113626ce034f8159ab0a8e553a8ffda8",
+    "rtl": {
+      "index": 2,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 102,
+      "capture_epoch": 7,
+      "cfg_id": 2,
+      "target_id": 1,
+      "area": 572,
+      "cx": 21,
+      "cy": 21,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 572,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "cx": 21,
+      "cy": 21
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "green.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750",
+      "filter": "2d2aaed86cd49d16f45695eb1b55de45084059172896a7a9d41fc46d64e77971"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 576,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 572,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 3,
+    "name": "blue",
+    "rgb_sha256": "a7c74979f5e4213167dc6e8fb8544c2f30d1b5476af81b64b156121c91fb51ab",
+    "rtl": {
+      "index": 3,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 103,
+      "capture_epoch": 7,
+      "cfg_id": 3,
+      "target_id": 2,
+      "area": 572,
+      "cx": 21,
+      "cy": 21,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 572,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "cx": 21,
+      "cy": 21
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "blue.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750",
+      "filter": "2d2aaed86cd49d16f45695eb1b55de45084059172896a7a9d41fc46d64e77971"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 576,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 572,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 4,
+    "name": "tilted",
+    "rgb_sha256": "e0068051e0e47c9098f29ce2368a795648726302ebaae8ca7f4830832131a95e",
+    "rtl": {
+      "index": 4,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 104,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 476,
+      "cx": 23,
+      "cy": 19,
+      "xmin": 8,
+      "xmax": 38,
+      "ymin": 8,
+      "ymax": 31,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 476,
+      "xmin": 8,
+      "xmax": 38,
+      "ymin": 8,
+      "ymax": 31,
+      "cx": 23,
+      "cy": 19
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        8,
+        8,
+        38,
+        31
+      ],
+      "mask_file": "tilted.mask",
+      "mask_sha256": "b0139c2c7b885ad1e3714dad185d8ac31ff88e8684fa55fc3238e7b7ccf7d664"
+    },
+    "mask_hashes": {
+      "class": "b0139c2c7b885ad1e3714dad185d8ac31ff88e8684fa55fc3238e7b7ccf7d664",
+      "filter": "025a4ce0fde72c8cd76ed79de3d3273d718201f865ac863a42a71e2fd51c0ccb"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 480,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2592
+      },
+      "filtered_pixels": {
+        "tp": 476,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2592
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 5,
+    "name": "glare",
+    "rgb_sha256": "c43f75d2a362bd3e3e0ee0fd2f1b896a9ef3ff9bc7c7e92b1514659c4c736cfe",
+    "rtl": {
+      "index": 5,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 105,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 2,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 2,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "glare.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "2db91c31e3390e46dbcb8dda4eaaa7695746fc404c4ca8605300dd04a0dbe223",
+      "filter": "e85e65c748a608211b3a3e5cbc130e9e85e80c4d00f43b65c8039c688fe29871"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 144,
+        "fp": 0,
+        "fn": 432,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 140,
+        "fp": 0,
+        "fn": 436,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "false_negative"
+    }
+  },
+  {
+    "index": 6,
+    "name": "dark",
+    "rgb_sha256": "2dacefd4fd489404951a4fc41c28ef6a50222321368e4cf7307739e385b49540",
+    "rtl": {
+      "index": 6,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 106,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 1,
+      "peak_slots": 0,
+      "component_count": 0
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 1,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "dark.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+      "filter": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 576,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 576,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "false_negative"
+    }
+  },
+  {
+    "index": 7,
+    "name": "bright_before_change",
+    "rgb_sha256": "fc54ca8ae28fd2832e441f3c22b5122330e6560ed6d08c7538bc4238a43988bb",
+    "rtl": {
+      "index": 7,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 107,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 572,
+      "cx": 21,
+      "cy": 21,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 572,
+      "xmin": 10,
+      "xmax": 33,
+      "ymin": 10,
+      "ymax": 33,
+      "cx": 21,
+      "cy": 21
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "bright_before_change.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750",
+      "filter": "2d2aaed86cd49d16f45695eb1b55de45084059172896a7a9d41fc46d64e77971"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 576,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 572,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 8,
+    "name": "dark_after_change",
+    "rgb_sha256": "2dacefd4fd489404951a4fc41c28ef6a50222321368e4cf7307739e385b49540",
+    "rtl": {
+      "index": 8,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 108,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 1,
+      "peak_slots": 0,
+      "component_count": 0
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 1,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        10,
+        10,
+        33,
+        33
+      ],
+      "mask_file": "dark_after_change.mask",
+      "mask_sha256": "b49cbee228774c00f0ed3a90f4d49ea9ad397211c7fc0709d2d361cc63c1d750"
+    },
+    "mask_hashes": {
+      "class": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+      "filter": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 576,
+        "tn": 2496
+      },
+      "filtered_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 576,
+        "tn": 2496
+      }
+    },
+    "evaluation": {
+      "category": "false_negative"
+    }
+  },
+  {
+    "index": 9,
+    "name": "edge",
+    "rgb_sha256": "a2db2fb0f0c03dafaffe1e28d45b896ff66251b9578d10a8b2fed7e9f45a8126",
+    "rtl": {
+      "index": 9,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 109,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 376,
+      "cx": 11,
+      "cy": 12,
+      "xmin": 1,
+      "xmax": 21,
+      "ymin": 4,
+      "ymax": 21,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 376,
+      "xmin": 1,
+      "xmax": 21,
+      "ymin": 4,
+      "ymax": 21,
+      "cx": 11,
+      "cy": 12
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        0,
+        0,
+        21,
+        21
+      ],
+      "mask_file": "edge.mask",
+      "mask_sha256": "419b0a64418d4c15e32d15f62765360d51d1b5e87e533d47f6f5599d0bf70756"
+    },
+    "mask_hashes": {
+      "class": "419b0a64418d4c15e32d15f62765360d51d1b5e87e533d47f6f5599d0bf70756",
+      "filter": "f4b4e005966b580ba91d5cb153e1563ef159708440203d569261253ef049d154"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 484,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2588
+      },
+      "filtered_pixels": {
+        "tp": 376,
+        "fp": 0,
+        "fn": 108,
+        "tn": 2588
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 0.78099173553719,
+      "center_error_px": 2.23606797749979
+    }
+  },
+  {
+    "index": 10,
+    "name": "same_color_largest",
+    "rgb_sha256": "c197955ffbef6f2705f2dbc952dcce44123021ddb7905ddad1a5650b9d8d5268",
+    "rtl": {
+      "index": 10,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 110,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 476,
+      "cx": 13,
+      "cy": 17,
+      "xmin": 2,
+      "xmax": 25,
+      "ymin": 8,
+      "ymax": 27,
+      "reject_reason": 0,
+      "peak_slots": 2,
+      "component_count": 2
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 476,
+      "xmin": 2,
+      "xmax": 25,
+      "ymin": 8,
+      "ymax": 27,
+      "cx": 13,
+      "cy": 17
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        2,
+        8,
+        25,
+        27
+      ],
+      "mask_file": "same_color_largest.mask",
+      "mask_sha256": "4e04c565369a7356d063d5b72b08731c0079d45811277543ce9cf9025439562a"
+    },
+    "mask_hashes": {
+      "class": "4e04c565369a7356d063d5b72b08731c0079d45811277543ce9cf9025439562a",
+      "filter": "d224c4c8e55bbafb120714edacb41afc8df989a57e83079aae3fa92a7fa4023d"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 736,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2336
+      },
+      "filtered_pixels": {
+        "tp": 728,
+        "fp": 0,
+        "fn": 8,
+        "tn": 2336
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 11,
+    "name": "same_color_tie",
+    "rgb_sha256": "6c6bc0f3e1a62377cc73f31f60a7f9f66e8fdb18bd27adfa9498a2df9ab22a55",
+    "rtl": {
+      "index": 11,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 111,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 396,
+      "cx": 11,
+      "cy": 19,
+      "xmin": 2,
+      "xmax": 21,
+      "ymin": 10,
+      "ymax": 29,
+      "reject_reason": 0,
+      "peak_slots": 2,
+      "component_count": 2
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 396,
+      "xmin": 2,
+      "xmax": 21,
+      "ymin": 10,
+      "ymax": 29,
+      "cx": 11,
+      "cy": 19
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        2,
+        10,
+        21,
+        29
+      ],
+      "mask_file": "same_color_tie.mask",
+      "mask_sha256": "3e2428661cecdc300077dce2e5c4fd4ffc962bca40225315631e1ecf08212da5"
+    },
+    "mask_hashes": {
+      "class": "3e2428661cecdc300077dce2e5c4fd4ffc962bca40225315631e1ecf08212da5",
+      "filter": "21b96948b191106b4a96384d94fd0e25ba2ff0c02b82c6d39431f96675ddaee7"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 800,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2272
+      },
+      "filtered_pixels": {
+        "tp": 792,
+        "fp": 0,
+        "fn": 8,
+        "tn": 2272
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 12,
+    "name": "touching_cards",
+    "rgb_sha256": "7cbe2adee4a2c5a1a4008cfe48adf6948d3419e20473d5b7f87d7b00bc08a78b",
+    "rtl": {
+      "index": 12,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 112,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 796,
+      "cx": 25,
+      "cy": 19,
+      "xmin": 6,
+      "xmax": 45,
+      "ymin": 10,
+      "ymax": 29,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 796,
+      "xmin": 6,
+      "xmax": 45,
+      "ymin": 10,
+      "ymax": 29,
+      "cx": 25,
+      "cy": 19
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        6,
+        10,
+        25,
+        29
+      ],
+      "mask_file": "touching_cards.mask",
+      "mask_sha256": "12a9ebfd20da9c77d58cc53365b05901205b99f8bb6171c25cd1d68da85322cb"
+    },
+    "mask_hashes": {
+      "class": "12a9ebfd20da9c77d58cc53365b05901205b99f8bb6171c25cd1d68da85322cb",
+      "filter": "30858cfbe0f1f958ace72e0cb2716552685d336f4a6c780bcb43504e5a18a257"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 800,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2272
+      },
+      "filtered_pixels": {
+        "tp": 796,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2272
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 0.5,
+      "center_error_px": 10.0
+    }
+  },
+  {
+    "index": 13,
+    "name": "occluded",
+    "rgb_sha256": "85ca2150b68c1f3f83140c7a8d63754af2190a19e338f99eada17e0d9b7f401f",
+    "rtl": {
+      "index": 13,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 113,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 2,
+      "peak_slots": 2,
+      "component_count": 2
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 2,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        20,
+        8,
+        43,
+        35
+      ],
+      "mask_file": "occluded.mask",
+      "mask_sha256": "087f7aa1cae780aa8938d916d532991b7393a9949bca1e130423eb4266b8fcd8"
+    },
+    "mask_hashes": {
+      "class": "8345e30486cb280231e702aed0eb86064415a5fdcfc8e264b7a28feb0130521a",
+      "filter": "b093c78d3fbf0539ce96c82de79cbf241e4bb58997eeabcf3cbef84a62daee1d"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 504,
+        "fp": 0,
+        "fn": 168,
+        "tn": 2400
+      },
+      "filtered_pixels": {
+        "tp": 496,
+        "fp": 0,
+        "fn": 176,
+        "tn": 2400
+      }
+    },
+    "evaluation": {
+      "category": "false_negative"
+    }
+  },
+  {
+    "index": 14,
+    "name": "background_noise",
+    "rgb_sha256": "7d1556835b519671bd15c4f094ecb2056f7f11d5c8c3599174f4b035207a7eb0",
+    "rtl": {
+      "index": 14,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 0,
+      "frame_id": 114,
+      "capture_epoch": 7,
+      "cfg_id": 4,
+      "target_id": 0,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0,
+      "reject_reason": 1,
+      "peak_slots": 0,
+      "component_count": 0
+    },
+    "ideal_geometry": {
+      "target_valid": 0,
+      "reject_reason": 1,
+      "area": 0,
+      "cx": 0,
+      "cy": 0,
+      "xmin": 0,
+      "xmax": 0,
+      "ymin": 0,
+      "ymax": 0
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": false,
+      "primary_bbox": null,
+      "mask_file": "background_noise.mask",
+      "mask_sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "mask_hashes": {
+      "class": "8a90318e7ef5c76daa09405a0e96d0d40a61f9ce5a809a4ace85ff6efd5ae764",
+      "filter": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 0,
+        "fp": 88,
+        "fn": 0,
+        "tn": 2984
+      },
+      "filtered_pixels": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3072
+      }
+    },
+    "evaluation": {
+      "category": "true_negative"
+    }
+  },
+  {
+    "index": 15,
+    "name": "selected_green_red_distractor",
+    "rgb_sha256": "0dc14e92aa0cfb12dcdf458a66789268ff41194b53bb1d4b843f2b75f59fdf37",
+    "rtl": {
+      "index": 15,
+      "latency": 74,
+      "new_observation": 1,
+      "target_valid": 1,
+      "frame_id": 115,
+      "capture_epoch": 7,
+      "cfg_id": 5,
+      "target_id": 1,
+      "area": 396,
+      "cx": 45,
+      "cy": 19,
+      "xmin": 36,
+      "xmax": 55,
+      "ymin": 10,
+      "ymax": 29,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 396,
+      "xmin": 36,
+      "xmax": 55,
+      "ymin": 10,
+      "ymax": 29,
+      "cx": 45,
+      "cy": 19
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        36,
+        10,
+        55,
+        29
+      ],
+      "mask_file": "selected_green_red_distractor.mask",
+      "mask_sha256": "dd0737bc654171d278a8ff03adf698b3ff0f683cb06fd47b631770811ca771f2"
+    },
+    "mask_hashes": {
+      "class": "dd0737bc654171d278a8ff03adf698b3ff0f683cb06fd47b631770811ca771f2",
+      "filter": "39c0ab238eccb7a99b66ec3a62a4c46b6819885fd68549541b7dee1064206fcd"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2672
+      },
+      "filtered_pixels": {
+        "tp": 396,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2672
+      }
+    },
+    "evaluation": {
+      "category": "true_positive",
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  },
+  {
+    "index": 16,
+    "name": "stopped_source_repeat",
+    "rgb_sha256": "0dc14e92aa0cfb12dcdf458a66789268ff41194b53bb1d4b843f2b75f59fdf37",
+    "rtl": {
+      "index": 16,
+      "latency": 74,
+      "new_observation": 0,
+      "target_valid": 1,
+      "frame_id": 115,
+      "capture_epoch": 7,
+      "cfg_id": 5,
+      "target_id": 1,
+      "area": 396,
+      "cx": 45,
+      "cy": 19,
+      "xmin": 36,
+      "xmax": 55,
+      "ymin": 10,
+      "ymax": 29,
+      "reject_reason": 0,
+      "peak_slots": 1,
+      "component_count": 1
+    },
+    "ideal_geometry": {
+      "target_valid": 1,
+      "reject_reason": 0,
+      "area": 396,
+      "xmin": 36,
+      "xmax": 55,
+      "ymin": 10,
+      "ymax": 29,
+      "cx": 45,
+      "cy": 19
+    },
+    "comparison": "exact_geometry",
+    "annotation": {
+      "origin": "synthetic_geometry",
+      "target_present": true,
+      "primary_bbox": [
+        36,
+        10,
+        55,
+        29
+      ],
+      "mask_file": "stopped_source_repeat.mask",
+      "mask_sha256": "dd0737bc654171d278a8ff03adf698b3ff0f683cb06fd47b631770811ca771f2"
+    },
+    "mask_hashes": {
+      "class": "dd0737bc654171d278a8ff03adf698b3ff0f683cb06fd47b631770811ca771f2",
+      "filter": "39c0ab238eccb7a99b66ec3a62a4c46b6819885fd68549541b7dee1064206fcd"
+    },
+    "pixel_metrics": {
+      "classified_pixels": {
+        "tp": 400,
+        "fp": 0,
+        "fn": 0,
+        "tn": 2672
+      },
+      "filtered_pixels": {
+        "tp": 396,
+        "fp": 0,
+        "fn": 4,
+        "tn": 2672
+      }
+    },
+    "evaluation": {
+      "category": "duplicate_excluded"
+    }
+  }
+]

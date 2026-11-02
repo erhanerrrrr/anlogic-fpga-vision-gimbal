@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "events": {
+    "state": 14,
+    "720p": 6
+  },
+  "source": "synthetic",
+  "hardware": "not_tested",
+  "mean": "floor(sum/256)",
+  "full_720p_rasters": 8,
+  "command_exit_codes": "all 0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "source_hashes": {
+    "rtl/recognition/capture_frame_guard.v": "ce45b6baf5943326a8a95725137092336c524aa9e5922e6e4015851a3e05732a",
+    "rtl/recognition/h4e_roi_sampler.v": "aa17ab64397b0f469dc7a63af137279abf38a5fe3f4dfed1a106c582984f3156",
+    "sim/h4e_c3a/tb_h4e_roi_sampler.v": "941f8ea2bb2aff0a2cbdf1887b97c4fae1c79949f64e70007eb6abd37655373a",
+    "model/h4e_c3a_reference.py": "ab37e9ba2aa4d16dbbd0ca7168fb61136bc6065672b2a93654a6c2f91abd9fbc",
+    "scripts/run_h4e_c3a.py": "0c5368e5c56308aceb6c0b816761acb50a559b5b5c9045c3d75157f823b1dda2"
+  },
+  "log_note": "Logging path detection corrected after successful simulation; simulation stdout preserved, identical compile commands rerun. RTL, TB, model and result checks unchanged."
+}

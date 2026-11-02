@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "base_commit": "009f09b7276afbe962dff4bbcc5fa0324d432d79",
+  "control_cycles": 2542,
+  "chain_cycles": 142635,
+  "frames": 19,
+  "results": 16,
+  "classified_pixels": 37507,
+  "applications": 3,
+  "cancellations": 3,
+  "candidate_events": 5,
+  "unit_cfg_wrap": "65534 -> 65535 -> 0",
+  "candidate_sof_collision": "PASS",
+  "checker_selftest": "PASS",
+  "source": "synthetic",
+  "hardware": "not_tested",
+  "input_hashes": {
+    "control.txt": "fc39e1adf50bc2c9d48ac8dff8c7ee421973a6e3f418a83fae91f64c4cb52f95",
+    "stimulus.txt": "31345ad6f847213ae69bb7451aef0ba965f9e6429dd0290f6644fdb4ebb8f4b8"
+  },
+  "tools": {
+    "iverilog": "Icarus Verilog version 14.0 (devel) ()",
+    "vvp": "Icarus Verilog runtime version 14.0 (devel) ()"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "command_exit_codes": "all 0",
+  "source_hashes": {
+    "rtl/recognition/capture_frame_guard.v": "ce45b6baf5943326a8a95725137092336c524aa9e5922e6e4015851a3e05732a",
+    "rtl/recognition/capture_observation_guard.v": "e34f567addcfb23ade389b5078a503bc89d75529da8aad572555a28b0083aa2b",
+    "rtl/recognition/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "rtl/recognition/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/recognition/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+    "rtl/recognition/h4e_target_packet.v": "4c17e7a3fc84621247868c5f888e10aecfa9f06481d6c9f7aa9e9f54d0440b91",
+    "rtl/recognition/h4e_capture_tracker.v": "8ea0f492c2a39d1963b473a02880bc1bacded3c29e64929b690423ff0cee9603",
+    "rtl/recognition/h4e_roi_sampler.v": "aa17ab64397b0f469dc7a63af137279abf38a5fe3f4dfed1a106c582984f3156",
+    "rtl/recognition/h4e_sampling_tracker.v": "7fdb19e290b43e12c73c477beb2939df534e4622624b9dd76f161f72da001a78",
+    "rtl/recognition/h4e_calibration_candidate.v": "9d2d89e2e517d11ed312f434716eac913cdc063f733440758494f771526e124f",
+    "rtl/recognition/h4e_candidate_tracker.v": "76534118d09d401d6c3d73dfe028f36910529f5206573b6e670594d337681dab",
+    "rtl/recognition/h4e_calibration_control.v": "def4dcc4954cf9688f74c188118aa18b6737e74691654569629a73a54a0c45de",
+    "rtl/recognition/h4e_calibrated_tracker.v": "baa2913a07674d6141616aecfa6c346178663c7d384d20ad9529727b3c4abc14",
+    "sim/h4e_c3c/tb_h4e_control.v": "3b3a8edffd0bbefe5cde14b86031d5520fc295feaa717437daea94d4f2430196",
+    "sim/h4e_c3c/tb_h4e_calibrated_chain.v": "8222bc193e0c4a0808d18b780f3acb47d0add043a6d296ee6e4c267ca1ce7446",
+    "rtl/recognition/h4e_c3c_sources.f": "894e5b83520b9347573032fe0317cf1074e1ea8a01cedef641547f2a460e6207",
+    "sim/h4e_c3c/control_fields.json": "5d19a5833c3b0b54b2915f8245a86ce837bc7e07a1e216f53bc798bad3ea1e9a",
+    "model/h4e_c3c_reference.py": "c03280487eb4daef5560f99413b4c9d3e597a0a32608f5e24d4ac5ace8d0d10e",
+    "model/h4e_c2b_reference.py": "299c7447b64b83a11b055bcbec85394fda6999ff134892c6f6099caee87dd3e2",
+    "model/h4e_c2a_reference.py": "62f50c654725d84ef6a229535abfd12a0afb8924e4d6d18c8e5133590042c472",
+    "scripts/run_h4e_c3c.py": "e1c7da5a41c267a334f6ce02052e79613a88f690e73c4871b3f526c2d7a8b28a",
+    "scripts/run_h4e_c2a.py": "e4d0fe40b63735c47d85878c2721d3326bd300f429b6e90c6e8eb44db4e5e148"
+  }
+}

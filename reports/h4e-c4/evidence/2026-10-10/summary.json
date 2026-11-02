@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "source": "synthetic_only",
+  "frames": 21,
+  "classified_pixels_checked": 91136,
+  "filtered_pixels_checked": 91136,
+  "exact_geometry_frames": 19,
+  "expected_structural_rejects": 2,
+  "format_cases": 28,
+  "format_rejections": 27,
+  "format_720p": "byte count/hash only; not RTL replay",
+  "real_camera_frames": 0,
+  "rtl_720p_replay": "not_run_this_stage",
+  "resource_increment": "0 new FPGA logic/memory; no RTL changes",
+  "source_hashes": {
+    "model/h4e_c4_reference.py": "eb12d4c641c866cab12e1cd33ee675da09e0db508746d9172c2a168ee7f2e726",
+    "scripts/generate_h4e_c4.py": "61482920967cef918e51a60cd1c0b2c63a4cdb706fdb7d8296c9e9c34d4c31d7",
+    "scripts/replay_h4e_rgb.py": "dc748919f12555391fc67da211a198b43df14dd3527059b28a5ed1f8ebeecfe1",
+    "scripts/run_h4e_c4.py": "e665b7832b66ea25aac7dc8977736b1c50a9ea524ba2fd3ab20868db7a15aa54",
+    "sim/h4e_c4/tb_h4e_rgb_replay.v": "6ba0d507a44fa96959b5a72e684c039b02a4b98c44f251d5af65aeff23367c63"
+  },
+  "scenes_detection": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 4,
+    "tn": 2,
+    "positive_frames": 14,
+    "negative_frames": 2,
+    "duplicates_excluded": 1
+  },
+  "metric_selftest": "PASS",
+  "commands_exit_codes": "all 0"
+}

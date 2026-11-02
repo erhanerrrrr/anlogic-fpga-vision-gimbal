@@ -1,0 +1,34 @@
+[
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-g2012",
+    "-s",
+    "tb_h4e_candidate",
+    "-o",
+    "rules.vvp",
+    "h4e_calibration_candidate.v",
+    "h4e_roi_sampler.v",
+    "capture_frame_guard.v",
+    "tb_h4e_candidate.v"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "rules.vvp"
+  ],
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-g2012",
+    "-s",
+    "tb_h4e_roi_sampler",
+    "-o",
+    "sample.vvp",
+    "h4e_calibration_candidate.v",
+    "h4e_roi_sampler.v",
+    "capture_frame_guard.v",
+    "tb_h4e_candidate_sample.v"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "sample.vvp"
+  ]
+]

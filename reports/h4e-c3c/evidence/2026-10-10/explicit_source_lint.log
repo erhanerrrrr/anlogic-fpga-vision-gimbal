@@ -1,0 +1,1 @@
+{"command": ["C:/iverilog/bin/iverilog.exe", "-g2012", "-Wall", "-s", "h4e_calibrated_tracker", "-o", "tmp/c3c_lint.vvp", "-c", "rtl/recognition/h4e_c3c_sources.f"], "exit_code": 0}

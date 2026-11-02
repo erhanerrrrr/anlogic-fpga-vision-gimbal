@@ -1,0 +1,87 @@
+{
+  "total_replay_events": 17,
+  "duplicates_excluded": 1,
+  "unique_events": 16,
+  "structural_failures": 0,
+  "unannotated": 0,
+  "evaluated_frames": 16,
+  "tp": 10,
+  "fp": 0,
+  "fn": 4,
+  "tn": 2,
+  "positive_frames": 14,
+  "negative_frames": 2,
+  "localization": [
+    {
+      "index": 1,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 2,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 3,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 4,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 7,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 9,
+      "bbox_iou": 0.78099173553719,
+      "center_error_px": 2.23606797749979
+    },
+    {
+      "index": 10,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 11,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    },
+    {
+      "index": 12,
+      "bbox_iou": 0.5,
+      "center_error_px": 10.0
+    },
+    {
+      "index": 15,
+      "bbox_iou": 1.0,
+      "center_error_px": 0.0
+    }
+  ],
+  "pixel_frames": 16,
+  "classified_pixels": {
+    "tp": 6652,
+    "fp": 88,
+    "fn": 1752,
+    "tn": 40660,
+    "precision": 0.9869436201780415,
+    "recall": 0.7915278438838649
+  },
+  "filtered_pixels": {
+    "tp": 6488,
+    "fp": 0,
+    "fn": 1916,
+    "tn": 40748,
+    "precision": 1.0,
+    "recall": 0.772013326987149
+  },
+  "false_positive_rate": 0.0,
+  "false_negative_rate": 0.2857142857142857,
+  "pixel_denominator": 49152,
+  "note": "Synthetic geometry or human labels are separate from RTL equivalence. E3/E5 excluded from detection rates and counted explicitly; repeat observations excluded. TP presence does not imply correct localization."
+}

@@ -1,0 +1,10 @@
+{
+  "scripts/run_h4e_c3c_td.py": "52049783d4ac2478d2b287bd2396d49c46b4ac45499fd4909af4510ce87768eb",
+  "docs/stages/H4E-C3c.md": "cef0cee8ca16e5a024617b69e5ea370d0a52eb46c704e06d5d3b68b812321091",
+  "reports/h4e-c3c/acceptance.md": "8863c86a35fa18659a5be6e9d16ffb27398926ce9c503f29e9ffd562e50dc393",
+  "tests/fixtures/h4e_c3c/candidates.csv": "e54f323392a947955d4762ddaa12f34c4e2fa4f801f7187a07d0775b0c455136",
+  "tests/fixtures/h4e_c3c/configs.csv": "61422da83d137bed906ef545fb485aac2750607e9149cbecb7ff7459aff18975",
+  "tests/fixtures/h4e_c3c/controls.csv": "45e51f7b501f9f0e0bf59c49bdd19f855a864ba68dd9a9c8dbba568af4d88b5a",
+  "tests/fixtures/h4e_c3c/frames.json": "393735565850b6cb117664f8e56a58a070b07cf19834b40344f6fe63a3b78688",
+  "tests/fixtures/h4e_c3c/results.csv": "213f5e65a153c9cca4ad373b06d0425db58c6991b196b81e88bf56d266ab9d8d"
+}

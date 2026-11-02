@@ -1,0 +1,33 @@
+standard
+***Report Model: h4e_c2a_synth_top Device: PH1P35MDG324***
+
+IO Statistics
+#IO                        75
+  #input                   42
+  #output                  33
+  #inout                    0
+
+Gate Statistics
+#Basic gates              400
+  #and                     12
+  #nand                     0
+  #or                       0
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                      3
+  #bufif1                   0
+  #MX21                     0
+  #FADD                     0
+  #DFF                    385
+  #LATCH                    0
+#MACRO_MUX                118
+
+Report Hierarchy Area:
++----------------------------------------------------+
+|Instance |Module            |gates  |seq    |macros |
++----------------------------------------------------+
+|top      |h4e_c2a_synth_top |15     |385    |0      |
+|  dut    |h4e_target_packet |0      |193    |0      |
++----------------------------------------------------+

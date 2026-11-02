@@ -1,0 +1,3 @@
+index,latency,new_observation,target_valid,frame_id,capture_epoch,cfg_id,target_id,area,cx,cy,xmin,xmax,ymin,ymax,reject_reason,peak_slots,component_count
+0,521,1,0,100,7,1,0,0,0,0,0,0,0,0,3,0,0
+1,522,1,1,101,7,1,0,636,25,15,10,41,6,25,0,1,1

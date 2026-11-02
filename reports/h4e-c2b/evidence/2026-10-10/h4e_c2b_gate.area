@@ -1,0 +1,60 @@
+standard
+***Report Model: h4e_c2b_synth_top Device: PH1P35MDG324***
+
+Design Statistics
+#IO                        79   out of    160   49.38%
+  #input                   45
+  #output                  34
+  #inout                    0
+#lut                     2020
+  #lut1                     4
+  #lut2                   347
+  #lut3                   372
+  #lut4                   273
+  #lut5                   430
+  #lut6                   594
+#reg                     1896
+  #slice reg             1896   out of  42432    4.47%
+  #pad reg                  0
+
+Utilization Statistics
+#slice*                  1519   out of  21216    7.16%
+  #used ram                96
+    #dram lut              96
+    #shifter lut            0
+  #used logic            1423
+    #with luts*          1147
+    #with adder           134
+    #reg only*            142
+#f7mux                     14   out of  10608    0.13%
+#f8mux                      0   out of   5304    0.00%
+#eram                       5   out of    108    4.63%
+  #eram20k                  5
+  #fifo20k                  0
+#dsp                        0   out of     40    0.00%
+#ddr_byte                   0   out of     12    0.00%
+#mipi_tx                    0   out of      2    0.00%
+#mipi_rx                    0   out of      2    0.00%
+#pad                       79   out of    160   49.38%
+#pll                        0   out of      6    0.00%
+#gclk                       0   out of     32    0.00%
+#lclk                       0   out of     12    0.00%
+#sclk                       0   out of     48    0.00%
+#mlclk                      0   out of      6    0.00%
+#ioclk                      0   out of     18    0.00%
+
+* Note! The LUT and Slice count after Optimize-Gate is not the final value, Run Optimize-place for a more realistic count.
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance       |Module                    |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |ddr     |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+|top            |h4e_c2b_synth_top         |1147      |134     |1896    |5       |0       |96       |0           |14      |0       |0       |0       |
+|  tracker      |h4e_capture_tracker       |1041      |134     |1712    |5       |0       |96       |0           |0       |0       |0       |0       |
+|    classifier |color_classifier_runtime  |33        |18      |2       |0       |0       |0        |0           |0       |0       |0       |0       |
+|    filter     |mask_majority_3x3         |95        |12      |233     |2       |0       |0        |0           |0       |0       |0       |0       |
+|    ingress    |capture_frame_guard       |120       |0       |233     |0       |0       |0        |0           |0       |0       |0       |0       |
+|    observer   |capture_observation_guard |0         |0       |65      |0       |0       |0        |0           |0       |0       |0       |0       |
+|    packet     |h4e_target_packet         |44        |0       |193     |0       |0       |0        |0           |0       |0       |0       |0       |
+|    region     |h4e_region_select         |749       |104     |962     |3       |0       |96       |0           |0       |0       |0       |0       |
++----------------------------------------------------------------------------------------------------------------------------------------------------+
