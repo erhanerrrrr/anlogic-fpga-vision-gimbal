@@ -1,0 +1,19 @@
+{
+  "stage": "B4d",
+  "date": "2026-10-19",
+  "user_simulation_confirmed": true,
+  "user_visual_confirmed": true,
+  "simulation_run": "build/b4d_native720_latency/run_20261019_222955",
+  "resolution": [1280, 720],
+  "frames": 2,
+  "pixels": 1843200,
+  "pixel_differences": 0,
+  "modelsim_errors": 0,
+  "modelsim_warnings": 0,
+  "peak_fifo_used": 1284,
+  "synthetic_capture_identity": true,
+  "synthetic_latency_measurements": true,
+  "full_board_timing_verified": false,
+  "bit_generated": false,
+  "board_tested": false
+}

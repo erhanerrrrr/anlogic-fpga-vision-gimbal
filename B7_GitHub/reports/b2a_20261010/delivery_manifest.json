@@ -1,0 +1,34 @@
+{
+  "stage": "B2a",
+  "archive_base": "009f09b7276afbe962dff4bbcc5fa0324d432d79",
+  "git_checkout": false,
+  "board_tested": false,
+  "user_run_confirmed": true,
+  "rtl_simulation_passed": true,
+  "standalone_synthesis_passed": true,
+  "exit_code": 0,
+  "source_sha256": {
+    "scripts/check_video_rgb_mask_pair.py": "c1797f3bd0d95ee80466838925d16f2d10fd586975ef977c679669ac135657f0",
+    "model/rgb_mask_reference.py": "6f43b46f62f01593d58e687b9890ca20eaeb86521a75c104a8df23f210f249c5",
+    "b2a_sources.f": "43d5e5767a5155b9227d7c79d7304941dcfec744f7845d862ab6491d4efb4f55",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+    "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf",
+    "sim/tb_rgb_mask_faults.v": "3bb3b242021c36f3a373cf308971d072a55ec2f014e04d9299c95d1ddbdde7a6",
+    "synthesis/rgb_mask_pair_probe.v": "c602bd3169e8d7127b679eae4fe896fcf460b7ad12f40383731e4b041b0ef208",
+    "run_b2a.py": "b6e67170f85d603ef5a047db79734d37b84267162bdeafaa45062be263e3ccd6",
+    "B2a_README.md": "43891b34f917b293e69496a2ccea7430a9a64560c25b0088dcf2f3f93b22a3b0",
+    "scripts/check_rgb_mask_faults.py": "5b13995b3ca931fbabf83c9cdc5c2ee2880396a7a37fcbd5db009e01f76abc87",
+    "scripts/b1_tools.py": "d31bb4c61358d7586f6b99524fe2a861381c1cdfa7d493beb0d839f6e1957573",
+    "synthesis/check_rgb_mask_pair_synthesis.py": "b8e610a7b835bf5104afa6bc1f3216691682e34b84d3e3b44f8953b56e9e8622",
+    "synthesis/td_runner.py": "0e2fd291fdd2a346322e88f4eef7f39e1a01ce2fef7524aa761374c27df08a8b",
+    "synthesis/check_video_display_synthesis.py": "b8daa07716a3bd06bcb7fb8f2d61d2684f4ad0e88db49e25e728eb193b5b9517"
+  },
+  "build_paths": {
+    "pairing": "build\\rgb_mask_pair\\run_20261010_224804",
+    "faults": "build\\rgb_mask_faults\\run_20261010_225031",
+    "synthesis": "build\\rgb_mask_pair_synthesis\\run_20261010_224814"
+  },
+  "user_confirmation_date": "2026-10-12"
+}

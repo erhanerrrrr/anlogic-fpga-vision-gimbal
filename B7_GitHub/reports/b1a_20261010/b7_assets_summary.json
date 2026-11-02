@@ -1,0 +1,25 @@
+{
+  "stage": "B7 asset readback only",
+  "passed": true,
+  "video_overlay_verified": false,
+  "synthesis_verified": false,
+  "board_verified": false,
+  "source_sha256": {
+    "anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "osd_char_lib.v": "80269dee8af301d175a0b8ba0b0305149852916a3ed81082349bebc27feac311",
+    "reference.json": "4558fbbe51319e2756056be2f47de97935e480a27533f31ebf5719b13b4b618c",
+    "provenance.json": "9e3f2ef27bc1c4538d7efad2d03bf7031f91b74f94c43729301757a00c026d0b",
+    "tb_osd_assets.v": "ae1ce7dd41d4dbc9624d62697bfcb0589b120d7e7c545bed9808c4c5ee39f73e",
+    "compare_osd_assets.py": "7c880b1bb92b24efbf0e5e488c1d2810b9c237ca969be173b3349b506cb29f79",
+    "check_osd_assets.py": "ac900a78229da8ae60fe6755c7410ae062e48a8fbce6aa80cf0433371c9e42d1",
+    "project_paths.py": "0e36405461b708ccda6b5bf6ec533269cd0a6084224e282a5ef6b141e292ef80"
+  },
+  "logo_addresses": 32768,
+  "font_rows": 4096,
+  "mismatches": 0,
+  "opaque_logo_pixels": 6387,
+  "supported_glyphs": 39,
+  "video_compositor_verified": false,
+  "reference_origin": "Frozen tables parsed from original vendor assets; not an independent logo design.",
+  "checker_selftest_passed": true
+}

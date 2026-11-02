@@ -1,0 +1,62 @@
+[
+  {
+    "cycle": "989",
+    "normalized_keys": "1",
+    "event": "1",
+    "requested_mode": "3",
+    "input_sof": "0",
+    "active_input_mode": "3",
+    "next_frame_mode": "3",
+    "output_sof": "0",
+    "out_mode": "0",
+    "abort": "0"
+  },
+  {
+    "cycle": "990",
+    "normalized_keys": "1",
+    "event": "0",
+    "requested_mode": "0",
+    "input_sof": "1",
+    "active_input_mode": "3",
+    "next_frame_mode": "0",
+    "output_sof": "0",
+    "out_mode": "0",
+    "abort": "0"
+  },
+  {
+    "cycle": "1011",
+    "normalized_keys": "1",
+    "event": "0",
+    "requested_mode": "0",
+    "input_sof": "0",
+    "active_input_mode": "3",
+    "next_frame_mode": "0",
+    "output_sof": "1",
+    "out_mode": "3",
+    "abort": "0"
+  },
+  {
+    "cycle": "1222",
+    "normalized_keys": "0",
+    "event": "0",
+    "requested_mode": "0",
+    "input_sof": "1",
+    "active_input_mode": "0",
+    "next_frame_mode": "0",
+    "output_sof": "0",
+    "out_mode": "0",
+    "abort": "0"
+  },
+  {
+    "cycle": "1243",
+    "normalized_keys": "0",
+    "event": "0",
+    "requested_mode": "0",
+    "input_sof": "0",
+    "active_input_mode": "0",
+    "next_frame_mode": "0",
+    "output_sof": "1",
+    "out_mode": "0",
+    "abort": "0"
+  }
+]

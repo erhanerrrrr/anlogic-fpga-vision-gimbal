@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "source_ids": "synthetic test identities; A must bind real capture buffers",
+  "cases": [
+    {
+      "name": "tiny_zero_blank",
+      "passed": true,
+      "dimensions": [
+        3,
+        3
+      ],
+      "raster": [
+        3,
+        3
+      ],
+      "guard_rows": 0,
+      "threshold": 128,
+      "mode_shift": 0,
+      "modes": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "frames": 6,
+      "pixels": 54,
+      "fifo_peak": 7,
+      "cross_frame_overlap_pixels": 40,
+      "eof_to_output_cycles": 8,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+        "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+        "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+        "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+        "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+        "rtl/video_four_mode_stream.v": "bc490e097a514363c649a4efc89425a58bd69634852c2abd9937ded2cf6b872a",
+        "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+        "rtl/video_frame_mode_stream.v": "31e004ad8d48cbb0dd2db35ba6588d973300f70a8cde9e6a8937b919b5bf138f",
+        "sim/tb_video_frame_mode_stream.v": "654381a5499acb55e41d83a110908aefb564d74d58a3d030acb3540234398ef0"
+      }
+    },
+    {
+      "name": "small_zero_blank",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        16,
+        12
+      ],
+      "guard_rows": 1,
+      "threshold": 128,
+      "mode_shift": 0,
+      "modes": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 105,
+      "eof_to_output_cycles": 21,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+        "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+        "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+        "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+        "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+        "rtl/video_four_mode_stream.v": "bc490e097a514363c649a4efc89425a58bd69634852c2abd9937ded2cf6b872a",
+        "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+        "rtl/video_frame_mode_stream.v": "31e004ad8d48cbb0dd2db35ba6588d973300f70a8cde9e6a8937b919b5bf138f",
+        "sim/tb_video_frame_mode_stream.v": "654381a5499acb55e41d83a110908aefb564d74d58a3d030acb3540234398ef0"
+      }
+    },
+    {
+      "name": "small_blanking",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        23,
+        15
+      ],
+      "guard_rows": 1,
+      "threshold": 128,
+      "mode_shift": 0,
+      "modes": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 0,
+      "eof_to_output_cycles": 21,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+        "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+        "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+        "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+        "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+        "rtl/video_four_mode_stream.v": "bc490e097a514363c649a4efc89425a58bd69634852c2abd9937ded2cf6b872a",
+        "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+        "rtl/video_frame_mode_stream.v": "31e004ad8d48cbb0dd2db35ba6588d973300f70a8cde9e6a8937b919b5bf138f",
+        "sim/tb_video_frame_mode_stream.v": "654381a5499acb55e41d83a110908aefb564d74d58a3d030acb3540234398ef0"
+      }
+    },
+    {
+      "name": "threshold_zero",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        16,
+        12
+      ],
+      "guard_rows": 1,
+      "threshold": 0,
+      "mode_shift": 0,
+      "modes": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 105,
+      "eof_to_output_cycles": 21,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+        "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+        "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+        "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+        "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+        "rtl/video_four_mode_stream.v": "bc490e097a514363c649a4efc89425a58bd69634852c2abd9937ded2cf6b872a",
+        "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+        "rtl/video_frame_mode_stream.v": "31e004ad8d48cbb0dd2db35ba6588d973300f70a8cde9e6a8937b919b5bf138f",
+        "sim/tb_video_frame_mode_stream.v": "654381a5499acb55e41d83a110908aefb564d74d58a3d030acb3540234398ef0"
+      }
+    },
+    {
+      "name": "threshold_max",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        16,
+        12
+      ],
+      "guard_rows": 1,
+      "threshold": 2047,
+      "mode_shift": 0,
+      "modes": [
+        0,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 105,
+      "eof_to_output_cycles": 21,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+        "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+        "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+        "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+        "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+        "rtl/video_four_mode_stream.v": "bc490e097a514363c649a4efc89425a58bd69634852c2abd9937ded2cf6b872a",
+        "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+        "rtl/video_frame_mode_stream.v": "31e004ad8d48cbb0dd2db35ba6588d973300f70a8cde9e6a8937b919b5bf138f",
+        "sim/tb_video_frame_mode_stream.v": "654381a5499acb55e41d83a110908aefb564d74d58a3d030acb3540234398ef0"
+      }
+    }
+  ],
+  "tool_version": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.3c Simulator 2014.09 Sep 20 2014",
+  "negative_checker_passed": true,
+  "source_sha256": {
+    "scripts/check_video_frame_mode.py": "3a3a1c982a40b3f2cf033a2a141742185d547f1c5e4a6fa25cea344bc865d4b7",
+    "model/rgb_mask_reference.py": "6f43b46f62f01593d58e687b9890ca20eaeb86521a75c104a8df23f210f249c5",
+    "model/raw_gray_reference.py": "d7b005b62324bdad7a7828a2e79b46a8dbb4d8f4f31edf76c36ff366d5aad932",
+    "model/edge_stream_reference.py": "a099bad0ef7931bbb3cf9d65b79f72223c497e0535939746b0fef079545e498b",
+    "b3a_sources.f": "20b2940d31a43b8fb0144f155cab318feaaa24be2ec03f39c117f17d39161b77"
+  }
+}

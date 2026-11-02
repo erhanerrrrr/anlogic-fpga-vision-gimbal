@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "source_sha256": {
+    "rtl/video_tracking_text.v": "8bc11792d197e76ac62635446210e2aaa1de90a92b3c8712291c34bcd33f8fda",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "rtl/video_target_osd.v": "624e69c66ad2e80195782c30b776b6acc49339164232dfeeb6d09fa7e582c700",
+    "assets/osd/anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "sim/tb_tracking_text.v": "d8344bb163aa2f1059e2b3a9d13de1fb6d50fa766e7a34057fd31142643b2c7e"
+  },
+  "logo_sha256": "cc319419dfd29e67542fc85691722164e1fbb71554ed3aefa245d780e3bfd39b",
+  "cases": [
+    {
+      "group": "panels",
+      "name": "unknown",
+      "packet": "08ffffffff",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "off",
+      "packet": "2005dc05dc",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "reacquire",
+      "packet": "2405dc05dc",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "follow",
+      "packet": "2804b00708",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "lost_hold",
+      "packet": "2e01f405dc",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "timeout_hold",
+      "packet": "3105dc09c4",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "fault",
+      "packet": "370000ffff",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "reserved6",
+      "packet": "3805dc05dc",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "reserved7",
+      "packet": "3c05dc05dc",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "zero_commands",
+      "packet": "2800000000",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "max_commands",
+      "packet": "28ffffffff",
+      "dimensions": [
+        976,
+        208
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    },
+    {
+      "group": "native_720p",
+      "name": "follow",
+      "packet": "2804b00708",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "pixel_differences": 0,
+      "logo_differences": 0
+    }
+  ]
+}

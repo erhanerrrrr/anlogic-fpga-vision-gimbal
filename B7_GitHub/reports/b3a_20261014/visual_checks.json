@@ -1,0 +1,38 @@
+[
+  {
+    "frame": 1,
+    "asserted_mode": 0,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  },
+  {
+    "frame": 2,
+    "asserted_mode": 1,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  },
+  {
+    "frame": 3,
+    "asserted_mode": 3,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  },
+  {
+    "frame": 4,
+    "asserted_mode": 2,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  },
+  {
+    "frame": 5,
+    "asserted_mode": 0,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  },
+  {
+    "frame": 6,
+    "asserted_mode": 1,
+    "selected_differences": 0,
+    "candidate_differences": 0
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "stage": "B3g4",
+  "date": "2026-10-17",
+  "simulation_passed": true,
+  "real_h4e_classifier_filter_and_region_tested": true,
+  "testbench_only_internal_mask_tap": true,
+  "synthetic_epoch": true,
+  "real_capture_id_tested": false,
+  "board_tested": false,
+  "bit_generated": false,
+  "user_run_confirmed": true,
+  "user_visual_confirmed": true,
+  "frames": 2,
+  "pixels": 936960,
+  "pixel_differences": 0,
+  "additional_sha256": {
+    "run_b3g4.py": "fcc60ad4d7f4f5afe447655c9c04d2bd7dfb94c5281851e72b02f68603bfedff",
+    "B3g4_README.md": "57f1ced729795a9e1d1a70231df03f7b2d2b3a476e44f960e657dee9fdf50bd0",
+    "b3g2_sources.f": "f2ef7bb5a541ba5073bbe360a7ab4278f4a0b36674aeb2a0deaab47e04228859",
+    "model/target_text_reference.py": "489cbf9a0965012c8e1be7e9440463ea6eef5a6d898c9399d840f29cebb2981a",
+    "model/target_osd_reference.py": "604b9e157d799dcdb31a5e2741d277daadb7aac813c9d329bfff72bcd48cc863",
+    "assets/osd/target_font_5x7.json": "93460f2de16ca72206f71124d289cc38dec3d0810efeebd9be0e6d1b6fc04f48"
+  },
+  "build_path": "build\\b3g4_real_result_stream\\run_20261017_202435"
+}

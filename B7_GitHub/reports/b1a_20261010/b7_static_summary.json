@@ -1,0 +1,327 @@
+{
+  "stage": "B7 standalone static OSD, 384x240",
+  "passed": true,
+  "cases": [
+    {
+      "width": 384,
+      "height": 240,
+      "layout": 0,
+      "enable": 1,
+      "complete_frames": 5,
+      "complete_pixels": 460800,
+      "reset_prefix_pixels": 200,
+      "pixel_mismatches": 0,
+      "layer_counts_per_frame": [
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2357,
+          "5": 203,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2333,
+          "5": 227,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2327,
+          "5": 233,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2334,
+          "5": 226,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2357,
+          "5": 203,
+          "6": 33
+        }
+      ],
+      "layers": "0 background,1 logo,2 title panel,3 title glyph,4 label panel,5 label glyph,6 cross",
+      "real_four_mode_pipeline_connected": false,
+      "passed": true,
+      "name": "normal"
+    },
+    {
+      "width": 384,
+      "height": 240,
+      "layout": 0,
+      "enable": 1,
+      "complete_frames": 5,
+      "complete_pixels": 460800,
+      "reset_prefix_pixels": 200,
+      "pixel_mismatches": 0,
+      "layer_counts_per_frame": [
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2357,
+          "5": 203,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2333,
+          "5": 227,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2327,
+          "5": 233,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2334,
+          "5": 226,
+          "6": 33
+        },
+        {
+          "0": 80620,
+          "1": 6387,
+          "2": 2330,
+          "3": 230,
+          "4": 2357,
+          "5": 203,
+          "6": 33
+        }
+      ],
+      "layers": "0 background,1 logo,2 title panel,3 title glyph,4 label panel,5 label glyph,6 cross",
+      "real_four_mode_pipeline_connected": false,
+      "passed": true,
+      "name": "continuous"
+    },
+    {
+      "width": 384,
+      "height": 240,
+      "layout": 1,
+      "enable": 1,
+      "complete_frames": 5,
+      "complete_pixels": 460800,
+      "reset_prefix_pixels": 200,
+      "pixel_mismatches": 0,
+      "layer_counts_per_frame": [
+        {
+          "0": 90258,
+          "1": 1085,
+          "2": 563,
+          "3": 77,
+          "4": 127,
+          "5": 33,
+          "6": 17
+        },
+        {
+          "0": 90258,
+          "1": 1085,
+          "2": 563,
+          "3": 77,
+          "4": 127,
+          "5": 33,
+          "6": 17
+        },
+        {
+          "0": 90258,
+          "1": 1085,
+          "2": 563,
+          "3": 77,
+          "4": 127,
+          "5": 33,
+          "6": 17
+        },
+        {
+          "0": 90258,
+          "1": 1085,
+          "2": 563,
+          "3": 77,
+          "4": 127,
+          "5": 33,
+          "6": 17
+        },
+        {
+          "0": 90258,
+          "1": 1085,
+          "2": 563,
+          "3": 77,
+          "4": 127,
+          "5": 33,
+          "6": 17
+        }
+      ],
+      "layers": "0 background,1 logo,2 title panel,3 title glyph,4 label panel,5 label glyph,6 cross",
+      "real_four_mode_pipeline_connected": false,
+      "passed": true,
+      "name": "clipped"
+    },
+    {
+      "width": 384,
+      "height": 240,
+      "layout": 2,
+      "enable": 1,
+      "complete_frames": 5,
+      "complete_pixels": 460800,
+      "reset_prefix_pixels": 200,
+      "pixel_mismatches": 0,
+      "layer_counts_per_frame": [
+        {
+          "0": 83931,
+          "1": 5666,
+          "2": 0,
+          "3": 0,
+          "4": 2331,
+          "5": 199,
+          "6": 33
+        },
+        {
+          "0": 83931,
+          "1": 5666,
+          "2": 0,
+          "3": 0,
+          "4": 2307,
+          "5": 223,
+          "6": 33
+        },
+        {
+          "0": 83931,
+          "1": 5666,
+          "2": 0,
+          "3": 0,
+          "4": 2301,
+          "5": 229,
+          "6": 33
+        },
+        {
+          "0": 83931,
+          "1": 5666,
+          "2": 0,
+          "3": 0,
+          "4": 2308,
+          "5": 222,
+          "6": 33
+        },
+        {
+          "0": 83931,
+          "1": 5666,
+          "2": 0,
+          "3": 0,
+          "4": 2331,
+          "5": 199,
+          "6": 33
+        }
+      ],
+      "layers": "0 background,1 logo,2 title panel,3 title glyph,4 label panel,5 label glyph,6 cross",
+      "real_four_mode_pipeline_connected": false,
+      "passed": true,
+      "name": "overlap"
+    },
+    {
+      "width": 384,
+      "height": 240,
+      "layout": 0,
+      "enable": 0,
+      "complete_frames": 5,
+      "complete_pixels": 460800,
+      "reset_prefix_pixels": 200,
+      "pixel_mismatches": 0,
+      "layer_counts_per_frame": [
+        {
+          "0": 92160,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "0": 92160,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "0": 92160,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "0": 92160,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        {
+          "0": 92160,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      ],
+      "layers": "0 background,1 logo,2 title panel,3 title glyph,4 label panel,5 label glyph,6 cross",
+      "real_four_mode_pipeline_connected": false,
+      "passed": true,
+      "name": "disabled"
+    }
+  ],
+  "synthesis_verified": false,
+  "720p_verified": false,
+  "four_mode_integration_verified": false,
+  "board_verified": false,
+  "source_sha256": {
+    "anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "osd_char_lib.v": "80269dee8af301d175a0b8ba0b0305149852916a3ed81082349bebc27feac311",
+    "reference.json": "4558fbbe51319e2756056be2f47de97935e480a27533f31ebf5719b13b4b618c",
+    "provenance.json": "9e3f2ef27bc1c4538d7efad2d03bf7031f91b74f94c43729301757a00c026d0b",
+    "video_static_osd.v": "3b5ed68ccfba6063e87bc1de29c6301306faaf36e0d3afbc4277652792d71a64",
+    "tb_video_static_osd.v": "4c8e7e1d7b2c801a5cbb901094ff94912d62386049b8b7417043b0109caa7460",
+    "compare_static_osd.py": "b939a4d9cec6852f2641795f6c1eee4d8fb5bef8c30cc2c11c04703bea89333d",
+    "check_video_static_osd.py": "0af769ae75c344f9cf6f6639a06d6170d21fc19b8cdc7f80b222d06716234bf0",
+    "project_paths.py": "0e36405461b708ccda6b5bf6ec533269cd0a6084224e282a5ef6b141e292ef80"
+  },
+  "checker_selftest_passed": true
+}
