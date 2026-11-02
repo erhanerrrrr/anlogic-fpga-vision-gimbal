@@ -1,0 +1,74 @@
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module h4e_region_select declared here: h4e_region_select.v:5
+FRAME 1 PASS A=0 E=1 peak_slots=0 components=0 max_row_cycles=12 EOF_WAIT=2
+FRAME 2 PASS A=0 E=2 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 3 PASS A=272 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 4 PASS A=289 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 5 PASS A=256 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 6 PASS A=1720 E=0 peak_slots=1 components=2 max_row_cycles=20 EOF_WAIT=2
+FRAME 7 PASS A=900 E=0 peak_slots=1 components=2 max_row_cycles=20 EOF_WAIT=2
+FRAME 8 PASS A=400 E=0 peak_slots=1 components=2 max_row_cycles=20 EOF_WAIT=2
+FRAME 9 PASS A=400 E=0 peak_slots=2 components=2 max_row_cycles=41 EOF_WAIT=2
+FRAME 10 PASS A=682 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 11 PASS A=1320 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 12 PASS A=2700 E=0 peak_slots=1 components=1 max_row_cycles=39 EOF_WAIT=2
+FRAME 13 PASS A=1560 E=0 peak_slots=2 components=1 max_row_cycles=41 EOF_WAIT=2
+FRAME 14 PASS A=2580 E=0 peak_slots=1 components=1 max_row_cycles=39 EOF_WAIT=2
+FRAME 15 PASS A=2541 E=0 peak_slots=29 components=1 max_row_cycles=608 EOF_WAIT=2
+FRAME 16 PASS A=800 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 17 PASS A=400 E=0 peak_slots=1 components=2 max_row_cycles=20 EOF_WAIT=2
+FRAME 18 PASS A=1200 E=0 peak_slots=1 components=2 max_row_cycles=20 EOF_WAIT=2
+FRAME 19 PASS A=10240 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 20 PASS A=0 E=2 peak_slots=16 components=31 max_row_cycles=193 EOF_WAIT=2
+FRAME 21 PASS A=0 E=2 peak_slots=16 components=32 max_row_cycles=193 EOF_WAIT=2
+FRAME 22 PASS A=0 E=2 peak_slots=16 components=33 max_row_cycles=193 EOF_WAIT=2
+FRAME 23 PASS A=0 E=2 peak_slots=16 components=40 max_row_cycles=193 EOF_WAIT=2
+FRAME 24 PASS A=10240 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=2
+FRAME 25 PASS A=0 E=1 peak_slots=0 components=0 max_row_cycles=1 EOF_WAIT=2
+FRAME 26 PASS A=270 E=0 peak_slots=2 components=3 max_row_cycles=41 EOF_WAIT=2
+FRAME 27 PASS A=636 E=0 peak_slots=2 components=3 max_row_cycles=41 EOF_WAIT=2
+FRAME 28 PASS A=812 E=0 peak_slots=3 components=5 max_row_cycles=62 EOF_WAIT=2
+FRAME 29 PASS A=2375 E=0 peak_slots=2 components=2 max_row_cycles=41 EOF_WAIT=2
+FRAME 30 PASS A=1101 E=0 peak_slots=2 components=4 max_row_cycles=41 EOF_WAIT=2
+FRAME 31 PASS A=1032 E=0 peak_slots=2 components=4 max_row_cycles=41 EOF_WAIT=2
+FRAME 32 PASS A=2326 E=0 peak_slots=2 components=3 max_row_cycles=41 EOF_WAIT=2
+FRAME 33 PASS A=2915 E=0 peak_slots=2 components=5 max_row_cycles=60 EOF_WAIT=2
+FRAME 34 PASS A=801 E=0 peak_slots=4 components=8 max_row_cycles=62 EOF_WAIT=2
+FRAME 35 PASS A=2978 E=0 peak_slots=3 components=2 max_row_cycles=58 EOF_WAIT=2
+FRAME 36 PASS A=334 E=0 peak_slots=2 components=2 max_row_cycles=41 EOF_WAIT=2
+FRAME 37 PASS A=0 E=2 peak_slots=2 components=4 max_row_cycles=41 EOF_WAIT=2
+FRAME 38 PASS A=972 E=0 peak_slots=2 components=4 max_row_cycles=41 EOF_WAIT=2
+FRAME 39 PASS A=640 E=0 peak_slots=3 components=5 max_row_cycles=62 EOF_WAIT=2
+FRAME 40 PASS A=1388 E=0 peak_slots=3 components=5 max_row_cycles=62 EOF_WAIT=2
+FRAME 41 PASS A=1308 E=0 peak_slots=2 components=4 max_row_cycles=60 EOF_WAIT=2
+FRAME 42 PASS A=1217 E=0 peak_slots=3 components=6 max_row_cycles=62 EOF_WAIT=2
+FRAME 43 PASS A=1099 E=0 peak_slots=3 components=4 max_row_cycles=62 EOF_WAIT=2
+FRAME 44 PASS A=997 E=0 peak_slots=2 components=4 max_row_cycles=60 EOF_WAIT=2
+FRAME 45 PASS A=1878 E=0 peak_slots=3 components=6 max_row_cycles=62 EOF_WAIT=2
+FRAME 46 PASS A=864 E=0 peak_slots=2 components=3 max_row_cycles=41 EOF_WAIT=2
+FRAME 47 PASS A=1130 E=0 peak_slots=2 components=3 max_row_cycles=41 EOF_WAIT=2
+FRAME 48 PASS A=662 E=0 peak_slots=2 components=4 max_row_cycles=41 EOF_WAIT=2
+FRAME 49 PASS A=2464 E=0 peak_slots=1 components=3 max_row_cycles=39 EOF_WAIT=2
+FRAME 50 PASS A=0 E=2 peak_slots=27 components=664 max_row_cycles=323 EOF_WAIT=2
+FRAME 51 PASS A=0 E=2 peak_slots=35 components=707 max_row_cycles=555 EOF_WAIT=2
+FRAME 52 PASS A=0 E=2 peak_slots=40 components=478 max_row_cycles=700 EOF_WAIT=2
+FRAME 53 PASS A=1190 E=0 peak_slots=35 components=187 max_row_cycles=757 EOF_WAIT=2
+FRAME 54 PASS A=4821 E=0 peak_slots=35 components=50 max_row_cycles=834 EOF_WAIT=2
+FRAME 55 PASS A=6036 E=0 peak_slots=28 components=12 max_row_cycles=793 EOF_WAIT=2
+FRAME 56 PASS A=7189 E=0 peak_slots=26 components=2 max_row_cycles=712 EOF_WAIT=2
+FRAME 57 PASS A=8140 E=0 peak_slots=17 components=2 max_row_cycles=572 EOF_WAIT=2
+FRAME 58 PASS A=17716 E=0 peak_slots=33 components=1 max_row_cycles=692 EOF_WAIT=2
+FRAME 59 PASS A=8246 E=0 peak_slots=18 components=34 max_row_cycles=377 EOF_WAIT=2
+FRAME 60 PASS A=12156 E=0 peak_slots=18 components=154 max_row_cycles=377 EOF_WAIT=2
+FRAME 61 PASS A=0 E=2 peak_slots=62 components=682 max_row_cycles=1301 EOF_WAIT=2
+FRAME 62 PASS A=9108 E=0 peak_slots=64 components=1 max_row_cycles=1343 EOF_WAIT=2
+FRAME 63 PASS A=12159 E=0 peak_slots=63 components=1 max_row_cycles=1322 EOF_WAIT=2
+FRAME 64 PASS A=0 E=3 peak_slots=0 components=0 max_row_cycles=1 EOF_WAIT=1
+FRAME 65 PASS A=36864 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=21
+FRAME 66 PASS A=0 E=5 peak_slots=63 components=0 max_row_cycles=384 EOF_WAIT=1
+FRAME 67 PASS A=36864 E=0 peak_slots=1 components=1 max_row_cycles=20 EOF_WAIT=21
+FRAME 68 PASS A=0 E=1 peak_slots=0 components=0 max_row_cycles=1 EOF_WAIT=2
+PASS ROW_REGIONS: 68 independent oracle frames; row recycling and capacity/deadline recovery
+tb_regions.v:71: $finish called at 105662200000 (1ps)

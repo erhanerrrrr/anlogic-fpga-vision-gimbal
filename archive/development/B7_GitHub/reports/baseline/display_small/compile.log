@@ -1,0 +1,27 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 14:17:04 on Oct 06,2026
+vlog -work lib src/rgb_to_gray.v src/video_gray.v src/window_3x3.v src/sobel_core.v src/edge_raster.v src/video_edge.v src/video_rgb_edge_align.v src/frame_mode_ctrl.v src/rgb_bypass.v src/video_bypass.v src/video_modes.v src/button_events.v src/button_mode_request.v src/video_modes_buttons.v src/video_static_osd.v src/video_display.v src/tb_video_display.v src/anlogic_logo_rom.v src/osd_char_lib.v 
+-- Compiling module rgb_to_gray
+-- Compiling module video_gray
+-- Compiling module window_3x3
+-- Compiling module sobel_core
+-- Compiling module edge_raster
+-- Compiling module video_edge
+-- Compiling module video_rgb_edge_align
+-- Compiling module frame_mode_ctrl
+-- Compiling module rgb_bypass
+-- Compiling module video_bypass
+-- Compiling module video_modes
+-- Compiling module button_events
+-- Compiling module button_mode_request
+-- Compiling module video_modes_buttons
+-- Compiling module video_static_osd
+-- Compiling module video_display
+-- Compiling module tb_video_display
+-- Compiling module anlogic_logo_rom
+-- Compiling module osd_char_lib
+
+Top level modules:
+	tb_video_display
+End time: 14:17:05 on Oct 06,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

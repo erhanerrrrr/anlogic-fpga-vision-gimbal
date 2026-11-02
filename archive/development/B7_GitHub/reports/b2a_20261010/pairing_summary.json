@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "source_ids": "synthetic test identities; A must bind real capture buffers",
+  "cases": [
+    {
+      "name": "tiny_zero_blank",
+      "passed": true,
+      "dimensions": [
+        3,
+        3
+      ],
+      "raster": [
+        3,
+        3
+      ],
+      "guard_rows": 0,
+      "frames": 6,
+      "pixels": 54,
+      "fifo_peak": 7,
+      "cross_frame_overlap_pixels": 35,
+      "eof_to_output_cycles": 7,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf"
+      }
+    },
+    {
+      "name": "small_zero_blank",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        16,
+        12
+      ],
+      "guard_rows": 1,
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 100,
+      "eof_to_output_cycles": 20,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf"
+      }
+    },
+    {
+      "name": "small_blanking",
+      "passed": true,
+      "dimensions": [
+        16,
+        12
+      ],
+      "raster": [
+        23,
+        15
+      ],
+      "guard_rows": 1,
+      "frames": 6,
+      "pixels": 1152,
+      "fifo_peak": 20,
+      "cross_frame_overlap_pixels": 0,
+      "eof_to_output_cycles": 20,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf"
+      }
+    },
+    {
+      "name": "native_720p",
+      "passed": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "raster": [
+        1650,
+        750
+      ],
+      "guard_rows": 4,
+      "frames": 6,
+      "pixels": 5529600,
+      "fifo_peak": 1284,
+      "cross_frame_overlap_pixels": 0,
+      "eof_to_output_cycles": 1284,
+      "pixel_differences": 0,
+      "source_sha256": {
+        "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+        "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+        "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+        "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf"
+      }
+    }
+  ],
+  "tool_version": "Model Technology ModelSim ALTERA STARTER EDITION vsim 10.3c Simulator 2014.09 Sep 20 2014",
+  "negative_checker_passed": true,
+  "source_sha256": {
+    "scripts/check_video_rgb_mask_pair.py": "c1797f3bd0d95ee80466838925d16f2d10fd586975ef977c679669ac135657f0",
+    "model/rgb_mask_reference.py": "6f43b46f62f01593d58e687b9890ca20eaeb86521a75c104a8df23f210f249c5",
+    "b2a_sources.f": "43d5e5767a5155b9227d7c79d7304941dcfec744f7845d862ab6491d4efb4f55"
+  }
+}

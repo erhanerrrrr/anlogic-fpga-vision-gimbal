@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-10",
+  "status": "PASS",
+  "scope": "Fresh runs from exported repository, separate from original board acceptance",
+  "tools": {
+    "python": "3.13.7",
+    "numpy": "2.4.4",
+    "scipy": "1.16.1",
+    "iverilog": "Icarus Verilog version 14.0 (devel) ()",
+    "TD": "6.2.168116"
+  },
+  "source_check": {
+    "files": 216,
+    "project_references": 64,
+    "original_RTL_unchanged": true
+  },
+  "unit": {
+    "status": "PASS",
+    "frames": 68,
+    "pixels": 2506752,
+    "rtl_sha256": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66"
+  },
+  "pipeline": {
+    "frames": 13,
+    "summary_lines": [
+      "PASS H4E: 13 complete native 720p frames, 11980801 metadata pixels, 8785920 HDMI mask/ROI pixels; moving rectangle, first/last corners, empty, full frame, held snapshot, sync and DDR",
+      "ROW_ENGINE max_row_cycles=1007 max_EOF_wait=4"
+    ]
+  },
+  "fixtures_equal_to_accepted_run": true,
+  "portable_build": {
+    "status": "PASS",
+    "timing": {
+      "SWNS": 0.415,
+      "STNS": 0.0,
+      "HWNS": 0.02,
+      "HTNS": 0.0,
+      "coverage_percent": 94.06
+    },
+    "resources": {
+      "slice": 12253,
+      "eram": 45,
+      "dsp": 8
+    },
+    "bit_sha256": "21a1ec5b9f65162fa3177c596c5c49445ba8e123209499e6561809dd65b10184",
+    "board_status": "not_board_tested",
+    "timing_scope": "existing SDC only"
+  },
+  "new_physical_warning_lines": [],
+  "warning_scope": "Existing critical clock/PLL/local-routing warnings remain; no full timing signoff",
+  "accepted_bit_sha256": "9d5bfd2f2f3ece15f772d92406762a30fbc06db0af72c16f2b87c461ee007f79",
+  "rebuilt_bit_promoted_to_baseline": false
+}

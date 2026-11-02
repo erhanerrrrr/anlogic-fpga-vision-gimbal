@@ -1,0 +1,68 @@
+[
+  {
+    "epoch": 7,
+    "frame": 4294967294,
+    "cfg": 1,
+    "color": 0,
+    "thresholds": [
+      24,
+      16,
+      16
+    ]
+  },
+  {
+    "epoch": 7,
+    "frame": 4294967295,
+    "cfg": 2,
+    "color": 1,
+    "thresholds": [
+      40,
+      12,
+      10
+    ]
+  },
+  {
+    "epoch": 7,
+    "frame": 0,
+    "cfg": 65535,
+    "color": 2,
+    "thresholds": [
+      24,
+      16,
+      16
+    ]
+  },
+  {
+    "epoch": 8,
+    "frame": 0,
+    "cfg": 0,
+    "color": 3,
+    "thresholds": [
+      24,
+      16,
+      16
+    ]
+  },
+  {
+    "epoch": 8,
+    "frame": 1,
+    "cfg": 1,
+    "color": 0,
+    "thresholds": [
+      24,
+      16,
+      16
+    ]
+  },
+  {
+    "epoch": 8,
+    "frame": 2,
+    "cfg": 1,
+    "color": 0,
+    "thresholds": [
+      24,
+      16,
+      16
+    ]
+  }
+]

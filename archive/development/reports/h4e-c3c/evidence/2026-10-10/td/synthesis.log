@@ -1,0 +1,300 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Program Files/bin/td_commands_prompt.EXE
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     �Ŷ���
+   Run Date =   Sat Oct 10 21:53:59 2026
+
+   Run on =     ZSZ
+============================================================
+RUN-1002 : start command "import_device ph1_35p.db -package PH1P35MDG324 -speed 3"
+ARC-1001 : Device Initialization.
+ARC-1001 : ----------------------------------------------------------------
+ARC-1001 :           OPTION          |          IO           |   SETTING   
+ARC-1001 : ----------------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |        35 IOs         |    gpio    
+ARC-1001 :            jtag           |  P13/P15/L14/R13/T13  |  dedicate  
+ARC-1001 : ----------------------------------------------------------------
+RUN-1003 : finish command "import_device ph1_35p.db -package PH1P35MDG324 -speed 3" in  1.663674s wall, 1.140625s user + 0.093750s system = 1.234375s CPU (74.2%)
+
+RUN-1004 : used memory is 325 MB, reserved memory is 321 MB, peak memory is 325 MB
+RUN-1002 : start command "read_verilog -dir . -top h4e_c3c_synth_top"
+HDL-1007 : analyze verilog file .\h4e_c3c_synth_top.v
+HDL-1007 : analyze verilog file .\h4e_calibration_control.v
+HDL-1007 : elaborate module h4e_c3c_synth_top in .\h4e_c3c_synth_top.v(2)
+HDL-1007 : elaborate module h4e_calibration_control in .\h4e_calibration_control.v(2)
+HDL-1200 : Current top model is h4e_c3c_synth_top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/Program Files/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.002122s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 331, reserved = 321, peak = 331;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 514, Total nets: 1521.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 0.022977s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (136.0%); Memory(MB): used = 331, reserved = 321, peak = 331;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 105, Total nets: 1112.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model h4e_c3c_synth_top
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.001623s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 331, reserved = 321, peak = 331;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 104, Total nets: 893.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.001141s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 331, reserved = 321, peak = 331;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 103, Total nets: 892.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1016 : Merged 26 instances.
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 0.115881s wall, 0.093750s user + 0.015625s system = 0.109375s CPU (94.4%); Memory(MB): used = 302, reserved = 299, peak = 334;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 563, Total nets: 620.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 30 inv instances.
+SYN-1020 : Optimized 51 distributor mux.
+SYN-1016 : Merged 50 instances.
+SYN-1015 : Optimize round 1, 428 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+SYN-3010 : Optimized 1 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 0.197786s wall, 0.203125s user + 0.000000s system = 0.203125s CPU (102.7%); Memory(MB): used = 306, reserved = 306, peak = 334;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 416, Total nets: 473.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.000582s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 306, reserved = 306, peak = 334;
+
+SYN-1079 : finish stage Check Design. Total instances: 416, Total nets: 473.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 0.342611s wall, 0.328125s user + 0.015625s system = 0.343750s CPU (100.3%); Memory(MB): used = 306, reserved = 306, peak = 334;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 416, Total nets: 473.
+
+RUN-1002 : start command "report_area -file h4e_c3c_rtl.area"
+RUN-1001 : standard
+***Report Model: h4e_c3c_synth_top Device: PH1P35MDG324***
+
+IO Statistics
+#IO                        75
+  #input                   43
+  #output                  32
+  #inout                    0
+
+Gate Statistics
+#Basic gates              295
+  #and                     17
+  #nand                     0
+  #or                       9
+  #nor                      0
+  #xor                      0
+  #xnor                     0
+  #buf                      0
+  #not                     10
+  #bufif1                   0
+  #MX21                    53
+  #FADD                     0
+  #DFF                    206
+  #LATCH                    0
+#MACRO_ADD                  1
+#MACRO_EQ                  13
+#MACRO_MUX                105
+
+RUN-1002 : start command "optimize_gate"
+RUN-1001 : Open license file D:/Program Files/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.005203s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 306, reserved = 306, peak = 334;
+
+SYN-1079 : finish stage Map Reg. Total instances: 416, Total nets: 473.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2001 : Map 75 IOs to PADs of model 'h4e_c3c_synth_top'
+SYN-6021 CRITICAL-WARNING: 75 out of 75 logical ports has no user assigned specific location constraint.
+                           This may affect performance or in some cases cause damage to the device!
+                           Bitgen will abort. If insist on bitgen with risk, please 'set_param bitgen unconstr_io on' to avoid bitgen error.
+                           No ADC ports: clk, read_data[31:0], read_word[3:0], rst_n, write_data[31:0], write_enable, write_word[3:0].
+                           No ADC ports will be assigned to random location as below:
+                           clk:K5, read_data[31]:C12, read_data[30]:V12, read_data[29]:P3, read_data[28]:B12, read_data[27]:V11, read_data[26]:J1, read_data[25]:A7, read_data[24]:V8, read_data[23]:K2, 
+                           read_data[22]:D8, read_data[21]:U10, read_data[20]:L3, read_data[19]:C9, read_data[18]:R12, read_data[17]:K3, read_data[16]:B11, read_data[15]:R11, read_data[14]:N4, read_data[13]:E6, 
+                           read_data[12]:U9, read_data[11]:M2, read_data[10]:B7, read_data[9]:T8, read_data[8]:P1, read_data[7]:D5, read_data[6]:N9, read_data[5]:R2, read_data[4]:B9, read_data[3]:R8, 
+                           read_data[2]:N2, read_data[1]:C8, read_data[0]:V7, read_word[3]:P5, read_word[2]:B10, read_word[1]:P10, read_word[0]:T3, rst_n:B4, write_data[31]:V6, write_data[30]:P6, 
+                           write_data[29]:D11, write_data[28]:R6, write_data[27]:L4, write_data[26]:E10, write_data[25]:U5, write_data[24]:U2, write_data[23]:D6, write_data[22]:V4, write_data[21]:V1, write_data[20]:B5, 
+                           write_data[19]:J14, write_data[18]:L16, write_data[17]:K13, write_data[16]:K17, write_data[15]:K15, write_data[14]:H18, write_data[13]:J16, write_data[12]:G17, write_data[11]:H16, write_data[10]:E18, 
+                           write_data[9]:H13, write_data[8]:D18, write_data[7]:G14, write_data[6]:A18, write_data[5]:F13, write_data[4]:E16, write_data[3]:F15, write_data[2]:C18, write_data[1]:D14, write_data[0]:C16, 
+                           write_enable:B14, write_word[3]:A15, write_word[2]:A14, write_word[1]:D13, write_word[0]:C13.
+SYN-1001 : End Stage 2.2 | Map IO; Time: 0.541415s wall, 0.546875s user + 0.000000s system = 0.546875s CPU (101.0%); Memory(MB): used = 310, reserved = 309, peak = 334;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module h4e_c3c_synth_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-1001 : Throwback 3 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 10 instances.
+SYN-2501 : Optimize round 1, 48 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-2501 : Optimize round 1, 0 better
+SYN-2501 : Map 1 macro adder(s)
+SYN-1016 : Merged 1 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 0.097884s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (95.8%); Memory(MB): used = 311, reserved = 309, peak = 334;
+
+SYN-1079 : finish stage Map Macro. Total instances: 631, Total nets: 687.
+
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-2581 : Mapping with K=6, #lut = 134 (4.37), #lev = 5 (4.20), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=6, #lut = 134 (4.37), #lev = 5 (4.20), #crit_level = 0
+SYN-3001 : Logic optimization opt = 0.16 sec, map = 0.01 sec, post map opt = 0.20 sec.
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 0.391844s wall, 0.390625s user + 0.000000s system = 0.390625s CPU (99.7%); Memory(MB): used = 320, reserved = 309, peak = 334;
+
+SYN-1001 : Packing model "h4e_c3c_synth_top" ...
+SYN-1001 : Stage 2.5 | Pack Gate
+SYN-4010 : Pack lib has 43 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 206 DFF/LATCH to SEQ ...
+SYN-1001 : Remove 1 carry adders
+RUN-1002 : start command "start_timer"
+RUN-1002 : start command "end_timer"
+SYN-4009 : Pack 1 carry chain into lslice
+SYN-1001 : End Stage 2.5 | Pack Gate; Time: 0.030068s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (103.9%); Memory(MB): used = 321, reserved = 309, peak = 334;
+
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |        14736                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          574                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |          206                |
+|     #luts                 |          134                |
+|     #lut1                 |            0                |
+|     #lut1(~A)             |            0                |
+|     #slices               |           16                |
+|     slices percentage     |        0.08%                |
+|     #RAMs                 |            0                |
+|     #DSPs                 |            0                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |            1                |
+|     #insts in MACRO       |           16                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        28.00                |
+| dff(single fanout)->dff   |            0                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+---------------------------------------------------------
+  Clock        |  Period            |  0   |  4   |  5
+---------------------------------------------------------
+  DeriveClock  |  20.000ns (50MHz)  |  32  |  54  |  37
+---------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(123 paths analyzed)
+
+Hierarchical Rent Exponent Report
++--------------------------------------------------------+
+|Inst     |Model  |Rent     |Cell     |Pin     |Term     |
++--------------------------------------------------------+
++--------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 1.101931s wall, 1.078125s user + 0.015625s system = 1.093750s CPU (99.3%); Memory(MB): used = 321, reserved = 309, peak = 334;
+
+RUN-1003 : finish command "optimize_gate" in  1.110487s wall, 1.078125s user + 0.015625s system = 1.093750s CPU (98.5%)
+
+RUN-1004 : used memory is 321 MB, reserved memory is 309 MB, peak memory is 334 MB
+RUN-1002 : start command "report_area -file h4e_c3c_gate.area"
+SYN-4034 : The count of slices with lut is 0.
+SYN-4035 : The count of slices with lut+ripple is 16.
+RUN-1001 : standard
+***Report Model: h4e_c3c_synth_top Device: PH1P35MDG324***
+
+Design Statistics
+#IO                        75   out of    160   46.88%
+  #input                   43
+  #output                  32
+  #inout                    0
+#lut                      150
+  #lut1                     0
+  #lut2                    29
+  #lut3                     7
+  #lut4                    37
+  #lut5                     7
+  #lut6                    70
+#reg                      206
+  #slice reg              206   out of  42432    0.49%
+  #pad reg                  0
+
+Utilization Statistics
+#slice*                   146   out of  21216    0.69%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic             146
+    #with luts*           104
+    #with adder            16
+    #reg only*             26
+#f7mux                      0   out of  10608    0.00%
+#f8mux                      0   out of   5304    0.00%
+#eram                       0   out of    108    0.00%
+  #eram20k                  0
+  #fifo20k                  0
+#dsp                        0   out of     40    0.00%
+#ddr_byte                   0   out of     12    0.00%
+#mipi_tx                    0   out of      2    0.00%
+#mipi_rx                    0   out of      2    0.00%
+#pad                       75   out of    160   46.88%
+#pll                        0   out of      6    0.00%
+#gclk                       0   out of     32    0.00%
+#lclk                       0   out of     12    0.00%
+#sclk                       0   out of     48    0.00%
+#mlclk                      0   out of      6    0.00%
+#ioclk                      0   out of     18    0.00%
+
+* Note! The LUT and Slice count after Optimize-Gate is not the final value, Run Optimize-place for a more realistic count.
+
+RUN-1002 : start command "write_verilog h4e_c3c_gate.v"
+HDL-1201 : write out verilog file h4e_c3c_gate.v
+H4E_C3C_TD_SYNTH_COMPLETE

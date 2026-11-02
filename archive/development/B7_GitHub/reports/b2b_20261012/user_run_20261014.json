@@ -1,0 +1,16 @@
+{
+  "user_run_confirmed": true,
+  "user_confirmation_date": "2026-10-14",
+  "user_image_confirmed": true,
+  "source_hashes_verified": true,
+  "board_tested": false,
+  "runs": {
+    "pairing": "build\\raw_gray\\run_20261014_131636",
+    "faults": "build\\raw_gray_faults\\run_20261014_131548",
+    "stage": "build\\raw_gray_stage\\run_20261014_131541"
+  },
+  "pixels": 5529600,
+  "pixel_differences": 0,
+  "fifo_peak": 1284,
+  "user_image_confirmation_date": "2026-10-14"
+}

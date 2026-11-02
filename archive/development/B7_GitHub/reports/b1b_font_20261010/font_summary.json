@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "rows_checked": 4096,
+  "letter_digit_height": 14,
+  "source_sha256": {
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "sim/tb_target_text_font.v": "efcd8d366142f81a170309137c7a354185f5f1898518119ca5aba9c89be41281",
+    "assets/osd/target_font_5x7.json": "93460f2de16ca72206f71124d289cc38dec3d0810efeebd9be0e6d1b6fc04f48",
+    "scripts/build_target_font.py": "54628e4d5d599143eb11aa050e9e5548da37f0d5c08e8e8a926d22c0b1ca8db8",
+    "scripts/check_target_text_font.py": "09e5dd171572011778c1e8ebb1d5884de0617bc3a3e5e5175326baefdc4f1564",
+    "model/target_text_reference.py": "489cbf9a0965012c8e1be7e9440463ea6eef5a6d898c9399d840f29cebb2981a"
+  }
+}

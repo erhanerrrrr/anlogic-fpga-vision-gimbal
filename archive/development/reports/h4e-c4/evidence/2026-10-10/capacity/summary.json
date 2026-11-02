@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "source_kind": "synthetic",
+  "hardware": "not_tested_by_replay",
+  "width": 512,
+  "height": 32,
+  "frames": 2,
+  "classified_pixels_checked": 32768,
+  "filtered_pixels_checked": 32768,
+  "exact_geometry_frames": 1,
+  "structural_rejects": 1,
+  "unexpected_structural_rejects": 0,
+  "max_post_eof_result_cycles": 522,
+  "quiet_clocks_after_last_result_at_least": 256,
+  "manifest_sha256": "85f3089d1fed029d84210891eff4396ad92c5b7d421c06fb9fe4319f93953f28",
+  "source_hashes": {
+    "rtl/recognition/capture_frame_guard.v": "ce45b6baf5943326a8a95725137092336c524aa9e5922e6e4015851a3e05732a",
+    "rtl/recognition/capture_observation_guard.v": "e34f567addcfb23ade389b5078a503bc89d75529da8aad572555a28b0083aa2b",
+    "rtl/recognition/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "rtl/recognition/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/recognition/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+    "rtl/recognition/h4e_target_packet.v": "4c17e7a3fc84621247868c5f888e10aecfa9f06481d6c9f7aa9e9f54d0440b91",
+    "rtl/recognition/h4e_capture_tracker.v": "8ea0f492c2a39d1963b473a02880bc1bacded3c29e64929b690423ff0cee9603",
+    "sim/h4e_c4/tb_h4e_rgb_replay.v": "6ba0d507a44fa96959b5a72e684c039b02a4b98c44f251d5af65aeff23367c63",
+    "rtl/recognition/h4e_c2b_sources.f": "641b585439c9e2d134a48b601b948bf3c1ff08b792af0b634f78e8f1ad837b85",
+    "model/h4e_c4_reference.py": "eb12d4c641c866cab12e1cd33ee675da09e0db508746d9172c2a168ee7f2e726",
+    "scripts/replay_h4e_rgb.py": "dc748919f12555391fc67da211a198b43df14dd3527059b28a5ed1f8ebeecfe1"
+  },
+  "tools": {
+    "iverilog": "Icarus Verilog version 14.0 (devel) ()",
+    "vvp": "Icarus Verilog runtime version 14.0 (devel) ()"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "commands_exit_codes": "all 0",
+  "wall_seconds": 2.563,
+  "max_runs": 64,
+  "frame_draining": "one complete frame then result+64 quiet clocks; not sensor-rate/CDC/board timing validation",
+  "resource_increment": "FPGA RTL unchanged: 0 new Slice/ERAM/DSP; no synthesis rerun",
+  "temporary_rgb_and_mask_bytes": 163840
+}

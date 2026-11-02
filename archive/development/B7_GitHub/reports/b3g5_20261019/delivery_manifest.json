@@ -1,0 +1,51 @@
+{
+  "stage": "B3g5",
+  "date": "2026-10-19",
+  "simulation_passed": true,
+  "user_run_confirmed": true,
+  "public_mask_port_tested": true,
+  "same_images_as_b3g4": true,
+  "synthetic_epoch": true,
+  "real_capture_id_tested": false,
+  "standalone_synthesis_passed": true,
+  "full_board_timing_verified": false,
+  "board_tested": false,
+  "bit_generated": false,
+  "frames": 2,
+  "pixels": 936960,
+  "pixel_differences": 0,
+  "resources": {
+    "reg": 6850,
+    "lut": 10918,
+    "slice": 7694,
+    "eram20k": 10,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 1.06,
+    "STNS": 0.0,
+    "HWNS": 0.292,
+    "HTNS": 0.0
+  },
+  "warnings": [
+    "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+    "SYN-6021 CRITICAL-WARNING: 128 out of 128 logical ports has no user assigned specific location constraint."
+  ],
+  "synthesis_wrapper_included": true,
+  "previous_probe_path_timing_failure_ns": -0.255,
+  "additional_sha256": {
+    "run_b3g5.py": "76381fac727d262c785e2940b0d16027d87f89a2bcbbe286ebe5c2b4d7e5d844",
+    "B3g5_README.md": "dd6e94f69170f3c833c55b2bc264879043361de9f2725b65a73aa33912eec50a",
+    "b3g2_sources.f": "f2ef7bb5a541ba5073bbe360a7ab4278f4a0b36674aeb2a0deaab47e04228859",
+    "rtl/video_four_mode_stream.v": "ce53c0938621c2952f63a045b35ec6bf978243173121d575fb8faccdfb4b0a1a",
+    "rtl/video_frame_mode_stream.v": "ab4bd3ff9753db09fc0bad999ebcef49cde0182e89399fbda21d4557500519d1",
+    "rtl/video_button_stream.v": "c262765dc7e53aabe6dd0fbcc0bb8146289c001f0d2be6aea2db0d130447a17f",
+    "rtl/video_b3_target_stream.v": "f0d15cb7fad1fa7cc523724fb537bd348e7d7460b4694ce9cd653ecb16ef328c",
+    "sim/tb_b3g5_formal_mask_port.v": "ce01648e02d4845a5940f3b5d2bc210c950fa1ce2c3bf05bac310c35f3e4e4dc",
+    "synthesis/b3g5_region_probe.v": "cf18f18d38b4e6639ea20a115f773cc4f8458611b3eb1425a97945ede8b6a4f7",
+    "synthesis/check_b3g5_region_synthesis.py": "fba697162586d24e943df78db6f7fee7e41bb8e0bbf409a84a53699922351d2b"
+  },
+  "build_path": "build\\b3g5_formal_mask_port\\run_20261019_101800",
+  "synthesis_path": "build\\b3g5_region_synthesis\\run_20261019_105649"
+}

@@ -1,0 +1,58 @@
+{
+  "font_revision": "uniform-5x7-2x",
+  "board_tested": false,
+  "user_image_confirmed": true,
+  "source_sha256": {
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "rtl/video_target_osd.v": "624e69c66ad2e80195782c30b776b6acc49339164232dfeeb6d09fa7e582c700",
+    "assets/osd/anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "rtl/osd_decimal_fields.v": "9a401a9a750467bc03eafe553da32b1bbb27bf951f393d46016553db2f738a27",
+    "rtl/video_result_text.v": "45ef4af84aa7e4ddd17889a434b0d3be867b4339dba1063f1300d579528533d9",
+    "rtl/video_target_info.v": "15ea4ec6e77684ce88fdc22d549c2f5cb824e51cffeabc7bdcdc549154871c8d",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "sim/tb_video_target_info.v": "35ca8d83c3b9021f570c0652ce1d33c1efc5f26c5e67a941dfa9037c48334abb",
+    "sim/tb_osd_decimal_fields.v": "4d6f701e321495d5e9ad4de7679030a88ae1f1b7716495aa31b741ed5a90a43d",
+    "scripts/check_video_target_info.py": "0bba91d1bd8eae97251a79967430ecb6de3d577f38324d9594467ee1250d0309",
+    "scripts/b1_tools.py": "d31bb4c61358d7586f6b99524fe2a861381c1cdfa7d493beb0d839f6e1957573",
+    "model/target_text_reference.py": "489cbf9a0965012c8e1be7e9440463ea6eef5a6d898c9399d840f29cebb2981a",
+    "model/target_osd_reference.py": "604b9e157d799dcdb31a5e2741d277daadb7aac813c9d329bfff72bcd48cc863",
+    "scripts/check_video_target_osd.py": "3e603ba98c877080043a320566992a8d50eef7a8424911784e58bbdc0ace3923",
+    "assets/osd/target_font_5x7.json": "93460f2de16ca72206f71124d289cc38dec3d0810efeebd9be0e6d1b6fc04f48",
+    "scripts/build_target_font.py": "54628e4d5d599143eb11aa050e9e5548da37f0d5c08e8e8a926d22c0b1ca8db8",
+    "synthesis/target_info_probe.v": "ee173352455cebda894f51a22afbb94678021a9ec4ed1bd4a366520182e3b85b",
+    "sim/tb_target_text_font.v": "efcd8d366142f81a170309137c7a354185f5f1898518119ca5aba9c89be41281",
+    "scripts/check_target_text_font.py": "09e5dd171572011778c1e8ebb1d5884de0617bc3a3e5e5175326baefdc4f1564",
+    "sim/tb_target_info_abort.v": "5b6bb1ca983501d4e7bd81063893eea3f171386e8c7b05b3aa5561e8ed26308c",
+    "run_b1b.py": "892d05b9a3b6524dc19a23dd9752105f1fbfc9d0093629cb92c03cadcea5baff",
+    "b1b_sources.f": "82da894e908c07bed298884fcb5c7a28dad46759db973f1a212b18ddd5c4b1ad",
+    "B1b_README.md": "ed4ff4443a48da83e2b2382fe416b8a3166ceec5619c2d6d9c7be0aba080d9be",
+    "synthesis/check_target_info_synthesis.py": "7cd241d6024031b72419f0bf91018f965e0087055fda95f484910f57add3a85e",
+    "scripts/check_target_info_abort.py": "d95abe2eaba48c9e841796efd869d0c042c73f981d6ca94bb3218455c2bc9632"
+  },
+  "resources_before": {
+    "reg": 1754,
+    "eram20k": 0,
+    "dsp": 0,
+    "slice": 3552,
+    "lut": 4476,
+    "latch": 0
+  },
+  "resources_after": {
+    "reg": 1754,
+    "eram20k": 0,
+    "dsp": 0,
+    "slice": 3460,
+    "lut": 4368,
+    "latch": 0
+  },
+  "resource_delta_from_previous_b1b": {
+    "reg": 0,
+    "eram20k": 0,
+    "dsp": 0,
+    "slice": -92,
+    "lut": -108,
+    "latch": 0
+  },
+  "user_confirmation_date": "2026-10-10",
+  "user_confirmation_scope": "Uniform B1b font appearance accepted; no board validation claimed."
+}

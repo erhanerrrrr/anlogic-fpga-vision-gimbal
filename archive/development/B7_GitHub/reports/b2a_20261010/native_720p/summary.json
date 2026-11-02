@@ -1,0 +1,25 @@
+{
+  "name": "native_720p",
+  "passed": true,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "raster": [
+    1650,
+    750
+  ],
+  "guard_rows": 4,
+  "frames": 6,
+  "pixels": 5529600,
+  "fifo_peak": 1284,
+  "cross_frame_overlap_pixels": 0,
+  "eof_to_output_cycles": 1284,
+  "pixel_differences": 0,
+  "source_sha256": {
+    "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+    "sim/tb_video_rgb_mask_pair.v": "91fab70086c18cd19604f6ad171ddd5f4b1e3c07c406a31221c772311a5abdbf"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "frame": 1,
+    "edge_pixels": 7180,
+    "edge_differences": 0,
+    "combined_differences": 0
+  },
+  {
+    "frame": 2,
+    "edge_pixels": 3276,
+    "edge_differences": 0,
+    "combined_differences": 0
+  },
+  {
+    "frame": 3,
+    "edge_pixels": 4,
+    "edge_differences": 0,
+    "combined_differences": 0
+  },
+  {
+    "frame": 4,
+    "edge_pixels": 802766,
+    "edge_differences": 0,
+    "combined_differences": 0
+  },
+  {
+    "frame": 5,
+    "edge_pixels": 0,
+    "edge_differences": 0,
+    "combined_differences": 0
+  },
+  {
+    "frame": 6,
+    "edge_pixels": 81960,
+    "edge_differences": 0,
+    "combined_differences": 0
+  }
+]

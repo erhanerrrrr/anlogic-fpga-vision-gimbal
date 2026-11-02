@@ -1,0 +1,68 @@
+{
+  "source_archive": "HX1P35A_Contest_202606/7_lab_ex_2026_nosoft/lab_ex3_osd_SC500_720P.zip",
+  "archive_sha256": "a66659fb3fe4ea8d3fd3e20f014c34246663889972e379a57bb875269b6581bf",
+  "logo_width": 160,
+  "logo_height": 160,
+  "logo_format": "bit24 opaque, bit23:0 RGB888; addr=y*160+x",
+  "font_format": "16x16; bit15 leftmost; unsupported char transparent",
+  "files": {
+    "anlogic_logo_rom.v": {
+      "zip_entry": "lab_ex3_osd_SC500_720P/lab_ex3_osd/user_source/hdl_source/anlogic_logo_rom.v",
+      "sha256": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+      "role": "unmodified vendor asset RTL"
+    },
+    "osd_char_lib.v": {
+      "zip_entry": "lab_ex3_osd_SC500_720P/lab_ex3_osd/user_source/hdl_source/osd_char_lib.v",
+      "sha256": "80269dee8af301d175a0b8ba0b0305149852916a3ed81082349bebc27feac311",
+      "role": "unmodified vendor asset RTL"
+    },
+    "hdmi_mixer.v": {
+      "zip_entry": "lab_ex3_osd_SC500_720P/lab_ex3_osd/user_source/hdl_source/hdmi_mixer.v",
+      "sha256": "e0b3fa961da8bd91d58175ad57eec38e90cc9295215c854154bc0bf2f2f987c7",
+      "role": "reference only"
+    }
+  },
+  "reference_sha256": "4558fbbe51319e2756056be2f47de97935e480a27533f31ebf5719b13b4b618c",
+  "opaque_logo_pixels": 6387,
+  "supported_characters": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    128,
+    129
+  ]
+}

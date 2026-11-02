@@ -1,0 +1,32 @@
+[
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-V"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "-V"
+  ],
+  [
+    "C:/iverilog/bin\\iverilog.EXE",
+    "-g2012",
+    "-s",
+    "tb_h4e_rgb_replay",
+    "-Ptb_h4e_rgb_replay.W=512",
+    "-Ptb_h4e_rgb_replay.H=32",
+    "-o",
+    "replay.vvp",
+    "capture_frame_guard.v",
+    "capture_observation_guard.v",
+    "color_classifier_runtime.v",
+    "mask_majority_3x3.v",
+    "h4e_region_select.v",
+    "h4e_target_packet.v",
+    "h4e_capture_tracker.v",
+    "tb_h4e_rgb_replay.v"
+  ],
+  [
+    "C:/iverilog/bin\\vvp.EXE",
+    "replay.vvp"
+  ]
+]

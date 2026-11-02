@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "scope": "B3g6 same-clock closed-loop display plus unchanged H4E selector",
+  "wrapper_included": true,
+  "board_tested": false,
+  "board_timing_verified": false,
+  "provisional_clock_mhz": 75,
+  "debounce_cycles": 750000,
+  "source_sha256": {
+    "../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v": "91d9bb3fa7b6fd396a0f1d73877a8cdac74c362f2c3f48a2a8afa826d64b6ab9",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v": "04225a02fad1907bf108b03382d7c4df3f641b1d7e85f9a81fbe67288adb6f4a",
+    "rtl/video_rgb_mask_pair.v": "6c9e7571234bc267793c39964f7469cdf16db4165e78eed0892cf7fd57eaf818",
+    "rtl/rgb_to_gray_lut.v": "dfe1e81e161f132d324359382db060cb8bdd2ed592072e08c62613188fdc4cc2",
+    "rtl/video_raw_gray_stage.v": "d191035d602d5bfb14c3805148d8b7c3a04fab49c6171c795be3d750c9cff7c5",
+    "rtl/window_3x3.v": "4e111600d060cf7fac782ca3d2c48a2c320327741705c2440df1cb2c2fe3972a",
+    "rtl/sobel_core.v": "cbaeab57aeb336198befe0264c7ca031045bea594b155386bac9c09848ee5336",
+    "rtl/video_gray_edge_stream.v": "2c55944784bc57cd5ed3bd2d1789f333a88c659df505f11003ca3ac1b56b1930",
+    "rtl/video_four_mode_stream.v": "ce53c0938621c2952f63a045b35ec6bf978243173121d575fb8faccdfb4b0a1a",
+    "rtl/frame_mode_ctrl.v": "d1a6cb3940dc1ab9ff04e29fb5d06372e0110c7b11fc95f12de56fa192b06fa0",
+    "rtl/video_frame_mode_stream.v": "ab4bd3ff9753db09fc0bad999ebcef49cde0182e89399fbda21d4557500519d1",
+    "rtl/button_events.v": "940134f9682c2b90fabc5c410c0b0ea6147b4f4bd7907113ecc8658e217dbb22",
+    "rtl/button_mode_request.v": "2c11aa0cca4b9396f0944e3bf983d171213e3ee16abfdce648fd971407c7e371",
+    "rtl/video_button_stream.v": "c262765dc7e53aabe6dd0fbcc0bb8146289c001f0d2be6aea2db0d130447a17f",
+    "rtl/video_calibration_roi.v": "c3c178353e39f02fd6ae115cb0d5a23a147be9a964a1106a2e4d3f677868c7c7",
+    "rtl/video_calibration_text.v": "7cea1ff1358dfc625aa5a72125fbdf01ae8b140b6eb97781bbac83daf7b22da9",
+    "rtl/video_tracking_text.v": "8bc11792d197e76ac62635446210e2aaa1de90a92b3c8712291c34bcd33f8fda",
+    "rtl/video_mode_label.v": "676e5c3e2e3a0aa0c9ebd32e1dd9f4118abea3283464a4c6807a17113b6c5d96",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "rtl/video_target_osd.v": "624e69c66ad2e80195782c30b776b6acc49339164232dfeeb6d09fa7e582c700",
+    "assets/osd/anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "rtl/capture_target_gate.v": "27b4d5fcf02fc63ecf50d8fd817e99f692d881852bcb60903bfe1a31e2c6664d",
+    "rtl/osd_decimal_fields.v": "9a401a9a750467bc03eafe553da32b1bbb27bf951f393d46016553db2f738a27",
+    "rtl/video_result_text.v": "45ef4af84aa7e4ddd17889a434b0d3be867b4339dba1063f1300d579528533d9",
+    "rtl/video_target_info.v": "15ea4ec6e77684ce88fdc22d549c2f5cb824e51cffeabc7bdcdc549154871c8d",
+    "rtl/video_b3_target_stream.v": "f0d15cb7fad1fa7cc523724fb537bd348e7d7460b4694ce9cd653ecb16ef328c",
+    "../boards/hx1p35a/h4e/user_source/hdl_source/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+    "rtl/video_b3_h4e_sameclk.v": "e77b07e1625d482561e8c7774f168e22dd180be70dbe179faadab10b7005e3af",
+    "synthesis/b3g6_closed_loop_probe.v": "be86971c0ab0a03652ed2812b961a01c7a7ce790f2be1ccf6d0657dd2ccd1d7c"
+  },
+  "warnings": [
+    "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+    "SYN-6021 CRITICAL-WARNING: 127 out of 127 logical ports has no user assigned specific location constraint."
+  ],
+  "resources": {
+    "reg": 6741,
+    "lut": 11022,
+    "slice": 7751,
+    "eram20k": 10,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 0.371,
+    "STNS": 0.0,
+    "HWNS": 0.292,
+    "HTNS": 0.0
+  },
+  "approx_delta_from_b3g5_different_wrapper": {
+    "reg": -109,
+    "lut": 104,
+    "slice": 57,
+    "eram20k": 0,
+    "dsp": 0,
+    "latch": 0
+  }
+}

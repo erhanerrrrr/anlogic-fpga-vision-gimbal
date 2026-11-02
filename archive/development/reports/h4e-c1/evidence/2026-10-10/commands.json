@@ -1,0 +1,13 @@
+{
+  "unit": [
+    "python -X utf8 boards/hx1p35a/h4e/run.py check",
+    "python -X utf8 boards/hx1p35a/h4e/run.py unit",
+    "python -X utf8 scripts/run_h4e_c1.py --mode development (unit completed; Icarus pipeline interrupted)"
+  ],
+  "pipeline": [
+    "vlib msim_work",
+    "vlog -sv -work msim_work tb_h4e.v <explicit sources in modelsim_compile.log>",
+    "vsim -c -onfinish exit -l modelsim_pipeline.log msim_work.tb_h4e -do \"onerror {quit -code 1}; run -all; quit -code 0\""
+  ],
+  "note": "Manual ModelSim fallback used ASCII temporary directory and copied compiled library. Reproducible runner now supports --pipeline-simulator modelsim using the same source list and a .do macro."
+}

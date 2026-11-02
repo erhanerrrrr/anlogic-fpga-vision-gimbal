@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "timing": {
+    "SWNS": 0.415,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0,
+    "coverage_percent": 94.06
+  },
+  "resources": {
+    "slice": 12253,
+    "eram": 45,
+    "dsp": 8
+  },
+  "bit_sha256": "21a1ec5b9f65162fa3177c596c5c49445ba8e123209499e6561809dd65b10184",
+  "board_status": "not_board_tested",
+  "timing_scope": "existing SDC only"
+}

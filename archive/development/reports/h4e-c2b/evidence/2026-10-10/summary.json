@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "base_commit": "009f09b7276afbe962dff4bbcc5fa0324d432d79",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "tools": {
+    "iverilog": "Icarus Verilog version 14.0 (devel) ()",
+    "vvp": "Icarus Verilog runtime version 14.0 (devel) ()"
+  },
+  "source": "synthetic; not camera capture",
+  "observer_cycles": 49,
+  "input_cycles": 144240,
+  "attempts": 25,
+  "result_events": 15,
+  "new_observations": 13,
+  "accepted_sofs": 23,
+  "new_source_sofs": 19,
+  "classified_pixels_checked": 37906,
+  "frame_aborts": 7,
+  "stream_errors": 4,
+  "last_frame_drain_cycles": 74,
+  "quiet_clocks_after_last_result": 1974,
+  "stimulus_sha256": "301ed41f4e82a0ee3d661d201f40d8ed1cd97ded717bfad91312a48fd3986940",
+  "checker_selftest": "PASS",
+  "hardware": "not_tested",
+  "synthesis": "separate TD report",
+  "command_exit_codes": "all 0"
+}

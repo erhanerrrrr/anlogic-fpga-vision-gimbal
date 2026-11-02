@@ -1,0 +1,49 @@
+{
+  "stage": "B3g2",
+  "date": "2026-10-17",
+  "profile": "strict-same-source-development",
+  "simulation_passed": true,
+  "standalone_synthesis_passed": true,
+  "user_run_confirmed": true,
+  "user_visual_confirmed": true,
+  "user_synthesis_confirmed": true,
+  "real_result_cdc_tested": false,
+  "real_capture_id_tested": false,
+  "full_board_timing_verified": false,
+  "board_tested": false,
+  "bit_generated": false,
+  "frames": 5,
+  "pixels": 2795520,
+  "pixel_differences": 0,
+  "resources": {
+    "reg": 5664,
+    "lut": 9423,
+    "slice": 6603,
+    "eram20k": 7,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 1.131,
+    "STNS": 0.0,
+    "HWNS": 0.292,
+    "HTNS": 0.0
+  },
+  "warnings": [
+    "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+    "SYN-6021 CRITICAL-WARNING: 132 out of 132 logical ports has no user assigned specific location constraint."
+  ],
+  "wrapper_included": true,
+  "other_files_sha256": {
+    "b3g2_sources.f": "f2ef7bb5a541ba5073bbe360a7ab4278f4a0b36674aeb2a0deaab47e04228859",
+    "run_b3g2.py": "fd21852ebad0ab35297b3fdac3ae69a3816702459db854435f327f908afed0cf",
+    "B3g2_README.md": "30d968fb72be0222f33873e11d3227be59cb342678f316fd8bc7c999f65a1000",
+    "scripts/check_b3_target_stream.py": "12f6a32641b3dd164526c913e004ee5b28baf1f55c428ddd0a0cd1d914ca90e9",
+    "synthesis/check_b3_target_synthesis.py": "4b608a508c1799df8feb36529d7d73ab8023ddfa30fae9d1f10e0ca56d19312e",
+    "model/target_text_reference.py": "489cbf9a0965012c8e1be7e9440463ea6eef5a6d898c9399d840f29cebb2981a",
+    "model/target_osd_reference.py": "604b9e157d799dcdb31a5e2741d277daadb7aac813c9d329bfff72bcd48cc863",
+    "assets/osd/target_font_5x7.json": "93460f2de16ca72206f71124d289cc38dec3d0810efeebd9be0e6d1b6fc04f48"
+  },
+  "simulation_path": "build\\b3_target_stream\\run_20261017_192445",
+  "synthesis_path": "build\\b3_target_synthesis\\run_20261017_200121"
+}

@@ -1,0 +1,18 @@
+Reading D:/altera14.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -onfinish stop -wlf osd.wlf -lib <repository>/build/static_osd_sim/run_20261006_174027_887527/lib tb_video_static_osd -gLAYOUT=1 -gENABLE=1 -gROW_BLANKS=1 -gWIDTH=384 -gHEIGHT=240 -do "run.do" 
+# Start time: 17:40:42 on Oct 06,2026
+# Loading <repository>/build/static_osd_sim/run_20261006_174027_887527/lib.tb_video_static_osd
+# Loading <repository>/build/static_osd_sim/run_20261006_174027_887527/lib.video_static_osd
+# Loading <repository>/build/static_osd_sim/run_20261006_174027_887527/lib.anlogic_logo_rom
+# Loading <repository>/build/static_osd_sim/run_20261006_174027_887527/lib.osd_char_lib
+# do run.do
+# Pixels=460800 SOF=5 EOL=1200 EOF=5 Errors=0
+# PASS: static OSD stream timing checks completed.
+# ** Note: $finish    : <repository>/build/static_osd_sim/run_20261006_174027_887527/src/tb_video_static_osd.v(119)
+#    Time: 4623260 ns  Iteration: 1  Instance: /tb_video_static_osd
+# Break in Module tb_video_static_osd at <repository>/build/static_osd_sim/run_20261006_174027_887527/src/tb_video_static_osd.v line 119
+# End time: 17:40:45 on Oct 06,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

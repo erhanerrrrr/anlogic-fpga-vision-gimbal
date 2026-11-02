@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "strict same-source adapter and B1a snapshot unit test",
+  "board_tested": false,
+  "source_sha256": {
+    "rtl/capture_target_gate.v": "27b4d5fcf02fc63ecf50d8fd817e99f692d881852bcb60903bfe1a31e2c6664d",
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "sim/tb_capture_target_gate.v": "0766aae00515eee17f040c1be51356151892c2557e519101a5509ff61a044a4e"
+  }
+}

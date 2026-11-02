@@ -1,0 +1,10 @@
+../boards/hx1p35a/h4e/user_source/hdl_source/color_classifier_runtime.v
+../boards/hx1p35a/h4e/user_source/hdl_source/mask_majority_3x3.v
+rtl/video_rgb_mask_pair.v
+rtl/rgb_to_gray_lut.v
+rtl/video_raw_gray_stage.v
+rtl/video_rgb_mask_raw_gray.v
+rtl/window_3x3.v
+rtl/sobel_core.v
+rtl/video_gray_edge_stream.v
+rtl/video_rgb_mask_edge.v

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "schema",
+    "status": "EXPECTED_REJECTION",
+    "reason": "unknown schema"
+  },
+  {
+    "name": "wrong_entry",
+    "status": "EXPECTED_REJECTION",
+    "reason": "wrong pixel entry or identity profile"
+  },
+  {
+    "name": "display_identity",
+    "status": "EXPECTED_REJECTION",
+    "reason": "wrong pixel entry or identity profile"
+  },
+  {
+    "name": "kind",
+    "status": "EXPECTED_REJECTION",
+    "reason": "source_kind required"
+  },
+  {
+    "name": "boolean_width",
+    "status": "EXPECTED_REJECTION",
+    "reason": "width out of range/type"
+  },
+  {
+    "name": "camera_partial",
+    "status": "EXPECTED_REJECTION",
+    "reason": "camera export must be complete 720p"
+  },
+  {
+    "name": "cfg_range",
+    "status": "EXPECTED_REJECTION",
+    "reason": "cfg_id out of range/type"
+  },
+  {
+    "name": "target_range",
+    "status": "EXPECTED_REJECTION",
+    "reason": "target_id out of range/type"
+  },
+  {
+    "name": "threshold_count",
+    "status": "EXPECTED_REJECTION",
+    "reason": "three thresholds required"
+  },
+  {
+    "name": "threshold_sign",
+    "status": "EXPECTED_REJECTION",
+    "reason": "threshold out of range/type"
+  },
+  {
+    "name": "hblank",
+    "status": "EXPECTED_REJECTION",
+    "reason": "hblank_cycles out of range/type"
+  },
+  {
+    "name": "path_escape",
+    "status": "EXPECTED_REJECTION",
+    "reason": "file escapes dataset or missing"
+  },
+  {
+    "name": "file_missing",
+    "status": "EXPECTED_REJECTION",
+    "reason": "file escapes dataset or missing"
+  },
+  {
+    "name": "checksum",
+    "status": "EXPECTED_REJECTION",
+    "reason": "SHA256 mismatch: red.rgb"
+  },
+  {
+    "name": "truncated",
+    "status": "EXPECTED_REJECTION",
+    "reason": "wrong byte count: truncated.rgb"
+  },
+  {
+    "name": "extra_bytes",
+    "status": "EXPECTED_REJECTION",
+    "reason": "wrong byte count: padding.rgb"
+  },
+  {
+    "name": "bbox_outside",
+    "status": "EXPECTED_REJECTION",
+    "reason": "bbox out of range/type"
+  },
+  {
+    "name": "bbox_inverted",
+    "status": "EXPECTED_REJECTION",
+    "reason": "inverted bbox"
+  },
+  {
+    "name": "presence_type",
+    "status": "EXPECTED_REJECTION",
+    "reason": "target_present must be bool"
+  },
+  {
+    "name": "annotation_provenance",
+    "status": "EXPECTED_REJECTION",
+    "reason": "annotation provenance required"
+  },
+  {
+    "name": "mask_presence",
+    "status": "EXPECTED_REJECTION",
+    "reason": "mask/presence disagreement"
+  },
+  {
+    "name": "mask_values",
+    "status": "EXPECTED_REJECTION",
+    "reason": "mask must contain only 0/1 bytes"
+  },
+  {
+    "name": "no_exposure",
+    "status": "EXPECTED_REJECTION",
+    "reason": "exposure/lighting required, explicit unknown allowed"
+  },
+  {
+    "name": "invalid_structural_reason",
+    "status": "EXPECTED_REJECTION",
+    "reason": "structural expectation is synthetic-only E3/E5"
+  },
+  {
+    "name": "repeat_config_changed",
+    "status": "EXPECTED_REJECTION",
+    "reason": "same source identity changed pixels/config"
+  },
+  {
+    "name": "same_cfg_changed_parameters",
+    "status": "EXPECTED_REJECTION",
+    "reason": "changed parameters need a new cfg_id"
+  },
+  {
+    "name": "720p_format_only",
+    "status": "PASS",
+    "rgb_bytes": 2764800
+  },
+  {
+    "name": "camera_missing_bit",
+    "status": "EXPECTED_REJECTION",
+    "reason": "camera bit_sha256 required"
+  }
+]

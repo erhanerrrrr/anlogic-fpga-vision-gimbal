@@ -1,0 +1,1090 @@
+[
+  {
+    "name": "empty",
+    "expected": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "period": 1650
+  },
+  {
+    "name": "area_255",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "area_272",
+    "expected": [
+      1,
+      0,
+      272,
+      8,
+      23,
+      5,
+      21,
+      15,
+      13,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "area_289",
+    "expected": [
+      1,
+      0,
+      289,
+      8,
+      24,
+      5,
+      21,
+      16,
+      13,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "area_256",
+    "expected": [
+      1,
+      0,
+      256,
+      20,
+      35,
+      20,
+      35,
+      27,
+      27,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "large_plus_remote_small",
+    "expected": [
+      1,
+      0,
+      1720,
+      12,
+      54,
+      8,
+      47,
+      33,
+      27,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "two_large",
+    "expected": [
+      1,
+      0,
+      900,
+      80,
+      109,
+      35,
+      64,
+      94,
+      49,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "equal_area_top_wins",
+    "expected": [
+      1,
+      0,
+      400,
+      80,
+      99,
+      8,
+      27,
+      89,
+      17,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "equal_area_left_wins",
+    "expected": [
+      1,
+      0,
+      400,
+      8,
+      27,
+      8,
+      27,
+      17,
+      17,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "tilted_low_fill",
+    "expected": [
+      1,
+      0,
+      682,
+      18,
+      89,
+      8,
+      69,
+      53,
+      38,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "L_shape",
+    "expected": [
+      1,
+      0,
+      1320,
+      10,
+      94,
+      8,
+      64,
+      52,
+      36,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "hole",
+    "expected": [
+      1,
+      0,
+      2700,
+      10,
+      109,
+      10,
+      64,
+      59,
+      37,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "U_merge",
+    "expected": [
+      1,
+      0,
+      1560,
+      8,
+      89,
+      8,
+      54,
+      48,
+      31,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "split_then_merge",
+    "expected": [
+      1,
+      0,
+      2580,
+      8,
+      99,
+      8,
+      64,
+      53,
+      36,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "many_aliases_merge",
+    "expected": [
+      1,
+      0,
+      2541,
+      5,
+      119,
+      5,
+      59,
+      62,
+      32,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "diagonal_touch",
+    "expected": [
+      1,
+      0,
+      800,
+      5,
+      44,
+      5,
+      44,
+      24,
+      24,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "one_pixel_separation",
+    "expected": [
+      1,
+      0,
+      400,
+      5,
+      24,
+      5,
+      24,
+      14,
+      14,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "frame_edges",
+    "expected": [
+      1,
+      0,
+      1200,
+      0,
+      39,
+      0,
+      29,
+      19,
+      14,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "full",
+    "expected": [
+      1,
+      0,
+      10240,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "label_capacity_31",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      31
+    ],
+    "period": 1650
+  },
+  {
+    "name": "label_capacity_32",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32
+    ],
+    "period": 1650
+  },
+  {
+    "name": "label_capacity_33",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      33
+    ],
+    "period": 1650
+  },
+  {
+    "name": "label_capacity_40",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40
+    ],
+    "period": 1650
+  },
+  {
+    "name": "overflow_recovery",
+    "expected": [
+      1,
+      0,
+      10240,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "clear_after_full",
+    "expected": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_0",
+    "expected": [
+      1,
+      0,
+      270,
+      14,
+      28,
+      2,
+      19,
+      21,
+      10,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_1",
+    "expected": [
+      1,
+      0,
+      636,
+      5,
+      46,
+      25,
+      42,
+      25,
+      33,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_2",
+    "expected": [
+      1,
+      0,
+      812,
+      52,
+      80,
+      50,
+      77,
+      66,
+      63,
+      5
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_3",
+    "expected": [
+      1,
+      0,
+      2375,
+      1,
+      72,
+      30,
+      78,
+      36,
+      54,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_4",
+    "expected": [
+      1,
+      0,
+      1101,
+      42,
+      81,
+      47,
+      79,
+      61,
+      63,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_5",
+    "expected": [
+      1,
+      0,
+      1032,
+      1,
+      31,
+      8,
+      51,
+      16,
+      29,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_6",
+    "expected": [
+      1,
+      0,
+      2326,
+      2,
+      55,
+      33,
+      79,
+      28,
+      56,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_7",
+    "expected": [
+      1,
+      0,
+      2915,
+      2,
+      106,
+      32,
+      74,
+      54,
+      53,
+      5
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_8",
+    "expected": [
+      1,
+      0,
+      801,
+      0,
+      44,
+      57,
+      79,
+      22,
+      68,
+      8
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_9",
+    "expected": [
+      1,
+      0,
+      2978,
+      7,
+      127,
+      28,
+      79,
+      67,
+      53,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_10",
+    "expected": [
+      1,
+      0,
+      334,
+      38,
+      54,
+      16,
+      40,
+      46,
+      28,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_11",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_12",
+    "expected": [
+      1,
+      0,
+      972,
+      16,
+      51,
+      7,
+      33,
+      33,
+      20,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_13",
+    "expected": [
+      1,
+      0,
+      640,
+      108,
+      127,
+      40,
+      71,
+      117,
+      55,
+      5
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_14",
+    "expected": [
+      1,
+      0,
+      1388,
+      41,
+      95,
+      27,
+      62,
+      68,
+      44,
+      5
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_15",
+    "expected": [
+      1,
+      0,
+      1308,
+      36,
+      93,
+      8,
+      47,
+      64,
+      27,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_16",
+    "expected": [
+      1,
+      0,
+      1217,
+      4,
+      75,
+      51,
+      79,
+      39,
+      65,
+      6
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_17",
+    "expected": [
+      1,
+      0,
+      1099,
+      34,
+      87,
+      26,
+      79,
+      60,
+      52,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_18",
+    "expected": [
+      1,
+      0,
+      997,
+      4,
+      55,
+      8,
+      55,
+      29,
+      31,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_19",
+    "expected": [
+      1,
+      0,
+      1878,
+      24,
+      68,
+      22,
+      74,
+      46,
+      48,
+      6
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_20",
+    "expected": [
+      1,
+      0,
+      864,
+      48,
+      83,
+      50,
+      73,
+      65,
+      61,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_21",
+    "expected": [
+      1,
+      0,
+      1130,
+      42,
+      85,
+      30,
+      76,
+      63,
+      53,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_22",
+    "expected": [
+      1,
+      0,
+      662,
+      90,
+      124,
+      52,
+      74,
+      107,
+      63,
+      4
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_rectangles_23",
+    "expected": [
+      1,
+      0,
+      2464,
+      24,
+      107,
+      3,
+      51,
+      65,
+      27,
+      3
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_0",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      664
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_1",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      707
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_2",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      478
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_3",
+    "expected": [
+      1,
+      0,
+      1190,
+      63,
+      127,
+      0,
+      79,
+      95,
+      39,
+      187
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_4",
+    "expected": [
+      1,
+      0,
+      4821,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      50
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_5",
+    "expected": [
+      1,
+      0,
+      6036,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      12
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_6",
+    "expected": [
+      1,
+      0,
+      7189,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "seeded_noise_7",
+    "expected": [
+      1,
+      0,
+      8140,
+      0,
+      127,
+      0,
+      79,
+      63,
+      39,
+      2
+    ],
+    "period": 1650
+  },
+  {
+    "name": "REPAIR_single_component_33_teeth",
+    "expected": [
+      1,
+      0,
+      17716,
+      10,
+      344,
+      10,
+      69,
+      177,
+      39,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "REPAIR_main_plus_33_blobs",
+    "expected": [
+      1,
+      0,
+      8246,
+      10,
+      159,
+      10,
+      64,
+      84,
+      37,
+      34
+    ],
+    "period": 1650
+  },
+  {
+    "name": "recycle_153_small_blobs_plus_main",
+    "expected": [
+      1,
+      0,
+      12156,
+      8,
+      159,
+      8,
+      87,
+      83,
+      47,
+      154
+    ],
+    "period": 1650
+  },
+  {
+    "name": "682_finished_components",
+    "expected": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      682
+    ],
+    "period": 1650
+  },
+  {
+    "name": "64_frontier_branches_merge_to_one",
+    "expected": [
+      1,
+      0,
+      9108,
+      2,
+      381,
+      2,
+      89,
+      191,
+      45,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "split_merge_split_merge_63_runs",
+    "expected": [
+      1,
+      0,
+      12159,
+      2,
+      379,
+      2,
+      69,
+      190,
+      35,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "65_run_capacity_error",
+    "expected": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "period": 1650
+  },
+  {
+    "name": "capacity_recovery",
+    "expected": [
+      1,
+      0,
+      36864,
+      0,
+      383,
+      0,
+      95,
+      191,
+      47,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "insufficient_row_cycles",
+    "expected": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "period": 384
+  },
+  {
+    "name": "deadline_recovery",
+    "expected": [
+      1,
+      0,
+      36864,
+      0,
+      383,
+      0,
+      95,
+      191,
+      47,
+      1
+    ],
+    "period": 1650
+  },
+  {
+    "name": "clear_after_recovery",
+    "expected": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "period": 1650
+  }
+]

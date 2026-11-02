@@ -1,0 +1,26 @@
+{
+  "assets": {
+    "original_run": "run_20261006_122700_809890",
+    "summary": "baseline/assets/summary.json"
+  },
+  "osd_small": {
+    "original_run": "run_20261006_140339_066158",
+    "summary": "baseline/osd_small/summary.json"
+  },
+  "osd_720p": {
+    "original_run": "run_20261006_164025_847959",
+    "summary": "baseline/osd_720p/summary.json"
+  },
+  "display_small": {
+    "original_run": "run_20261006_141704_824166",
+    "summary": "baseline/display_small/summary.json"
+  },
+  "display_720p": {
+    "original_run": "run_20261006_160609_638188",
+    "summary": "baseline/display_720p/summary.json"
+  },
+  "synthesis": {
+    "original_run": "run_20261006_162810_943601",
+    "summary": "baseline/synthesis/synthesis_result.json"
+  }
+}

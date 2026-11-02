@@ -1,0 +1,68 @@
+Reading D:/altera14.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -onfinish stop -wlf display.wlf -lib <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib tb_video_display -gWIDTH=16 -gHEIGHT=12 -gROW_BLANKS=1 -gOSD_ENABLE=0 -do "run.do" 
+# Start time: 14:19:27 on Oct 06,2026
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.tb_video_display
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_display
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_modes_buttons
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.button_mode_request
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.button_events
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_modes
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.frame_mode_ctrl
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_bypass
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.rgb_bypass
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_rgb_edge_align
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_edge
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_gray
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.rgb_to_gray
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.window_3x3
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.sobel_core
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.edge_raster
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.video_static_osd
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.anlogic_logo_rom
+# Loading <original-workspace>/build/video_display_sim/run_20261006_141704_824166/lib.osd_char_lib
+# do run.do
+# Frame 0 source_id=100 SOF latency=61 cycles
+# Display frame 0 SOF latency=63 cycles
+# Frame 0 complete: pixels=192 EOF delay=38 cycles
+# Frame 1 source_id=101 SOF latency=59 cycles
+# Display frame 1 SOF latency=61 cycles
+# Frame 1 complete: pixels=192 EOF delay=38 cycles
+# Frame 2 source_id=102 SOF latency=61 cycles
+# Display frame 2 SOF latency=63 cycles
+# Frame 2 complete: pixels=192 EOF delay=38 cycles
+# Frame 3 source_id=103 SOF latency=59 cycles
+# Display frame 3 SOF latency=61 cycles
+# Frame 3 complete: pixels=192 EOF delay=38 cycles
+# Frame 4 source_id=104 SOF latency=61 cycles
+# Display frame 4 SOF latency=63 cycles
+# Frame 4 complete: pixels=192 EOF delay=38 cycles
+# Frame 5 source_id=105 SOF latency=59 cycles
+# Display frame 5 SOF latency=61 cycles
+# Frame 5 complete: pixels=192 EOF delay=38 cycles
+# Frame 6 source_id=106 SOF latency=61 cycles
+# Display frame 6 SOF latency=63 cycles
+# Frame 6 complete: pixels=192 EOF delay=38 cycles
+# Frame 7 source_id=107 SOF latency=59 cycles
+# Display frame 7 SOF latency=61 cycles
+# Frame 7 complete: pixels=192 EOF delay=38 cycles
+# Frame 8 source_id=108 SOF latency=61 cycles
+# Display frame 8 SOF latency=63 cycles
+# Frame 8 complete: pixels=192 EOF delay=38 cycles
+# Frame 9 source_id=109 SOF latency=59 cycles
+# Display frame 9 SOF latency=61 cycles
+# Frame 9 complete: pixels=192 EOF delay=38 cycles
+# Pixels=1920 SOF=10 EOL=120 EOF=10 BorderPositions=520 Errors=0
+# Display pixels=1920 SOF=10 EOL=120 EOF=10
+# FIFO peak=52 Tag peak=53 Capacity=80
+# Detection pixels=1920 Rejected requests=0
+# Buttons: mode=8 calibrate=1 track=1
+# Reset prefix pixels=22 Async reset checks=1
+# PASS: buttons, video modes and OSD stream checks completed.
+# ** Note: $finish    : <original-workspace>/build/video_display_sim/run_20261006_141704_824166/src/tb_video_display.v(299)
+#    Time: 27380 ns  Iteration: 1  Instance: /tb_video_display
+# Break in Module tb_video_display at <original-workspace>/build/video_display_sim/run_20261006_141704_824166/src/tb_video_display.v line 299
+# End time: 14:19:27 on Oct 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

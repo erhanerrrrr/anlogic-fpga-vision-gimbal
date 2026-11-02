@@ -1,0 +1,8 @@
+BMEAN 1 10
+BMEAN 2 40
+BMEAN 3 210
+BMEAN 4 255
+BMEAN 5 63
+BMEAN 6 116
+C3A_PASS events=6 ignored=1 W=1280 H=720
+tb_h4e_roi_sampler.v:149: $finish called at 73728360000 (1ps)

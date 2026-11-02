@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "device": "PH1P35MDG324",
+  "top": "h4e_c3c_synth_top",
+  "controller_hierarchy": {
+    "logic_lut": 57,
+    "ripple": 16,
+    "seq": 65,
+    "eram": 0,
+    "dsp": 0,
+    "dram_lut": 0,
+    "shifter_lut": 0,
+    "f7mux": 0,
+    "f8mux": 0,
+    "pll": 0,
+    "ddr": 0
+  },
+  "whole_harness_synthesis_slice_estimate": 146,
+  "timing": "not_constrained_not_signed_off",
+  "hardware": "not_tested",
+  "full_board_increment": "requires A integration and place/route; harness is excluded",
+  "command": [
+    "D:\\Program Files\\bin\\td_commands_prompt.EXE",
+    "h4e_c3c_synth.tcl"
+  ],
+  "exit_code": 0,
+  "source_hashes": {
+    "rtl/recognition/h4e_calibration_control.v": "def4dcc4954cf9688f74c188118aa18b6737e74691654569629a73a54a0c45de",
+    "synth/h4e_c3c/h4e_c3c_synth_top.v": "a6505aee22e4b4d56fd858878c036a7127ee9440caf14b78be1b60f5d0290c37",
+    "scripts/h4e_c3c_synth.tcl": "8a645726e492896cab19fb38f56d9a416fc226ab6a4966315b043184bb857975"
+  }
+}

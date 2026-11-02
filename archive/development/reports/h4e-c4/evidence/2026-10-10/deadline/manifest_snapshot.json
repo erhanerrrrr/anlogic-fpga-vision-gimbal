@@ -1,0 +1,69 @@
+{
+  "schema": "h4e-rgb-replay-v1",
+  "source_kind": "synthetic",
+  "seed": 20261010,
+  "width": 64,
+  "height": 48,
+  "entry": "fixed_wb_rgb888_before_gamma_gray_osd",
+  "identity_profile": "capture-v1",
+  "bit_sha256": null,
+  "exposure": "synthetic byte values; no camera exposure",
+  "lighting": "synthetic; no physical light measurement",
+  "frames": [
+    {
+      "name": "deadline_stress",
+      "rgb_file": "deadline_stress.rgb",
+      "rgb_sha256": "590b0d412ef90973d2ad9d9471e133f93aed8eda0775b3a9922ce6a7bc605ade",
+      "frame_id": 100,
+      "epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "thresholds": [
+        24,
+        16,
+        16
+      ],
+      "hblank_cycles": 0,
+      "annotation": {
+        "origin": "synthetic_geometry",
+        "target_present": true,
+        "primary_bbox": [
+          4,
+          6,
+          6,
+          41
+        ],
+        "mask_file": "deadline_stress.mask",
+        "mask_sha256": "bba7376487632affa9124f6273c49cbec440712d8109a1df27661a5381c85514"
+      },
+      "expected_structural_reason": 5
+    },
+    {
+      "name": "recovery",
+      "rgb_file": "recovery.rgb",
+      "rgb_sha256": "2c041314f8439f79219fe2caefb4e5c922f6194ab9f704772f0c15a9f9390b04",
+      "frame_id": 101,
+      "epoch": 7,
+      "cfg_id": 1,
+      "target_id": 0,
+      "thresholds": [
+        24,
+        16,
+        16
+      ],
+      "hblank_cycles": 4096,
+      "annotation": {
+        "origin": "synthetic_geometry",
+        "target_present": true,
+        "primary_bbox": [
+          10,
+          6,
+          41,
+          41
+        ],
+        "mask_file": "recovery.mask",
+        "mask_sha256": "8d9e0229cf4995d7bd02d504f401731e94c012c13f0243230049a500ca2a4a97"
+      }
+    }
+  ]
+}

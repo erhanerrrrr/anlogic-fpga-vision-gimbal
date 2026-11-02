@@ -1,0 +1,19 @@
+# Rebuildable simulation/synthesis products
+/build/
+/test_data/
+__pycache__/
+*.py[cod]
+*.wlf
+transcript
+vsim_stacktrace.vstf
+work/
+modelsim.ini
+# Local environments, editors and archives
+.venv*/
+.vscode/
+.idea/
+*.zip
+*.bit
+*.db
+Thumbs.db
+.DS_Store

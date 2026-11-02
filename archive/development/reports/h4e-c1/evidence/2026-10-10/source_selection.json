@@ -1,0 +1,6 @@
+{
+  "region_selector": "rtl/recognition/h4e_region_select.v",
+  "staging_destination": "user_source/hdl_source/h4e_region_select.v",
+  "sha256": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+  "remaining_sources": "frozen H4E explicit source list from run_pipeline_test.py"
+}

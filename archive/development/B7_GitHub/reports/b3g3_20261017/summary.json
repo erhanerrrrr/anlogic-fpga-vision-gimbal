@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "unchanged H4E C region selector + strict source gate + B1a snapshot",
+  "synthetic_epoch": true,
+  "real_capture_id": false,
+  "board_tested": false,
+  "source_sha256": {
+    "../boards/hx1p35a/h4e/user_source/hdl_source/h4e_region_select.v": "42a540ede64c5f5dc8446aaa0e30fea5fc68693166de4c2e8070443114b93b66",
+    "rtl/capture_target_gate.v": "27b4d5fcf02fc63ecf50d8fd817e99f692d881852bcb60903bfe1a31e2c6664d",
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "sim/tb_b3g3_h4e_result.v": "fb30cba4b8edeef0f57a65193df4b73b6a5a707e0d1b728a107b34c88f0dfba5"
+  }
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "name": "empty",
+    "frame": 1,
+    "area": 0,
+    "reason": 1,
+    "peak_slots": 0,
+    "components": 0,
+    "max_row_cycles": 12,
+    "EOF_wait": 2
+  },
+  {
+    "name": "area_255",
+    "frame": 2,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "area_272",
+    "frame": 3,
+    "area": 272,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "area_289",
+    "frame": 4,
+    "area": 289,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "area_256",
+    "frame": 5,
+    "area": 256,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "large_plus_remote_small",
+    "frame": 6,
+    "area": 1720,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 2,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "two_large",
+    "frame": 7,
+    "area": 900,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 2,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "equal_area_top_wins",
+    "frame": 8,
+    "area": 400,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 2,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "equal_area_left_wins",
+    "frame": 9,
+    "area": 400,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 2,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "tilted_low_fill",
+    "frame": 10,
+    "area": 682,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "L_shape",
+    "frame": 11,
+    "area": 1320,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "hole",
+    "frame": 12,
+    "area": 2700,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 39,
+    "EOF_wait": 2
+  },
+  {
+    "name": "U_merge",
+    "frame": 13,
+    "area": 1560,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 1,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "split_then_merge",
+    "frame": 14,
+    "area": 2580,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 39,
+    "EOF_wait": 2
+  },
+  {
+    "name": "many_aliases_merge",
+    "frame": 15,
+    "area": 2541,
+    "reason": 0,
+    "peak_slots": 29,
+    "components": 1,
+    "max_row_cycles": 608,
+    "EOF_wait": 2
+  },
+  {
+    "name": "diagonal_touch",
+    "frame": 16,
+    "area": 800,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "one_pixel_separation",
+    "frame": 17,
+    "area": 400,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 2,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "frame_edges",
+    "frame": 18,
+    "area": 1200,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 2,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "full",
+    "frame": 19,
+    "area": 10240,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "label_capacity_31",
+    "frame": 20,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 16,
+    "components": 31,
+    "max_row_cycles": 193,
+    "EOF_wait": 2
+  },
+  {
+    "name": "label_capacity_32",
+    "frame": 21,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 16,
+    "components": 32,
+    "max_row_cycles": 193,
+    "EOF_wait": 2
+  },
+  {
+    "name": "label_capacity_33",
+    "frame": 22,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 16,
+    "components": 33,
+    "max_row_cycles": 193,
+    "EOF_wait": 2
+  },
+  {
+    "name": "label_capacity_40",
+    "frame": 23,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 16,
+    "components": 40,
+    "max_row_cycles": 193,
+    "EOF_wait": 2
+  },
+  {
+    "name": "overflow_recovery",
+    "frame": 24,
+    "area": 10240,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 2
+  },
+  {
+    "name": "clear_after_full",
+    "frame": 25,
+    "area": 0,
+    "reason": 1,
+    "peak_slots": 0,
+    "components": 0,
+    "max_row_cycles": 1,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_0",
+    "frame": 26,
+    "area": 270,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 3,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_1",
+    "frame": 27,
+    "area": 636,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 3,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_2",
+    "frame": 28,
+    "area": 812,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 5,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_3",
+    "frame": 29,
+    "area": 2375,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 2,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_4",
+    "frame": 30,
+    "area": 1101,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_5",
+    "frame": 31,
+    "area": 1032,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_6",
+    "frame": 32,
+    "area": 2326,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 3,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_7",
+    "frame": 33,
+    "area": 2915,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 5,
+    "max_row_cycles": 60,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_8",
+    "frame": 34,
+    "area": 801,
+    "reason": 0,
+    "peak_slots": 4,
+    "components": 8,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_9",
+    "frame": 35,
+    "area": 2978,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 2,
+    "max_row_cycles": 58,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_10",
+    "frame": 36,
+    "area": 334,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 2,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_11",
+    "frame": 37,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_12",
+    "frame": 38,
+    "area": 972,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_13",
+    "frame": 39,
+    "area": 640,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 5,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_14",
+    "frame": 40,
+    "area": 1388,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 5,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_15",
+    "frame": 41,
+    "area": 1308,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 60,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_16",
+    "frame": 42,
+    "area": 1217,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 6,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_17",
+    "frame": 43,
+    "area": 1099,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 4,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_18",
+    "frame": 44,
+    "area": 997,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 60,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_19",
+    "frame": 45,
+    "area": 1878,
+    "reason": 0,
+    "peak_slots": 3,
+    "components": 6,
+    "max_row_cycles": 62,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_20",
+    "frame": 46,
+    "area": 864,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 3,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_21",
+    "frame": 47,
+    "area": 1130,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 3,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_22",
+    "frame": 48,
+    "area": 662,
+    "reason": 0,
+    "peak_slots": 2,
+    "components": 4,
+    "max_row_cycles": 41,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_rectangles_23",
+    "frame": 49,
+    "area": 2464,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 3,
+    "max_row_cycles": 39,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_0",
+    "frame": 50,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 27,
+    "components": 664,
+    "max_row_cycles": 323,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_1",
+    "frame": 51,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 35,
+    "components": 707,
+    "max_row_cycles": 555,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_2",
+    "frame": 52,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 40,
+    "components": 478,
+    "max_row_cycles": 700,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_3",
+    "frame": 53,
+    "area": 1190,
+    "reason": 0,
+    "peak_slots": 35,
+    "components": 187,
+    "max_row_cycles": 757,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_4",
+    "frame": 54,
+    "area": 4821,
+    "reason": 0,
+    "peak_slots": 35,
+    "components": 50,
+    "max_row_cycles": 834,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_5",
+    "frame": 55,
+    "area": 6036,
+    "reason": 0,
+    "peak_slots": 28,
+    "components": 12,
+    "max_row_cycles": 793,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_6",
+    "frame": 56,
+    "area": 7189,
+    "reason": 0,
+    "peak_slots": 26,
+    "components": 2,
+    "max_row_cycles": 712,
+    "EOF_wait": 2
+  },
+  {
+    "name": "seeded_noise_7",
+    "frame": 57,
+    "area": 8140,
+    "reason": 0,
+    "peak_slots": 17,
+    "components": 2,
+    "max_row_cycles": 572,
+    "EOF_wait": 2
+  },
+  {
+    "name": "REPAIR_single_component_33_teeth",
+    "frame": 58,
+    "area": 17716,
+    "reason": 0,
+    "peak_slots": 33,
+    "components": 1,
+    "max_row_cycles": 692,
+    "EOF_wait": 2
+  },
+  {
+    "name": "REPAIR_main_plus_33_blobs",
+    "frame": 59,
+    "area": 8246,
+    "reason": 0,
+    "peak_slots": 18,
+    "components": 34,
+    "max_row_cycles": 377,
+    "EOF_wait": 2
+  },
+  {
+    "name": "recycle_153_small_blobs_plus_main",
+    "frame": 60,
+    "area": 12156,
+    "reason": 0,
+    "peak_slots": 18,
+    "components": 154,
+    "max_row_cycles": 377,
+    "EOF_wait": 2
+  },
+  {
+    "name": "682_finished_components",
+    "frame": 61,
+    "area": 0,
+    "reason": 2,
+    "peak_slots": 62,
+    "components": 682,
+    "max_row_cycles": 1301,
+    "EOF_wait": 2
+  },
+  {
+    "name": "64_frontier_branches_merge_to_one",
+    "frame": 62,
+    "area": 9108,
+    "reason": 0,
+    "peak_slots": 64,
+    "components": 1,
+    "max_row_cycles": 1343,
+    "EOF_wait": 2
+  },
+  {
+    "name": "split_merge_split_merge_63_runs",
+    "frame": 63,
+    "area": 12159,
+    "reason": 0,
+    "peak_slots": 63,
+    "components": 1,
+    "max_row_cycles": 1322,
+    "EOF_wait": 2
+  },
+  {
+    "name": "65_run_capacity_error",
+    "frame": 64,
+    "area": 0,
+    "reason": 3,
+    "peak_slots": 0,
+    "components": 0,
+    "max_row_cycles": 1,
+    "EOF_wait": 1
+  },
+  {
+    "name": "capacity_recovery",
+    "frame": 65,
+    "area": 36864,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 21
+  },
+  {
+    "name": "insufficient_row_cycles",
+    "frame": 66,
+    "area": 0,
+    "reason": 5,
+    "peak_slots": 63,
+    "components": 0,
+    "max_row_cycles": 384,
+    "EOF_wait": 1
+  },
+  {
+    "name": "deadline_recovery",
+    "frame": 67,
+    "area": 36864,
+    "reason": 0,
+    "peak_slots": 1,
+    "components": 1,
+    "max_row_cycles": 20,
+    "EOF_wait": 21
+  },
+  {
+    "name": "clear_after_recovery",
+    "frame": 68,
+    "area": 0,
+    "reason": 1,
+    "peak_slots": 0,
+    "components": 0,
+    "max_row_cycles": 1,
+    "EOF_wait": 2
+  }
+]

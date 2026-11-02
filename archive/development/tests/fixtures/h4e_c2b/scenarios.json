@@ -1,0 +1,572 @@
+[
+  {
+    "name": "first_10",
+    "fid": 10,
+    "epoch": 7,
+    "request": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 7509
+  },
+  {
+    "name": "repeat_10_threshold_request",
+    "fid": 10,
+    "epoch": 7,
+    "request": [
+      2,
+      0,
+      80,
+      16,
+      16
+    ],
+    "active": [
+      1,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 0,
+    "input_eof_cycle": 15214
+  },
+  {
+    "name": "new_11_applies_threshold",
+    "fid": 11,
+    "epoch": 7,
+    "request": [
+      2,
+      0,
+      80,
+      16,
+      16
+    ],
+    "active": [
+      2,
+      0,
+      80,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 22919
+  },
+  {
+    "name": "repeat_empty_11",
+    "fid": 11,
+    "epoch": 7,
+    "request": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      2,
+      0,
+      80,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 0,
+    "input_eof_cycle": 30624
+  },
+  {
+    "name": "max_frame_id",
+    "fid": 4294967295,
+    "epoch": 7,
+    "request": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 38329
+  },
+  {
+    "name": "wrapped_frame_id",
+    "fid": 0,
+    "epoch": 7,
+    "request": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 46034
+  },
+  {
+    "name": "revoke_after_eof",
+    "fid": 1,
+    "epoch": 7,
+    "request": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      3,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "revoke",
+    "input_eof_cycle": 53739
+  },
+  {
+    "name": "same_id_new_epoch",
+    "fid": 0,
+    "epoch": 8,
+    "request": [
+      4,
+      1,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      4,
+      1,
+      24,
+      16,
+      16
+    ],
+    "color": 1,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 61255
+  },
+  {
+    "name": "stale_epoch_sof",
+    "fid": 99,
+    "epoch": 7,
+    "request": [
+      99,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      4,
+      1,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "stale"
+  },
+  {
+    "name": "half_row_interruption",
+    "fid": 2,
+    "epoch": 8,
+    "request": [
+      5,
+      2,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      5,
+      2,
+      24,
+      16,
+      16
+    ],
+    "color": 2,
+    "event": 0,
+    "kind": "half_row"
+  },
+  {
+    "name": "same_id_retry_keeps_config",
+    "fid": 2,
+    "epoch": 8,
+    "request": [
+      6,
+      2,
+      80,
+      16,
+      16
+    ],
+    "active": [
+      5,
+      2,
+      24,
+      16,
+      16
+    ],
+    "color": 2,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 70941
+  },
+  {
+    "name": "half_frame_between_rows",
+    "fid": 3,
+    "epoch": 8,
+    "request": [
+      6,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      6,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "half_frame"
+  },
+  {
+    "name": "new_sof_recovers",
+    "fid": 4,
+    "epoch": 8,
+    "request": [
+      7,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      7,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 80591
+  },
+  {
+    "name": "early_eof",
+    "fid": 5,
+    "epoch": 8,
+    "request": [
+      8,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      8,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "early_eof",
+    "input_eof_cycle": 80802
+  },
+  {
+    "name": "after_early_eof",
+    "fid": 6,
+    "epoch": 8,
+    "request": [
+      9,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      9,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 88331
+  },
+  {
+    "name": "missing_sof_ignored",
+    "fid": 7,
+    "epoch": 8,
+    "request": [
+      10,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      9,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "missing_sof"
+  },
+  {
+    "name": "coordinate_jump",
+    "fid": 8,
+    "epoch": 8,
+    "request": [
+      10,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      10,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "bad_coordinate"
+  },
+  {
+    "name": "retry_keeps_color",
+    "fid": 8,
+    "epoch": 8,
+    "request": [
+      11,
+      1,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      10,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 96336
+  },
+  {
+    "name": "reset_during_frame",
+    "fid": 9,
+    "epoch": 8,
+    "request": [
+      11,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      11,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "reset"
+  },
+  {
+    "name": "after_global_reset",
+    "fid": 9,
+    "epoch": 8,
+    "request": [
+      12,
+      1,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      12,
+      1,
+      24,
+      16,
+      16
+    ],
+    "color": 1,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 104058
+  },
+  {
+    "name": "complete_but_superseded",
+    "fid": 10,
+    "epoch": 8,
+    "request": [
+      13,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      13,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "overlap",
+    "input_eof_cycle": 111763
+  },
+  {
+    "name": "new_sof_during_tail",
+    "fid": 11,
+    "epoch": 8,
+    "request": [
+      14,
+      2,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      14,
+      2,
+      24,
+      16,
+      16
+    ],
+    "color": 2,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 119267
+  },
+  {
+    "name": "epoch_change_without_flush",
+    "fid": 12,
+    "epoch": 8,
+    "request": [
+      15,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      15,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 0,
+    "kind": "epoch_only",
+    "input_eof_cycle": 126972
+  },
+  {
+    "name": "same_id_epoch9",
+    "fid": 11,
+    "epoch": 9,
+    "request": [
+      16,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      16,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "input_eof_cycle": 134486
+  },
+  {
+    "name": "final_frame_then_source_stops",
+    "fid": 12,
+    "epoch": 9,
+    "request": [
+      17,
+      0,
+      24,
+      16,
+      16
+    ],
+    "active": [
+      17,
+      0,
+      24,
+      16,
+      16
+    ],
+    "color": 0,
+    "event": 1,
+    "fresh": 1,
+    "kind": "stop",
+    "input_eof_cycle": 142191
+  }
+]

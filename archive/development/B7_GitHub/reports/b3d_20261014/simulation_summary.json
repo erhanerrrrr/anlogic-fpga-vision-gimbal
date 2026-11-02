@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "board_tested": false,
+  "source_sha256": {
+    "rtl/calibration_status_view.v": "e1adaa24fc374e5a8bc02a7fff0976aa90e5110f6ed06a8d84f3aeb4f705c025",
+    "rtl/video_calibration_text.v": "7cea1ff1358dfc625aa5a72125fbdf01ae8b140b6eb97781bbac83daf7b22da9",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "rtl/b1_target_snapshot.v": "2270ca5da0c6b6c5c04f336b3928ec4311bce449f6d388e8e1284c2ac3ef5e28",
+    "rtl/video_target_osd.v": "624e69c66ad2e80195782c30b776b6acc49339164232dfeeb6d09fa7e582c700",
+    "assets/osd/anlogic_logo_rom.v": "37c76680345f17a85632b7835e46a3a197cf75fdd91ca6a970b75f5346e7a9f8",
+    "sim/tb_calibration_status_view.v": "6f3d7159524fc8451830ffabe5fb5008e4a3b9e70b2a7cec10b60dd629ad671b",
+    "sim/tb_calibration_text.v": "6535e5e0a1f49ef636a5b845556f767fb68ff720aca4a2062ce5e732664d8be1",
+    "sim/tb_calibration_c_control.v": "031681d1069edf4c9367f4233bb800036543b03463e15340d643c8608257da2f",
+    "../rtl/recognition/calibration_control.v": "af478b684810a3dfcdf0cbd6cd9676e480b476a98184c938f1023c0b7711c84e"
+  },
+  "cases": [
+    {
+      "group": "panels",
+      "name": "unknown",
+      "packet": "3000000000000",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "idle_h4e_values",
+      "packet": "4000004181010",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "wait_sample",
+      "packet": "4800004181010",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "sample_done_calculating",
+      "packet": "5000004181010",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "computed_pending_old_cfg",
+      "packet": "5a00004181010",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "applied_new_cfg",
+      "packet": "620000ac08070",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "failed_keeps_cfg",
+      "packet": "6d4000ac08070",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "manual_pending",
+      "packet": "5800004181010",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "max_fields",
+      "packet": "6dfffffffffff",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "panels",
+      "name": "zero_fields",
+      "packet": "6000000000000",
+      "dimensions": [
+        976,
+        160
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    },
+    {
+      "group": "native_720p",
+      "name": "applied_new_cfg",
+      "packet": "620000ac08070",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "pixel_differences": 0,
+      "logo_composition_differences": 0
+    }
+  ],
+  "observer_vectors": 53,
+  "real_c_control_passed": true,
+  "reference_logo_sha256": "cc319419dfd29e67542fc85691722164e1fbb71554ed3aefa245d780e3bfd39b"
+}

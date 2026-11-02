@@ -1,0 +1,70 @@
+standard
+***Report Model: video_display_720p_probe_top Device: PH1P35MDG324***
+
+Design Statistics
+#IO                       123   out of    160   76.88%
+  #input                   91
+  #output                  32
+  #inout                    0
+#lut                     4129
+  #lut1                    10
+  #lut2                   799
+  #lut3                   206
+  #lut4                   361
+  #lut5                   472
+  #lut6                  2281
+#reg                      996
+  #slice reg              996   out of  42432    2.35%
+  #pad reg                  0
+
+Utilization Statistics
+#slice*                  3381   out of  21216   15.94%
+  #used ram                24
+    #dram lut              24
+    #shifter lut            0
+  #used logic            3357
+    #with luts*          3057
+    #with adder           201
+    #reg only*             99
+#f7mux                      0   out of  10608    0.00%
+#f8mux                      0   out of   5304    0.00%
+#eram                      28   out of    108   25.93%
+  #eram20k                 28
+  #fifo20k                  0
+#dsp                        6   out of     40   15.00%
+#ddr_byte                   0   out of     12    0.00%
+#mipi_tx                    0   out of      2    0.00%
+#mipi_rx                    0   out of      2    0.00%
+#pad                      123   out of    160   76.88%
+#pll                        0   out of      6    0.00%
+#gclk                       0   out of     32    0.00%
+#lclk                       0   out of     12    0.00%
+#sclk                       0   out of     48    0.00%
+#mlclk                      0   out of      6    0.00%
+#ioclk                      0   out of     18    0.00%
+
+* Note! The LUT and Slice count after Optimize-Gate is not the final value, Run Optimize-place for a more realistic count.
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                     |Module                       |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |ddr     |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                          |video_display_720p_probe_top |3057      |201     |996     |28      |6       |24       |0           |0       |0       |0       |0       |
+|  core                       |video_display                |3001      |201     |996     |28      |6       |24       |0           |0       |0       |0       |0       |
+|    chain                    |video_modes_buttons          |695       |201     |811     |28      |6       |24       |0           |0       |0       |0       |0       |
+|      controls               |button_mode_request          |56        |60      |74      |0       |0       |0        |0           |0       |0       |0       |0       |
+|        keys                 |button_events                |54        |60      |72      |0       |0       |0        |0           |0       |0       |0       |0       |
+|      video                  |video_modes                  |639       |141     |737     |28      |6       |24       |0           |0       |0       |0       |0       |
+|        align                |video_rgb_edge_align         |500       |89      |579     |26      |3       |24       |0           |0       |0       |0       |0       |
+|          edges              |video_edge                   |346       |37      |476     |3       |3       |24       |0           |0       |0       |0       |0       |
+|            gray             |video_gray                   |50        |0       |67      |0       |3       |0        |0           |0       |0       |0       |0       |
+|              pixel_pipeline |rgb_to_gray                  |21        |0       |9       |0       |3       |0        |0           |0       |0       |0       |0       |
+|            raster           |edge_raster                  |90        |12      |122     |1       |0       |24       |0           |0       |0       |0       |0       |
+|            sobel            |sobel_core                   |53        |25      |2       |0       |0       |0        |0           |0       |0       |0       |0       |
+|            windows          |window_3x3                   |126       |0       |231     |2       |0       |0        |0           |0       |0       |0       |0       |
+|        detection_tap        |video_bypass                 |12        |0       |24      |0       |0       |0        |0           |0       |0       |0       |0       |
+|          pixel_pipeline     |rgb_bypass                   |12        |0       |24      |0       |0       |0        |0           |0       |0       |0       |0       |
+|        gray_branch          |rgb_to_gray                  |21        |0       |9       |0       |3       |0        |0           |0       |0       |0       |0       |
+|        modes                |frame_mode_ctrl              |3         |0       |3       |0       |0       |0        |0           |0       |0       |0       |0       |
+|    overlay                  |video_static_osd             |2306      |0       |185     |0       |0       |0        |0           |0       |0       |0       |0       |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+

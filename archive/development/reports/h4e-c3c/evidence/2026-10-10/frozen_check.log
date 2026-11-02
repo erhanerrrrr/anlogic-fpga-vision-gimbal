@@ -1,0 +1,2 @@
+{"command": ["C:\\Users\\\u5f20\u4e01\u4e39\\Documents\\ChatGPT\\fpga\\tmp\\h4e-env\\Scripts\\python.exe", "-X", "utf8", "boards/hx1p35a/h4e/run.py", "check"], "exit_code": 0}
+{"status": "PASS", "source_files": 216, "project_references": 64, "bit_sha256": "9d5bfd2f2f3ece15f772d92406762a30fbc06db0af72c16f2b87c461ee007f79"}

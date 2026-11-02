@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "tracking text + shared font + banked observation wrapper only",
+  "wrapper_included": true,
+  "board_tested": false,
+  "board_timing_verified": false,
+  "provisional_clock_mhz": 75,
+  "source_sha256": {
+    "rtl/video_tracking_text.v": "8bc11792d197e76ac62635446210e2aaa1de90a92b3c8712291c34bcd33f8fda",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "synthesis/tracking_text_probe.v": "8fb12f879be0bd73d347956aa0a595fbd2488a590e0f7d25f3d5f8770f85b25d"
+  },
+  "warnings": [
+    "SYN-6021 CRITICAL-WARNING: 123 out of 123 logical ports has no user assigned specific location constraint."
+  ],
+  "resources": {
+    "reg": 486,
+    "lut": 665,
+    "slice": 448,
+    "eram20k": 0,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 3.877,
+    "STNS": 0.0,
+    "HWNS": 0.981,
+    "HTNS": 0.0
+  }
+}

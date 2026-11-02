@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "warnings": [
+    "SYN-5025 WARNING: Using 0 for all undriven pins and nets",
+    "SYN-6021 CRITICAL-WARNING: 126 out of 126 logical ports has no user assigned specific location constraint."
+  ],
+  "board_constraints_applied": false,
+  "gate_level_simulated": false
+}

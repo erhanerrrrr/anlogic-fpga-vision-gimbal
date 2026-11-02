@@ -1,59 +1,96 @@
-# FPGA 云台：C 颜色识别与定位
+# 基于 FPGA 的双轴视觉跟踪云台
 
-当前完成 S0 软件测试基础及 C1–C10 的C端独立链路：颜色分类、整帧掩膜、面积/框统计、中心结果包、3×3去噪、有效性拒判、来源帧去重、标定采样和阈值按帧生效。最终12帧720p测试及TD综合通过；B显示联调和真实上板验收待完成。人工指定红/绿/蓝之一；多张同色卡的可靠区分仍留作后续增强。
+**2026 FPGA 创新设计赛道 · 安路赛道 · 选题二**  
+基于安路 PH1P35 的实时数字图像处理系统  
+参赛成员：华尔涵、张韶珍、张梓琪
 
-队友接入请先阅读 [A/B交接说明](docs/handoff/C端交接.md)。最终顶层是 `rtl/recognition/rgb_calibrated_result.v`，源文件列表是 `rtl/recognition/c10_sources.f`。首次复现可运行 `python scripts/run_c10.py`；完整阶段回归使用 `python scripts/run_c_acceptance.py --td`。
+以 HX1P35A 开发板为核心，连接 SC500CS 摄像头和双轴舵机云台。FPGA 完成视频采集、图像处理、目标识别、控制与显示，形成从视觉输入到云台动作的完整链路。当前提交版本为 **F3A**。
 
-可直接浏览 [C10验收记录](reports/c10/acceptance.md)及 [2026-10-06固定验收证据](reports/c10/evidence/2026-10-06/README.md)。`generated/`下的大型数据由脚本重建，不纳入Git。
+**[下载源码与 bit](https://github.com/erhanerrrrr/anlogic-fpga-vision-gimbal/releases/latest)** · **[系统设计](docs/ARCHITECTURE.md)** · **[编译与仿真](docs/BUILD.md)** · **[板端操作](docs/OPERATION.md)** · **[验证结果](docs/VALIDATION.md)**
 
-运行：
+## 功能概览
 
-```powershell
-python scripts/run_s0.py
-python scripts/run_c1.py
-python scripts/run_c2.py
-python scripts/run_c2_td.py
-python scripts/run_c3.py
-python scripts/run_c4.py
-python scripts/run_c4_td.py
-python scripts/run_c5.py
-python scripts/run_c5_td.py
-python scripts/run_c6.py
-python scripts/run_c6_td.py
-python scripts/run_c7.py
-python scripts/run_c7_td.py
-python scripts/run_c8.py
-python scripts/run_c8_td.py
-python scripts/run_c9.py
-python scripts/run_c9_td.py
-python scripts/run_c10.py
-python scripts/run_c10_td.py
+| 功能 | 项目实现 |
+| --- | --- |
+| 视频采集与显示 | MIPI 摄像头输入、DDR 帧缓存、1280×720 HDMI 输出 |
+| 图像处理 | 原始画面、灰度、二值化、边缘、颜色掩模、色阶简化等显示模式 |
+| 目标识别 | 红、绿、蓝目标选择；卡片状、近圆形和不规则轮廓分类；识别框与类别叠加 |
+| 双轴跟踪 | 根据目标偏差控制水平和俯仰舵机，支持中心保持、限速限幅、遮挡保持与视野内恢复 |
+| 运动检测 | K3 采集空背景，区分空背景、运动前景和静止前景；黄色前景框与板载声光提示 |
+| 自动曝光 | 根据亮度与高光统计调节摄像头曝光时间和模拟增益 |
+| 延迟可视化 | 显示 CSI 帧起始至 HDMI TX 输入的当前、最小、最大延迟与趋势 |
+| 信息与交互 | 安路 Logo、中心标记、数码管、双色灯、蜂鸣器、按键拨码及 UART 遥测 |
+
+默认演示页保留画面、Logo、中心和识别框；详细参数与延迟图表通过按键切换查看。颜色识别、MOTION、自动曝光和延迟显示集成于同一个 bit。
+
+## 系统结构
+
+```mermaid
+flowchart LR
+    CAM[SC500CS 摄像头] --> RX[MIPI / ISP]
+    RX --> DDR[DDR 帧缓存]
+    DDR --> VIS[颜色与形状识别]
+    VIS --> CTRL[双轴控制]
+    CTRL --> PWM[舵机 PWM]
+    DDR --> MOTION[背景与运动检测]
+    DDR --> OSD[图像处理 / OSD]
+    VIS --> OSD
+    MOTION --> OSD
+    OSD --> HDMI[HDMI 显示]
+    DDR --> AE[亮度统计 / 曝光控制]
+    AE -->|I²C| CAM
 ```
 
-需要 Python 3.7 或更高版本，无第三方 Python 依赖；C1 另需 ModelSim 的 vlib/vlog/vsim 在 PATH。生成物分别在 `reports/s0/generated/` 和 `reports/c1/generated/`，可重建，不提交大型生成物。
+## 查看代码
 
-阶段说明及待确认接口见 [S0](docs/stages/S0.md)。正常测试应退出 0；故意错误自检 `python scripts/run_s0.py --inject-error marker` 应退出 1。
+| 入口 | 内容 |
+| --- | --- |
+| [`src/top/design_top_wrapper.v`](src/top/design_top_wrapper.v) | 系统顶层、模块连接与最终参数 |
+| [`src/vision/`](src/vision/) | 颜色分割、区域定位、形状分类、颜色标定 |
+| [`src/control/`](src/control/) | 跟踪控制、限幅与 PWM |
+| [`src/motion/`](src/motion/) | 背景采集及运动检测 |
+| [`src/exposure/`](src/exposure/) / [`src/timing/`](src/timing/) | 自动曝光 / 帧标记及延迟统计 |
+| [`src/display/`](src/display/) / [`src/io/`](src/io/) | 图像与叠加显示 / 按键及板载外设 |
+| [`platform/`](platform/) / [`constraints/`](constraints/) | 配套接口与 IP / 引脚和时序约束 |
+| [`project/`](project/) / [`tb/`](tb/) / [`tools/`](tools/) | 工程文件 / 仿真用例 / 构建与记录工具 |
 
-S0 软件测试通过不等于 RTL 仿真通过；本地阶段测试不等于 A/B 已确认公共接口或上板通过。
+历史分工与开发版本集中保存在 [`archive/development/`](archive/development/)，不参与 F3A 编译。各阶段提交与作者记录保留，版本关系见[开发记录](docs/history/README.md)。
 
-C1 的接口、延迟、参数与实际 RTL 仿真结果见 [C1 说明](docs/stages/C1.md)。C1 仿真通过不等于 TD 综合或上板通过。
+## 快速复现
 
-C2 的完整流接口、RTL 掩膜图和 TD 检查说明见 [C2 说明](docs/stages/C2.md)，生成物在 `reports/c2/generated/`。TD 早期综合不等于板级时序、布局布线或上板通过。
+器件为 **PH1P35MDG324，速度等级 -3**；发布版本使用 **TangDynasty 6.2.1 Engineer（6.2.168.116）**。辅助脚本使用 Python 3.10 或更高版本。
 
-C3 的原始面积/框、末像素锁存时序和接口说明见 [C3 说明](docs/stages/C3.md)，生成物在 `reports/c3/generated/`。本阶段还没有中心坐标或目标可信度判断。
+```shell
+git clone https://github.com/erhanerrrrr/anlogic-fpga-vision-gimbal.git
+cd anlogic-fpga-vision-gimbal
+python tools/project.py check
+python tools/project.py prepare
+```
 
-C4 新增中心坐标和完整结果包，详见 [C4 说明](docs/stages/C4.md)，生成物在 `reports/c4/generated/`。该阶段隔离模块的有效性仅为 count>0。
+使用 TangDynasty 打开最后一条命令打印的 `.al` 工程，顶层为 `design_top_wrapper`。需要仿真时，将 Icarus Verilog 的 `iverilog` 和 `vvp` 加入 PATH，再运行：
 
-C5 新增3×3多数滤波和完整边界输出，详见 [C5 说明](docs/stages/C5.md)。生成物在 `reports/c5/generated/`；滤波后的面积使用新的独立期望，该阶段隔离模块不含 C6 干扰拒判。
+```shell
+python tools/run_tests.py
+```
 
-C6 新增面积/尺寸/填充率门槛、拒判原因与原始调试字段，详见 [C6 说明](docs/stages/C6.md)，生成物在 `reports/c6/generated/`。近距离同色块仍可能被接受，不能当作通用多目标选择。
+依赖检查、仿真和编译入口均在根目录；无需读取历史分支或修改本机绝对路径。完整操作见[编译说明](docs/BUILD.md)。
 
-C7 验证移动、消失/重现、停帧和复位，抑制连续重复来源帧号的新通知，详见 [C7 说明](docs/stages/C7.md)。生成物在 `reports/c7/generated/`；A需根据新通知判断结果是否新鲜，不能只看保持的有效位。
+## 实现与验证
 
-C8 新增16×16区域的RGB采样与统计，收到请求后在下一新来源帧采集；忙碌请求记录后忽略，不修改识别阈值。详见 [C8 说明](docs/stages/C8.md)，生成物在 `reports/c8/generated/`。样本是否适合标定及参数应用留到C9。
+整理后的源码通过 30 项 HDL 回归、UART 解码检查和完整顶层综合；源代码与 F3A 构建快照核对一致。以下为 **F3A bit 原构建的最终布线结果**：
 
-C9 新增标定有效性、阈值生成、pending/活动参数及新来源帧边界应用；失败保留旧值，人工选色恢复对应默认规则。详见 [C9 说明](docs/stages/C9.md)，生成物在 `reports/c9/generated/`。新顶层自行管理颜色和cfg_id，A/B接入前需按新接口对齐。
+| Slice | ERAM | DSP | Setup WNS | Hold WNS |
+| --- | --- | --- | --- | --- |
+| 18716 / 21216 | 98 / 108 | 18 / 40 | +0.103 ns | +0.020 ns |
 
-C10 用连续12帧720p及中断恢复序列验收最终C端链路，提供实际掩膜图、独立期望、结果与延迟CSV、全阶段回归入口、实物RGB软件分析工具和便携交付包。见 [C10说明](docs/stages/C10.md)及 [A/B交接说明](docs/handoff/C端交接.md)。B显示联调、实物回放及H3/H4上板验收仍待完成。
+功能测试反馈和工具检查分别列于[验证结果](docs/VALIDATION.md)。延迟统计不包含显示器响应与舵机运动时间；时序分析仍有摄像头配置分频时钟及部分外部接口覆盖缺口。当前未据此宣称全接口时序签核或长期运行指标。
 
-全部阶段重跑：`python scripts/run_c_acceptance.py --td`。数据分析工具自检：`python scripts/test_c_capture_analysis.py`。最终验收通过后打包：`python scripts/package_c_delivery.py`。
+## 配置文件与来源
+
+配置文件：[`release/F3A_demo_overlay.bit`](release/F3A_demo_overlay.bit)。本次仓库整理保持原 bit 和算法参数，SHA-256 为：
+
+```text
+bb8485f592b80be51f362e5254c6d1b841f965d23bfc843b12a9e081fae926c6
+```
+
+工程使用开发板配套接口及厂商 IP，原作者和版权说明保留，详见[来源与依赖](THIRD_PARTY.md)。正式参赛技术文档和演示成片将以确认后的文件补充；本页已提供代码审阅、编译和板端操作所需说明。

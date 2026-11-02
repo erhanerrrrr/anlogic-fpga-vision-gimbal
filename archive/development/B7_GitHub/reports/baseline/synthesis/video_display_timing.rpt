@@ -1,0 +1,472 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Tue Oct  6 16:32:55 2026
+
+Top Model           : video_display_720p_probe_top
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 100.00%
+Constraint File     : <original-workspace>/build/video_display_synthesis/run_20261006_162810_943601/video_display_synthesis.sdc;
+Confidence          : Synthesized
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 3 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: 2.197ns, STNS: 0.000ns
+	HWNS: 0.220ns, HTNS: 0.000ns
+	Period Check WNS: 10.533ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       75.002         1079   pixel_clk
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000      6.666                13.333          75.002                11.136          89.799            2.197      0.000            0.220      0.000            0.000             1079               11             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     pixel_clk -> pixel_clk
+Type           :     Self
+From Clock     :     pixel_clk
+To Clock       :     pixel_clk
+Min Period     :     11.136ns
+Fmax           :     89.799MHz
+
+Statistics:
+Max            : SWNS      2.197ns, STNS      0.000ns,         0 Viol Endpoints,      2349 Total Endpoints,    856906 Paths Analyzed
+Min            : HWNS      0.220ns, HTNS      0.000ns,         0 Viol Endpoints,      2349 Total Endpoints,    856906 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 2.197ns
+Begin Point         : core/overlay/logo_addr_first_reg[9].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/overlay/out_rgb_reg[17].d (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_125c
+Budget              : 13.333ns { pixel_clk rising@13.333ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 11.072ns (cell 3.456ns (31%), net 7.616ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT6=8  LUT2=2  LUT4=1 )
+Max Fanout          : 707
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/logo_addr_first_reg[9].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.076    f     0.076          pin: core/overlay/logo_addr_first_reg[9].q
+net (fo=707)                            1.299          1.375          net: core/overlay/logo/I_addr[9],  ../../src/anlogic_logo_rom.v(2)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1621.c
+LUT6                                    0.315    f     1.690       1  pin: core/overlay/out_rgb_b[17]_syn_1621.o
+net (fo=16)                             0.766          2.456          net: core/overlay/out_rgb_b[17]_syn_1622,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1631.a
+LUT6                                    0.315    f     2.771       2  pin: core/overlay/out_rgb_b[17]_syn_1631.o
+net (fo=3)                              0.520          3.291          net: core/overlay/out_rgb_b[17]_syn_1632,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1635.c
+LUT6                                    0.315    f     3.606       3  pin: core/overlay/out_rgb_b[17]_syn_1635.o
+net (fo=1)                              0.448          4.054          net: core/overlay/out_rgb_b[17]_syn_1636,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1638.a
+LUT2                                    0.273    f     4.327       4  pin: core/overlay/out_rgb_b[17]_syn_1638.o
+net (fo=1)                              0.448          4.775          net: core/overlay/out_rgb_b[17]_syn_1639,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1656.a
+LUT6                                    0.315    f     5.090       5  pin: core/overlay/out_rgb_b[17]_syn_1656.o
+net (fo=1)                              0.448          5.538          net: core/overlay/out_rgb_b[17]_syn_1657,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1931.a
+LUT6                                    0.315    f     5.853       6  pin: core/overlay/out_rgb_b[17]_syn_1931.o
+net (fo=251)                            1.161          7.014          net: core/overlay/out_rgb_b[17]_syn_1932,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_2957.b
+LUT2                                    0.273    f     7.287       7  pin: core/overlay/out_rgb_b[17]_syn_2957.o
+net (fo=13)                             0.734          8.021          net: core/overlay/out_rgb_b[17]_syn_2958,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_3661.a
+LUT6                                    0.315    f     8.336       8  pin: core/overlay/out_rgb_b[17]_syn_3661.o
+net (fo=1)                              0.448          8.784          net: core/overlay/out_rgb_b[17]_syn_3662,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_3679.a
+LUT6                                    0.315    f     9.099       9  pin: core/overlay/out_rgb_b[17]_syn_3679.o
+net (fo=1)                              0.448          9.547          net: core/overlay/out_rgb_b[17]_syn_3680,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_3693.a
+LUT6                                    0.315    f     9.862      10  pin: core/overlay/out_rgb_b[17]_syn_3693.o
+net (fo=1)                              0.448         10.310          net: core/overlay/out_rgb_b[17]_syn_3694,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_3695.a
+LUT4                                    0.273    f    10.583      11  pin: core/overlay/out_rgb_b[17]_syn_3695.o
+net (fo=1)                              0.448         11.031          net: core/overlay/out_rgb_b[17],  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_reg[17].d
+SEQ (reg)                               0.041    f    11.072               
+--------------------------------------------------------------------  ---------------
+Arrival                                               11.072               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/out_rgb_reg[17].clk
+capture edge                           13.333    r    13.333               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         13.269               
+clock uncertainty                       0.000         13.269               
+clock pessimism                         0.000         13.269               
+--------------------------------------------------------------------  ---------------
+Required                                              13.269               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.197               
+
+Slack               : 2.197ns
+Begin Point         : core/overlay/logo_addr_first_reg[9].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/overlay/out_rgb_reg[19].d (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_125c
+Budget              : 13.333ns { pixel_clk rising@13.333ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 11.072ns (cell 3.456ns (31%), net 7.616ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT6=8  LUT2=2  LUT5=1 )
+Max Fanout          : 707
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/logo_addr_first_reg[9].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.076    f     0.076          pin: core/overlay/logo_addr_first_reg[9].q
+net (fo=707)                            1.299          1.375          net: core/overlay/logo/I_addr[9],  ../../src/anlogic_logo_rom.v(2)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1621.c
+LUT6                                    0.315    f     1.690       1  pin: core/overlay/out_rgb_b[17]_syn_1621.o
+net (fo=16)                             0.766          2.456          net: core/overlay/out_rgb_b[17]_syn_1622,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1631.a
+LUT6                                    0.315    f     2.771       2  pin: core/overlay/out_rgb_b[17]_syn_1631.o
+net (fo=3)                              0.520          3.291          net: core/overlay/out_rgb_b[17]_syn_1632,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1635.c
+LUT6                                    0.315    f     3.606       3  pin: core/overlay/out_rgb_b[17]_syn_1635.o
+net (fo=1)                              0.448          4.054          net: core/overlay/out_rgb_b[17]_syn_1636,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1638.a
+LUT2                                    0.273    f     4.327       4  pin: core/overlay/out_rgb_b[17]_syn_1638.o
+net (fo=1)                              0.448          4.775          net: core/overlay/out_rgb_b[17]_syn_1639,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1656.a
+LUT6                                    0.315    f     5.090       5  pin: core/overlay/out_rgb_b[17]_syn_1656.o
+net (fo=1)                              0.448          5.538          net: core/overlay/out_rgb_b[17]_syn_1657,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_1931.a
+LUT6                                    0.315    f     5.853       6  pin: core/overlay/out_rgb_b[17]_syn_1931.o
+net (fo=251)                            1.161          7.014          net: core/overlay/out_rgb_b[17]_syn_1932,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_2957.b
+LUT2                                    0.273    f     7.287       7  pin: core/overlay/out_rgb_b[17]_syn_2957.o
+net (fo=13)                             0.734          8.021          net: core/overlay/out_rgb_b[17]_syn_2958,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[19]_syn_22.a
+LUT6                                    0.315    f     8.336       8  pin: core/overlay/out_rgb_b[19]_syn_22.o
+net (fo=1)                              0.448          8.784          net: core/overlay/out_rgb_b[19]_syn_23,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[19]_syn_24.d
+LUT5                                    0.273    f     9.057       9  pin: core/overlay/out_rgb_b[19]_syn_24.o
+net (fo=1)                              0.448          9.505          net: core/overlay/out_rgb_b[19]_syn_25,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[19]_syn_36.a
+LUT6                                    0.315    f     9.820      10  pin: core/overlay/out_rgb_b[19]_syn_36.o
+net (fo=1)                              0.448         10.268          net: core/overlay/out_rgb_b[19]_syn_37,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[19]_syn_41.b
+LUT6                                    0.315    f    10.583      11  pin: core/overlay/out_rgb_b[19]_syn_41.o
+net (fo=1)                              0.448         11.031          net: core/overlay/out_rgb_b[19],  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_reg[19].d
+SEQ (reg)                               0.041    f    11.072               
+--------------------------------------------------------------------  ---------------
+Arrival                                               11.072               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/out_rgb_reg[19].clk
+capture edge                           13.333    r    13.333               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         13.269               
+clock uncertainty                       0.000         13.269               
+clock pessimism                         0.000         13.269               
+--------------------------------------------------------------------  ---------------
+Required                                              13.269               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.197               
+
+Slack               : 2.451ns
+Begin Point         : core/overlay/logo_addr_first_reg[9].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/overlay/out_rgb_reg[18].d (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_125c
+Budget              : 13.333ns { pixel_clk rising@13.333ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 10.818ns (cell 3.456ns (31%), net 7.362ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 11 ( LUT6=8  LUT4=1  LUT3=1  LUT2=1 )
+Max Fanout          : 707
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/logo_addr_first_reg[9].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.076    f     0.076          pin: core/overlay/logo_addr_first_reg[9].q
+net (fo=707)                            1.299          1.375          net: core/overlay/logo/I_addr[9],  ../../src/anlogic_logo_rom.v(2)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_119.e
+LUT6                                    0.315    f     1.690       1  pin: core/overlay/out_rgb_b[17]_syn_119.o
+net (fo=5)                              0.588          2.278          net: core/overlay/out_rgb_b[17]_syn_120,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_121.a
+LUT6                                    0.315    f     2.593       2  pin: core/overlay/out_rgb_b[17]_syn_121.o
+net (fo=3)                              0.520          3.113          net: core/overlay/out_rgb_b[17]_syn_122,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_145.a
+LUT6                                    0.315    f     3.428       3  pin: core/overlay/out_rgb_b[17]_syn_145.o
+net (fo=1)                              0.448          3.876          net: core/overlay/out_rgb_b[17]_syn_146,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_176.b
+LUT6                                    0.315    f     4.191       4  pin: core/overlay/out_rgb_b[17]_syn_176.o
+net (fo=1)                              0.448          4.639          net: core/overlay/out_rgb_b[17]_syn_177,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_178.c
+LUT6                                    0.315    f     4.954       5  pin: core/overlay/out_rgb_b[17]_syn_178.o
+net (fo=7)                              0.638          5.592          net: core/overlay/out_rgb_b[17]_syn_179,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[17]_syn_354.a
+LUT2                                    0.273    f     5.865       6  pin: core/overlay/out_rgb_b[17]_syn_354.o
+net (fo=291)                            1.181          7.046          net: core/overlay/out_rgb_b[17]_syn_355,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[18]_syn_7.a
+LUT6                                    0.315    f     7.361       7  pin: core/overlay/out_rgb_b[18]_syn_7.o
+net (fo=1)                              0.448          7.809          net: core/overlay/out_rgb_b[18]_syn_8,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[18]_syn_9.b
+LUT6                                    0.315    f     8.124       8  pin: core/overlay/out_rgb_b[18]_syn_9.o
+net (fo=1)                              0.448          8.572          net: core/overlay/out_rgb_b[18]_syn_10,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[18]_syn_11.a
+LUT3                                    0.273    f     8.845       9  pin: core/overlay/out_rgb_b[18]_syn_11.o
+net (fo=1)                              0.448          9.293          net: core/overlay/out_rgb_b[18]_syn_12,  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_b[18]_syn_43.a
+LUT6                                    0.315    f     9.608      10  pin: core/overlay/out_rgb_b[18]_syn_43.o
+net (fo=1)                              0.448         10.056          net: core/overlay/logo/sel0_syn_15030[18],  ../../src/anlogic_logo_rom.v(7)
+                                                                      pin: core/overlay/out_rgb_b[18]_syn_44.a
+LUT4                                    0.273    f    10.329      11  pin: core/overlay/out_rgb_b[18]_syn_44.o
+net (fo=1)                              0.448         10.777          net: core/overlay/out_rgb_b[18],  NOFILE(0)
+                                                                      pin: core/overlay/out_rgb_reg[18].d
+SEQ (reg)                               0.041    f    10.818               
+--------------------------------------------------------------------  ---------------
+Arrival                                               10.818               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/overlay/out_rgb_reg[18].clk
+capture edge                           13.333    r    13.333               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         13.269               
+clock uncertainty                       0.000         13.269               
+clock pessimism                         0.000         13.269               
+--------------------------------------------------------------------  ---------------
+Required                                              13.269               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.451               
+
+
+Period Check
+----------------------------------------------------------------------------------------------------
+    Type       Setting(ns)      Required(ns)         Slack(ns)   Point
+--------------------------------------------------------------------------------
+    DRAM            13.333             2.800            10.533   core/chain/video/align/edges/raster/ramread0_syn_66.wclk
+    DRAM            13.333             2.800            10.533   core/chain/video/align/edges/raster/ramread0_syn_26.wclk
+    DRAM            13.333             2.800            10.533   core/chain/video/align/edges/raster/ramread0_syn_46.wclk
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.220ns
+Begin Point         : core/chain/video/align/edges/sobel/out_edge_reg[0].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/chain/video/align/edges/raster/ramread5_syn_13.dia[0] (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : slow_125c
+Budget              : 0.000ns { pixel_clk rising@0.000ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 0.517ns (cell 0.069ns (13%), net 0.448ns (87%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/sobel/out_edge_reg[0].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.069    f     0.069          pin: core/chain/video/align/edges/sobel/out_edge_reg[0].q
+net (fo=1)                              0.448          0.517          net: core/chain/video/align/edges/raster/in_edge[0],  ../../src/edge_raster.v(12)
+                                                                      pin: core/chain/video/align/edges/raster/ramread5_syn_13.dia[0]
+ERAM (reg)                              0.000    f     0.517       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.517               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/raster/ramread5_syn_13.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.297          0.297               
+clock uncertainty                       0.000          0.297               
+clock pessimism                         0.000          0.297               
+--------------------------------------------------------------------  ---------------
+Required                                               0.297               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.220               
+
+Slack               : 0.292ns
+Begin Point         : core/chain/video/align/edges/windows/stage_gray_reg[0].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/chain/video/align/edges/windows/ramread0_syn_14.dia[0] (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : slow_125c
+Budget              : 0.000ns { pixel_clk rising@0.000ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 0.589ns (cell 0.069ns (11%), net 0.520ns (89%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 3
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/windows/stage_gray_reg[0].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.069    f     0.069          pin: core/chain/video/align/edges/windows/stage_gray_reg[0].q
+net (fo=3)                              0.520          0.589          net: core/chain/video/align/edges/windows/stage_gray[0],  ../../src/window_3x3.v(38)
+                                                                      pin: core/chain/video/align/edges/windows/ramread0_syn_14.dia[0]
+ERAM (reg)                              0.000    f     0.589       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.589               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/windows/ramread0_syn_14.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.297          0.297               
+clock uncertainty                       0.000          0.297               
+clock pessimism                         0.000          0.297               
+--------------------------------------------------------------------  ---------------
+Required                                               0.297               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.292               
+
+Slack               : 0.292ns
+Begin Point         : core/chain/video/align/edges/windows/stage_gray_reg[1].clk (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : core/chain/video/align/edges/windows/ramread0_syn_14.dia[1] (rising edge triggered by clock pixel_clk  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : slow_125c
+Budget              : 0.000ns { pixel_clk rising@0.000ns - pixel_clk rising@0.000ns }
+Data Path Delay     : 0.589ns (cell 0.069ns (11%), net 0.520ns (89%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( ERAM=1 )
+Max Fanout          : 3
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/windows/stage_gray_reg[1].clk
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+SEQ (clk2q)                             0.069    f     0.069          pin: core/chain/video/align/edges/windows/stage_gray_reg[1].q
+net (fo=3)                              0.520          0.589          net: core/chain/video/align/edges/windows/stage_gray[1],  ../../src/window_3x3.v(38)
+                                                                      pin: core/chain/video/align/edges/windows/ramread0_syn_14.dia[1]
+ERAM (reg)                              0.000    f     0.589       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.589               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: clk
+hierarchy                               0.000          0.000          pin: clk_syn_2.ipad
+PAD                                     0.000          0.000          pin: clk_syn_2.sg09_di
+PAD                                     0.000          0.000          pin: clk_syn_2.di
+net (fo=1055)                           0.000          0.000          net: clk_dup_1,  ../../src/video_display_720p_probe_top.v(6)
+                                                                      pin: core/chain/video/align/edges/windows/ramread0_syn_14.clka
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.297          0.297               
+clock uncertainty                       0.000          0.297               
+clock pessimism                         0.000          0.297               
+--------------------------------------------------------------------  ---------------
+Required                                               0.297               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.292               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

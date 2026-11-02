@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "new observer + status text + font + banked observation wrapper, all metadata observed",
+  "wrapper_included": true,
+  "board_tested": false,
+  "board_timing_verified": false,
+  "provisional_clock_mhz": 75,
+  "source_sha256": {
+    "rtl/calibration_status_view.v": "e1adaa24fc374e5a8bc02a7fff0976aa90e5110f6ed06a8d84f3aeb4f705c025",
+    "rtl/video_calibration_text.v": "7cea1ff1358dfc625aa5a72125fbdf01ae8b140b6eb97781bbac83daf7b22da9",
+    "assets/osd/target_text_font.v": "e7db8056f069fb9cd67b9c5ac31b0ea5cfd39400621d19801af3e4df02a7766b",
+    "synthesis/calibration_status_probe.v": "57613e01043e0ebbfe7d37cfbe26f820fb9db8e330ccf9e21bac2d3d0aa4a475"
+  },
+  "warnings": [
+    "SYN-6021 CRITICAL-WARNING: 132 out of 132 logical ports has no user assigned specific location constraint."
+  ],
+  "resources": {
+    "reg": 572,
+    "lut": 774,
+    "slice": 520,
+    "eram20k": 0,
+    "dsp": 0,
+    "latch": 0
+  },
+  "timing_ns": {
+    "SWNS": 3.871,
+    "STNS": 0.0,
+    "HWNS": 1.017,
+    "HTNS": 0.0
+  }
+}
