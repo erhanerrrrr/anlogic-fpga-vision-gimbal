@@ -1,58 +1,96 @@
-# 安路赛题二：FPGA 双轴视觉跟踪云台
+# 基于 FPGA 的双轴视觉跟踪云台
 
-本仓库统一 A（板级集成与云台）、B（图像处理与显示）、C（颜色识别与定位）的代码和接口。当前**已上板验收的共同基线是 H4E**：MIPI/DDR/HDMI 视频链路、红色分割、3×3 去噪、最大连通区域选择、目标框/中心及安路 Logo。舵机闭环、真实采集帧身份、按键多模式、颜色标定尚未完成整机验收。
+**2026 FPGA 创新设计赛道 · 安路赛道 · 选题二**  
+基于安路 PH1P35 的实时数字图像处理系统  
+参赛成员：华尔涵、张韶珍、张梓琪
 
-H4E 已通过用户报告的目标接替、清空恢复及约一分钟连续运行。不能据此宣称任意光照、长期无溢出、量化延迟或整项赛题全部完成。
+以 HX1P35A 开发板为核心，连接 SC500CS 摄像头和双轴舵机云台。FPGA 完成视频采集、图像处理、目标识别、控制与显示，形成从视觉输入到云台动作的完整链路。当前提交版本为 **F3A**。
 
-## 所有人从这里开始
+**[下载源码与 bit](https://github.com/erhanerrrrr/anlogic-fpga-vision-gimbal/releases/latest)** · **[系统设计](docs/ARCHITECTURE.md)** · **[编译与仿真](docs/BUILD.md)** · **[板端操作](docs/OPERATION.md)** · **[验证结果](docs/VALIDATION.md)**
 
-- [基线及复现命令](boards/hx1p35a/h4e/README.md)：已验收 bit、源码、测试和构建。
-- [统一接口 v1](docs/interfaces/team-contract-v1.md)：明确当前实现与后续开发约定，旧模块文档作为局部接口参考。
-- [赛题逐项核对与遗漏](docs/contest-review.md)：基本要求、评分重点、选做项和项目自定目标分开记录。
-- [三人下一阶段任务与验收](docs/team-roadmap.md)：按小阶段交付，先仿真、再整机实现、最后上板。
-- [B 同学独立任务书](docs/tasks/B-task-guide.md) / [C 同学独立任务书](docs/tasks/C-task-guide.md)：每步目标、注意事项、仿真验收和交付材料。
-- [上板成果直白说明](docs/board-progress-explained.md)：我们实际做成了什么、对应哪条赛题要求、哪些还未完成。
-- [协作规则](CONTRIBUTING.md)与[来源记录](docs/provenance.md)。
+## 功能概览
 
-## 目录与维护责任
+| 功能 | 项目实现 |
+| --- | --- |
+| 视频采集与显示 | MIPI 摄像头输入、DDR 帧缓存、1280×720 HDMI 输出 |
+| 图像处理 | 原始画面、灰度、二值化、边缘、颜色掩模、色阶简化等显示模式 |
+| 目标识别 | 红、绿、蓝目标选择；卡片状、近圆形和不规则轮廓分类；识别框与类别叠加 |
+| 双轴跟踪 | 根据目标偏差控制水平和俯仰舵机，支持中心保持、限速限幅、遮挡保持与视野内恢复 |
+| 运动检测 | K3 采集空背景，区分空背景、运动前景和静止前景；黄色前景框与板载声光提示 |
+| 自动曝光 | 根据亮度与高光统计调节摄像头曝光时间和模拟增益 |
+| 延迟可视化 | 显示 CSI 帧起始至 HDMI TX 输入的当前、最小、最大延迟与趋势 |
+| 信息与交互 | 安路 Logo、中心标记、数码管、双色灯、蜂鸣器、按键拨码及 UART 遥测 |
 
-| 位置 | 内容 | 维护方式 |
-|---|---|---|
-| `boards/hx1p35a/h4e/` | 216 个来源文件的完整板级冻结快照、TD 工程、已验收 bit、证据、便携回归 | A 管理；不在该快照内开发新功能 |
-| `rtl/recognition/`、`model/`、`scripts/`、`tests/` | C 的 S0–C10 模块及测试；新增 H4E 连通域核作为后续维护入口 | C；原 C10 是独立历史链路，不直接替换 H4E |
-| `B7_GitHub/` | B 的四模式、按键、静态 OSD 与独立验证 | B；目前不是已验收的整机显示顶层 |
-| `docs/interfaces/` | 团队接口、版本和兼容边界 | A/B/C 共同审查 |
-| `docs/history/` | 原 C 首页、上次分工计划 | 历史快照；不作为当前项目状态 |
+默认演示页保留画面、Logo、中心和识别框；详细参数与延迟图表通过按键切换查看。颜色识别、MOTION、自动曝光和延迟显示集成于同一个 bit。
 
-后续板级功能在新目录/分支集成，使用明确源文件列表。禁止递归编译全仓库，否则冻结快照和开发目录会引入同名模块。
+## 系统结构
 
-## 共同基线快速验证
-
-安装 Python、Icarus Verilog（`iverilog` 和 `vvp` 在 PATH）；在仓库根目录执行：
-
-```powershell
-python -m pip install -r boards/hx1p35a/h4e/requirements.txt
-python -X utf8 boards/hx1p35a/h4e/run.py check
-python -X utf8 boards/hx1p35a/h4e/run.py unit
-python -X utf8 boards/hx1p35a/h4e/run.py pipeline
+```mermaid
+flowchart LR
+    CAM[SC500CS 摄像头] --> RX[MIPI / ISP]
+    RX --> DDR[DDR 帧缓存]
+    DDR --> VIS[颜色与形状识别]
+    VIS --> CTRL[双轴控制]
+    CTRL --> PWM[舵机 PWM]
+    DDR --> MOTION[背景与运动检测]
+    DDR --> OSD[图像处理 / OSD]
+    VIS --> OSD
+    MOTION --> OSD
+    OSD --> HDMI[HDMI 显示]
+    DDR --> AE[亮度统计 / 曝光控制]
+    AE -->|I²C| CAM
 ```
 
-`check` 核对源文件、约束、工程依赖、码流和测试输入的哈希；`unit` 检查 68 个案例；`pipeline` 检查 13 帧完整 720p 数据及显示。无需开发板或 TD 即可跑仿真。B/C 每个小阶段提交一个 PR，并附可复跑的检查结果。
+## 查看代码
 
-C 的根目录开发核回归入口及资源边界见 [H4E 新 C1](docs/stages/H4E-C1.md)，冻结版本与开发版本的证据分别保存。
+| 入口 | 内容 |
+| --- | --- |
+| [`src/top/design_top_wrapper.v`](src/top/design_top_wrapper.v) | 系统顶层、模块连接与最终参数 |
+| [`src/vision/`](src/vision/) | 颜色分割、区域定位、形状分类、颜色标定 |
+| [`src/control/`](src/control/) | 跟踪控制、限幅与 PWM |
+| [`src/motion/`](src/motion/) | 背景采集及运动检测 |
+| [`src/exposure/`](src/exposure/) / [`src/timing/`](src/timing/) | 自动曝光 / 帧标记及延迟统计 |
+| [`src/display/`](src/display/) / [`src/io/`](src/io/) | 图像与叠加显示 / 按键及板载外设 |
+| [`platform/`](platform/) / [`constraints/`](constraints/) | 配套接口与 IP / 引脚和时序约束 |
+| [`project/`](project/) / [`tb/`](tb/) / [`tools/`](tools/) | 工程文件 / 仿真用例 / 构建与记录工具 |
 
-[H4E 新 C2a](docs/stages/H4E-C2a.md)提供 T 主目标原子结果封装、A/B 联调序列和资源报告；已独立仿真/综合，与 C2b 来源适配配合使用，尚未进入冻结板级工程。
+历史分工与开发版本集中保存在 [`archive/development/`](archive/development/)，不参与 F3A 编译。各阶段提交与作者记录保留，版本关系见[开发记录](docs/history/README.md)。
 
-[H4E 新 C2b](docs/stages/H4E-C2b.md)已完成合成来源身份、重复观察抑制、旧 epoch 拦截与半帧恢复验证；新增身份保护不占 ERAM/DSP。真实来源/DDR/CDC 接入和整机上板仍待 A 集成。
+## 快速复现
 
-本次集成以 B 分支 `5e38a969` 为父提交，其历史包含 C 基线 `acd9165b`。是否已进入默认分支，以 GitHub PR 状态为准；不要把仍在评审的分支当作已合并。
+器件为 **PH1P35MDG324，速度等级 -3**；发布版本使用 **TangDynasty 6.2.1 Engineer（6.2.168.116）**。辅助脚本使用 Python 3.10 或更高版本。
 
-[H4E 新 C3a](docs/stages/H4E-C3a.md)完成中央 16×16 颜色统计，不改阈值；独立综合新增采样模块不占 ERAM/DSP，真实采样与整机时序待 A 集成验证。
+```shell
+git clone https://github.com/erhanerrrrr/anlogic-fpga-vision-gimbal.git
+cd anlogic-fpga-vision-gimbal
+python tools/project.py check
+python tools/project.py prepare
+```
 
-[H4E 新 C3b](docs/stages/H4E-C3b.md)完成样本质量判断和候选阈值计算；不改变活动配置，独立综合不占 ERAM/DSP。C3c 再接新帧参数应用。
+使用 TangDynasty 打开最后一条命令打印的 `.al` 工程，顶层为 `design_top_wrapper`。需要仿真时，将 Icarus Verilog 的 `iverilog` 和 `vvp` 加入 PATH，再运行：
 
-[H4E 新 C3c](docs/stages/H4E-C3c.md)完成新来源帧边界的参数整体应用、人工选色和完整 busy 仲裁；含取消后两拍收尾。独立控制模块不占 ERAM/DSP，尚待 A 整机集成上板。
+```shell
+python tools/run_tests.py
+```
 
-[H4E 新 C4](docs/stages/H4E-C4.md)已交付 RGB888 文件校验/RTL 回放和合成场景指标；新增 FPGA 资源为 0。真实输入与人工标注待 A 提供，实拍鲁棒性尚未验收。
+依赖检查、仿真和编译入口均在根目录；无需读取历史分支或修改本机绝对路径。完整操作见[编译说明](docs/BUILD.md)。
 
-C 开发进度本次交付范围和 A/B 接入事项见 [2026-10-13 交付状态](docs/stages/H4E-C-delivery-status.md)；C4 实拍评估及新增功能上板尚待完成。
+## 实现与验证
+
+整理后的源码通过 30 项 HDL 回归、UART 解码检查和完整顶层综合；源代码与 F3A 构建快照核对一致。以下为 **F3A bit 原构建的最终布线结果**：
+
+| Slice | ERAM | DSP | Setup WNS | Hold WNS |
+| --- | --- | --- | --- | --- |
+| 18716 / 21216 | 98 / 108 | 18 / 40 | +0.103 ns | +0.020 ns |
+
+功能测试反馈和工具检查分别列于[验证结果](docs/VALIDATION.md)。延迟统计不包含显示器响应与舵机运动时间；时序分析仍有摄像头配置分频时钟及部分外部接口覆盖缺口。当前未据此宣称全接口时序签核或长期运行指标。
+
+## 配置文件与来源
+
+配置文件：[`release/F3A_demo_overlay.bit`](release/F3A_demo_overlay.bit)。本次仓库整理保持原 bit 和算法参数，SHA-256 为：
+
+```text
+bb8485f592b80be51f362e5254c6d1b841f965d23bfc843b12a9e081fae926c6
+```
+
+工程使用开发板配套接口及厂商 IP，原作者和版权说明保留，详见[来源与依赖](THIRD_PARTY.md)。正式参赛技术文档和演示成片将以确认后的文件补充；本页已提供代码审阅、编译和板端操作所需说明。

@@ -1,0 +1,31 @@
+name: F3A source checks
+
+on:
+  push:
+    paths-ignore:
+      - 'archive/**'
+      - '**/*.md'
+  pull_request:
+    paths-ignore:
+      - 'archive/**'
+      - '**/*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install simulator
+        run: sudo apt-get update -qq && sudo apt-get install -y iverilog
+      - name: Check dependencies
+        run: python tools/project.py check
+      - name: Run HDL and UART checks
+        run: python tools/run_tests.py --jobs 2

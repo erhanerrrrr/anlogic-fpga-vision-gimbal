@@ -1,0 +1,30 @@
+{
+  "version": "F3A",
+  "build": "build_r1",
+  "sha256": "bb8485f592b80be51f362e5254c6d1b841f965d23bfc843b12a9e081fae926c6",
+  "size": 1789539,
+  "servo_us": {
+    "pan": [
+      1000,
+      2000
+    ],
+    "tilt": [
+      1200,
+      1800
+    ]
+  },
+  "tool": "TangDynasty 6.2.1 Engineer 6.2.168.116",
+  "device": "PH1P35MDG324, speed -3",
+  "resources": {
+    "slice": 18716,
+    "eram": 98,
+    "dsp": 18
+  },
+  "timing": {
+    "SWNS": 0.103,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "timing_coverage_percent": 93.46
+}
